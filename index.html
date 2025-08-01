@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End Customer page</title>
+    <link rel="stylesheet" href="assets/output.css">
+   <style>
+ .bg-mg {
+    background-image: url(./assets/img/map.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bg-mg max-h-100vh h-screen">
+
+        <header class="nav-menu px-20 py-2 mx-auto flex items-center justify-between">
+            <div class="max-w-[150px] max-h-10"><a href="#"><img src="assets/img/logo.png" alt="logo"
+                    class="max-w-[150px] max-h-10"></a></div>
+            <nav class="">
+                <div class="">
+                    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                    <ul id="menu" class="hidden md:flex space-x-6 items-center">
+                        <li><a href="#" class="hover:text-gray-300 ">Home</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Medicine</a></li>
+                        <li class="relative group">
+                            <a class="flex items-center hover:text-gray-300 focus:outline-none">
+                                Services
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                            <!-- Submenu -->
+                            <ul
+                                class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                <li><a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web Design</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a></li>
+                            </ul>
+                        </li>
+                        <li class="relative group">
+                            <a class="flex items-center hover:text-gray-300 focus:outline-none">
+                                Services
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                            <!-- Submenu -->
+                            <ul
+                                class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">Web Design</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">SEO</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">Consulting</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Mobile Menu -->
+                <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-2 mt-2 text-white px-4">
+                    <li><a href="#" class="block hover:text-gray-300">Home</a></li>
+                    <li><a href="#" class="block hover:text-gray-300">About</a></li>
+                    <li>
+                        <button id="mobile-submenu-btn"
+                            class="flex items-center w-full hover:text-gray-300 focus:outline-none">
+                            Services
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <ul id="mobile-submenu" class="hidden flex-col pl-4 mt-1 space-y-1">
+                            <li><a href="#" class="block hover:text-gray-300">Web Design</a></li>
+                            <li><a href="#" class="block hover:text-gray-300">SEO</a></li>
+                            <li><a href="#" class="block hover:text-gray-300">Consulting</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="block hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const btn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Mobile submenu toggle
+        const mobileSubmenuBtn = document.getElementById('mobile-submenu-btn');
+        const mobileSubmenu = document.getElementById('mobile-submenu');
+        mobileSubmenuBtn.addEventListener('click', () => {
+            mobileSubmenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

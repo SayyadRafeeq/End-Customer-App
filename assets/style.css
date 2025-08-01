@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+
+:root {
+  --color-white: #ffffff;  
+  --color-gray: #212B36;
+  --color-gray-light: #F8FAFC;
+  --color-gray-dark: #212529;
+  --color-dark-charcoal: #111111; 
+  --color-sea-green: #10b981;
+  --color-sea-green-deep: #238B6D; 
+}
+
+.container {
+    max-width: 1440px!important;
+    margin: 0 auto;
+    width: 100%;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background-imgae: url(./img/map.png);
+    color: var(--color-gray-dark);
+}
+
+.nav-menu {
+    max-height:78px;
+    height: 78px;
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(5px);
+    width: 100%;
+}
+
+
+.nav-menu ul li{
+    @apply text-[var(--color-dark-charcoal)] ;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.nav-menu ul li a:hover {
+    @apply text-[var(--color-sea-green-deep)] ;
+}
+.color-red{
+    background-color: var(--color-gray);
+}
+
+.primary-radius-18{
+    @apply rounded-[18px] text-white flex items-center justify-center;
+    background-color: var(--color-sea-green-deep);
+    width: 36px;
+height: 36px;
+opacity: 1;
+}

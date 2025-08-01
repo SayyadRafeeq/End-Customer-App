@@ -1,0 +1,9 @@
+# Node modules
+node_modules/
+
+# Tailwind output
+assets/output.css
+
+# System files
+.DS_Store
+Thumbs.db
