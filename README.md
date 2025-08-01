@@ -1,10 +1,35 @@
-📁 README.md
-markdown
-Copy
-Edit
-# EndCustomer Frontend Project
+# End Customer Web UI
 
-This is a simple frontend project built using HTML, Tailwind CSS v4, and JavaScript. It uses local assets and requires Tailwind to be built via npm.
+This is a frontend project built with **Tailwind CSS v4** and **HTML/JavaScript**, styled and structured for modern browser compatibility and responsive design.
+
+---
+
+## 📦 Project Setup
+
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm (comes with Node.js)
+- Git
+
+---
+
+## 🚀 Installation & Usage
+
+Follow these steps to run the project locally:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/vickyshukla/End-Customer-.git
+cd End-Customer-
+
+### 2. Install Dependencies 
+npm install
+
+### 3. Build Tailwind CSS
+
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 
 ## 📦 Project Structure
 
