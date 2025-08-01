@@ -35,17 +35,15 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 
 project/
 ├── assets/
+  ├── style.css
+  ├── output.css
 │ └── img/
 │ ├── logo.png
 │ └── map.png
 ├── script/
 │ └── ... (JS files)
 ├── index.html
-├── style.css
-├── output.css
 ├── package.json
-├── tailwind.config.js
-├── postcss.config.js
 └── .gitignore
 
 yaml
