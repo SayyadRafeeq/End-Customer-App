@@ -1,12 +1,14 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-
-@theme {
+@theme{
   --color-white: #ffffff;  
   --color-gray: #212B36;
   --color-gray-light: #F8FAFC;
+  --color-white: #ffffff;
+  --color-gray: #212b36;
+  --color-gray-light: #f8fafc;
   --color-gray-dark: #212529;
   --color-dim-gray: #696969;
   --color-snow-gray: #F7F8FA;
@@ -23,54 +25,68 @@
   /* Box Shadow */
     --box-shadow-1: 4px 4px 10px 4px rgba(0, 0, 0, 0.20);
 
-  /* Font Size and Font Weight */
-  --text-30-bold: 1.875rem;
-  --text-30-bold--font-weight: 700;
-  --text-30-bold--line-height: 36px;
-  --text-30-bold--font-style: normal;
+  --color-dark-charcoal: #111111;
+  --color-sea-green: #10b981;
+  --color-sea-green-deep: #238B6D; 
+  --color-charcoal-black:#212529;
+  --color-smoke-white:#EEEEEE;
+  --color-ash-gray:#D9D9D9;
+  --color-light-coral:#FF916C;
+  --color-mint-leaf:#58D36A;
+  --color-pastel-blue:#6CA4FF;
+  --color-pastel-red:#FF6C6C;
+  --color-orchid:#D36CFF;
+  --color-mustard-yellow:#D6B71D;
+  --color-ice-gray:#F4F6F8;
+  --color-sea-green-deep: #238b6d;
 
-  --text-24-semibold: 1.5rem;
-  --text-24-semibold--font-weight: 600;
-  --text-24-semibold--line-height: 120%;
-  --text-24-semibold--font-style: normal;
+/* Font Size and Font Weight */
+    --text-30-bold: 1.875rem;
+    --text-30-bold--font-weight: 700;
+    --text-30-bold--line-height: 36px;
+    --text-30-bold--font-style: normal;
 
-  --text-22-bold: 1.375rem;
-  --text-22-bold--font-weight: 700;
-  --text-22-bold--line-height: 26.4px;
-  --text-22-bold--font-style: normal;
- 
-  --text-16-semibold: 1rem;
-  --text-16-semibold--font-weight: 600;
-  --text-16-semibold--line-height: 120%;
-  --text-16-semibold--font-style: normal;
+    --text-24-semibold: 1.5rem;
+    --text-24-semibold--font-weight: 600;
+    --text-24-semibold--line-height: 120%;
+    --text-24-semibold--font-style: normal;
 
-  --text-16-normal: 1rem;
-  --text-16-normal--font-weight: 400;
-  --text-16-normal--line-height: 120%;
-  --text-16-normal--font-style: normal;
+    --text-22-bold: 1.375rem;
+    --text-22-bold--font-weight: 700;
+    --text-22-bold--line-height: 26.4px;
+    --text-22-bold--font-style: normal;
 
-  --text-15-normal: 0.938rem;
-  --text-15-normal--font-weight: 400;
-  --text-15-normal--line-height: 22.5px;
-  --text-15-normal--font-style: normal;
+    --text-16-semibold: 1rem;
+    --text-16-semibold--font-weight: 600;
+    --text-16-semibold--line-height: 120%;
+    --text-16-semibold--font-style: normal;
 
-  --text-15-semibold: 0.938rem;
-  --text-15-semibold--font-weight: 600;
-  --text-15-semibold--line-height: 22.5px;
-  --text-15-semibold--font-style: normal;
+    --text-16-normal: 1rem;
+    --text-16-normal--font-weight: 400;
+    --text-16-normal--line-height: 120%;
+    --text-16-normal--font-style: normal;
 
+    --text-15-normal: 0.938rem;
+    --text-15-normal--font-weight: 400;
+    --text-15-normal--line-height: 22.5px;
+    --text-15-normal--font-style: normal;
+
+    --text-15-semibold: 0.938rem;
+    --text-15-semibold--font-weight: 600;
+    --text-15-semibold--line-height: 22.5px;
+    --text-15-semibold--font-style: normal;
 }
 
 .container {
-    max-width: 1440px!important;
-    margin: 0 auto;
-    width: 100%;
+  max-width: 1440px !important;
+  margin: 0 auto;
+  width: 100%;
 }
 
 body {
-    font-family: "Nunito", sans-serif;
-    background-imgae: url(./img/map.png);
-    color: var(--color-gray-dark);
+  font-family: "Nunito", sans-serif;
+  background-imgae: url(./img/map.png);
+  color: var(--color-gray-dark);
 }
 
 .no-scrollbar::-webkit-scrollbar {
@@ -79,27 +95,26 @@ body {
 }
 
 .nav-menu {
-    max-height:78px;
-    height: 78px;
-    background: rgba(255, 255, 255, 0.30);
-    backdrop-filter: blur(5px);
-    width: 100%;
+  max-height: 78px;
+  height: 78px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  width: 100%;
 }
 
-
-.nav-menu ul li{
-    @apply text-[var(--color-dark-charcoal)] ;
-    font-weight: 600;
-    font-family: sans-serif;
-    font-style: normal;
-    font-size: 1rem;
+.nav-menu ul li {
+  @apply text-[var(--color-dark-charcoal)];
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 1rem;
 }
 
 .nav-menu ul li a:hover {
-    @apply text-[var(--color-sea-green-deep)] ;
+  @apply text-[var(--color-sea-green-deep)];
 }
-.color-red{
-    background-color: var(--color-gray);
+.color-red {
+  background-color: var(--color-gray);
 }
 
 .primary-radius-18{
@@ -112,4 +127,123 @@ opacity: 1;
 
 .campaign-card{
     @apply w-[319px] flex-shrink-0 h-[346px] rounded-[10px] bg-white shadow-(--box-shadow-1) p-5 space-y-5;
+}
+.secondary-card{
+    max-width: 12.5rem;
+    max-height: 14.75rem;
+}
+
+.categories-card{
+    max-height:12.5rem;
+    max-width: 12.5rem;
+    padding:10px;
+}
+.custom-hr {
+  @apply relative h-[1px] border-none bg-smoke-white w-full mt-2
+}
+
+.custom-hr::after {
+  content: '';
+  @apply absolute top-1/2 left-0 translate-y-[-50%] h-[3px] w-[6.25rem] bg-sea-green-deep;
+}
+
+.carousel-section {
+  @apply bg-ice-gray px-20 py-[4.5rem]; 
+}
+
+.carousel-container {
+  @apply w-full overflow-hidden relative touch-pan-y;
+}
+
+.carousel-track {
+  @apply flex transition-transform duration-500 ease-in-out;
+}
+
+.carousel-slide {
+  @apply w-full flex-shrink-0 block h-auto;
+  object-fit: contain;
+}
+
+.carousel-container img {
+  @apply w-full;
+  max-height: 70vh;  
+  object-fit: contain; 
+}
+
+.carousel-dots {
+  @apply flex justify-center mt-4 gap-2 items-center;
+}
+
+.carousel-dots .dot {
+  @apply w-2.5 h-2.5 bg-ash-gray rounded-full cursor-pointer transition-colors duration-200 ease-in;
+}
+
+.carousel-dots .dot.active {
+  @apply bg-sea-green-deep w-3.5 h-3.5;
+}
+
+@media (max-width: 840px) {
+  .carousel-section {
+    @apply px-4 py-8; 
+  }
+
+  .carousel-dots {
+    @apply mt-3;
+  }
+
+  .carousel-dots .dot {
+    @apply w-2 h-2;
+  }
+
+  .carousel-dots .dot.active{
+    @apply w-2.5 h-2.5
+  }
+}
+.primary-radius-18 {
+  @apply rounded-[18px] text-white flex items-center justify-center;
+  background-color: var(--color-sea-green-deep);
+  width: 36px;
+  height: 36px;
+  opacity: 1;
+}
+
+.primary-btn {
+  display: flex;
+  height: 48px;
+  padding: 0.68rem 1.37rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.15);
+  font-family: "Public Sans", sans-serif;   
+}
+
+.primary-box-shadow {
+  box-shadow: 0 24px 48px 0 rgba(145, 158, 171, 0.2);
+}
+
+/* Custom styles */
+.custom-marker {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.facility-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.facility-card.selected {
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+.leaflet-left {
+  right: 0 !important;
+  position: absolute;
+
+  bottom: 5rem;
+}
+.leaflet-control-zoom {
+  position: absolute !important;
+  right: 2rem;
+  bottom: 0 !important;
 }
