@@ -2,13 +2,27 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-:root {
+@theme{
+  --color-white: #ffffff;  
+  --color-gray: #212B36;
+  --color-gray-light: #F8FAFC;
   --color-white: #ffffff;
   --color-gray: #212b36;
   --color-gray-light: #f8fafc;
   --color-gray-dark: #212529;
   --color-dark-charcoal: #111111;
   --color-sea-green: #10b981;
+  --color-sea-green-deep: #238B6D; 
+  --color-charcoal-black:#212529;
+  --color-smoke-white:#EEEEEE;
+  --color-ash-gray:#D9D9D9;
+  --color-light-coral:#FF916C;
+  --color-mint-leaf:#58D36A;
+  --color-pastel-blue:#6CA4FF;
+  --color-pastel-red:#FF6C6C;
+  --color-orchid:#D36CFF;
+  --color-mustard-yellow:#D6B71D;
+  --color-ice-gray:#F4F6F8;
   --color-sea-green-deep: #238b6d;
 }
 
@@ -47,6 +61,85 @@ body {
   background-color: var(--color-gray);
 }
 
+.primary-radius-18{
+    @apply rounded-[18px] text-white flex items-center justify-center;
+    background-color: var(--color-sea-green-deep);
+    width: 36px;
+height: 36px;
+opacity: 1;
+}
+
+.secondary-card{
+    max-width: 12.5rem;
+    max-height: 14.75rem;
+}
+
+.categories-card{
+    max-height:12.5rem;
+    max-width: 12.5rem;
+    padding:10px;
+}
+.custom-hr {
+  @apply relative h-[1px] border-none bg-smoke-white w-full mt-2
+}
+
+.custom-hr::after {
+  content: '';
+  @apply absolute top-1/2 left-0 translate-y-[-50%] h-[3px] w-[6.25rem] bg-sea-green-deep;
+}
+
+.carousel-section {
+  @apply bg-ice-gray px-20 py-[4.5rem]; 
+}
+
+.carousel-container {
+  @apply w-full overflow-hidden relative touch-pan-y;
+}
+
+.carousel-track {
+  @apply flex transition-transform duration-500 ease-in-out;
+}
+
+.carousel-slide {
+  @apply w-full flex-shrink-0 block h-auto;
+  object-fit: contain;
+}
+
+.carousel-container img {
+  @apply w-full;
+  max-height: 70vh;  
+  object-fit: contain; 
+}
+
+.carousel-dots {
+  @apply flex justify-center mt-4 gap-2 items-center;
+}
+
+.carousel-dots .dot {
+  @apply w-2.5 h-2.5 bg-ash-gray rounded-full cursor-pointer transition-colors duration-200 ease-in;
+}
+
+.carousel-dots .dot.active {
+  @apply bg-sea-green-deep w-3.5 h-3.5;
+}
+
+@media (max-width: 840px) {
+  .carousel-section {
+    @apply px-4 py-8; 
+  }
+
+  .carousel-dots {
+    @apply mt-3;
+  }
+
+  .carousel-dots .dot {
+    @apply w-2 h-2;
+  }
+
+  .carousel-dots .dot.active{
+    @apply w-2.5 h-2.5
+  }
+}
 .primary-radius-18 {
   @apply rounded-[18px] text-white flex items-center justify-center;
   background-color: var(--color-sea-green-deep);
