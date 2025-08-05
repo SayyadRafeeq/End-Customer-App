@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>End Customer page</title>
     <link rel="stylesheet" href="assets/output.css">
-   <style>
- .bg-mg {
-    background-image: url(./assets/img/map.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+    <style>
+        .bg-mg {
+            background-image: url(./assets/img/map.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
     </style>
 </head>
 
@@ -19,79 +19,192 @@
     <div class="container">
         <div class="bg-mg max-h-100vh h-screen">
 
-        <header class="nav-menu px-20 py-2 mx-auto flex items-center justify-between">
-            <div class="max-w-[150px] max-h-10"><a href="#"><img src="assets/img/logo.png" alt="logo"
-                    class="max-w-[150px] max-h-10"></a></div>
-            <nav class="">
-                <div class="">
-                    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                    <ul id="menu" class="hidden md:flex space-x-6 items-center">
-                        <li><a href="#" class="hover:text-gray-300 ">Home</a></li>
-                        <li><a href="#" class="hover:text-gray-300">Medicine</a></li>
-                        <li class="relative group">
-                            <a class="flex items-center hover:text-gray-300 focus:outline-none">
-                                Services
-                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </a>
-                            <!-- Submenu -->
-                            <ul
-                                class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
-                                <li><a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web Design</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a></li>
-                            </ul>
-                        </li>
-                        <li class="relative group">
-                            <a class="flex items-center hover:text-gray-300 focus:outline-none">
-                                Services
-                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </a>
-                            <!-- Submenu -->
-                            <ul
-                                class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
-                                <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">Web Design</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">SEO</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">Consulting</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#" class="hover:text-gray-300">Contact</a></li>
-                    </ul>
-                </div>
-                <!-- Mobile Menu -->
-                <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-2 mt-2 text-white px-4">
-                    <li><a href="#" class="block hover:text-gray-300">Home</a></li>
-                    <li><a href="#" class="block hover:text-gray-300">About</a></li>
-                    <li>
-                        <button id="mobile-submenu-btn"
-                            class="flex items-center w-full hover:text-gray-300 focus:outline-none">
-                            Services
-                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <header class="nav-menu px-20 py-2 mx-auto flex items-center justify-between">
+                <div class="max-w-[150px] max-h-10"><a href="#"><img src="assets/img/logo.png" alt="logo"
+                            class="max-w-[150px] max-h-10"></a></div>
+                <nav class="">
+                    <div class="">
+                        <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
+                                    d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
                         </button>
-                        <ul id="mobile-submenu" class="hidden flex-col pl-4 mt-1 space-y-1">
-                            <li><a href="#" class="block hover:text-gray-300">Web Design</a></li>
-                            <li><a href="#" class="block hover:text-gray-300">SEO</a></li>
-                            <li><a href="#" class="block hover:text-gray-300">Consulting</a></li>
+                        <ul id="menu" class="hidden md:flex space-x-6 items-center">
+                            <li><a href="#" class="hover:text-gray-300 ">Home</a></li>
+                            <li><a href="#" class="hover:text-gray-300">Medicine</a></li>
+                            <li class="relative group">
+                                <a class="flex items-center hover:text-gray-300 focus:outline-none">
+                                    Services
+                                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </a>
+                                <!-- Submenu -->
+                                <ul
+                                    class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web Design</a>
+                                    </li>
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a></li>
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="relative group">
+                                <a class="flex items-center hover:text-gray-300 focus:outline-none">
+                                    Services
+                                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </a>
+                                <!-- Submenu -->
+                                <ul
+                                    class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">Web Design</a></li>
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">SEO</a></li>
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">Consulting</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="hover:text-gray-300">Contact</a></li>
                         </ul>
-                    </li>
-                    <li><a href="#" class="block hover:text-gray-300">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+                    </div>
+                    <!-- Mobile Menu -->
+                    <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-2 mt-2 text-white px-4">
+                        <li><a href="#" class="block hover:text-gray-300">Home</a></li>
+                        <li><a href="#" class="block hover:text-gray-300">About</a></li>
+                        <li>
+                            <button id="mobile-submenu-btn"
+                                class="flex items-center w-full hover:text-gray-300 focus:outline-none">
+                                Services
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <ul id="mobile-submenu" class="hidden flex-col pl-4 mt-1 space-y-1">
+                                <li><a href="#" class="block hover:text-gray-300">Web Design</a></li>
+                                <li><a href="#" class="block hover:text-gray-300">SEO</a></li>
+                                <li><a href="#" class="block hover:text-gray-300">Consulting</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="block hover:text-gray-300">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
         </div>
+
+        <!--Shop By Health Concerns Section-->
+        <section class="bg-white p-5 md:p-20 health-concerns-section">
+            <div>
+                <h1 class="font-bold text-xl md:text-3xl text-charcoal-black">
+                    Shop By Health Concerns
+                </h1>
+                <div class="custom-hr"></div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 pt-5">
+                    <!--Diabetes Card-->
+                    <div class="card secondary-card flex flex-col gap-2.5 items-center">
+                        <img src="./assets/img/diabeties.svg" alt="Diabetes Image">
+                        <span class=" text-center font-semibold text-base md:text-lg">Diabetes</span>
+                    </div>
+                    <!--Heart Care Card-->
+                    <div class="card secondary-card flex flex-col gap-2.5 items-center">
+                        <img src="./assets/img/heart-care.svg" alt="Heart Care Image">
+                        <span class=" text-center font-semibold text-base md:text-lg">Heart Care</span>
+                    </div>
+                    <!--Liver Care Card-->
+                    <div class="card secondary-card flex flex-col gap-2.5 items-center">
+                        <img src="./assets/img/liver-care.svg" alt="Liver Care Image">
+                        <span class=" text-center font-semibold text-base md:text-lg">Liver Care</span>
+                    </div>
+                    <!--Muscle & Joint Care Card-->
+                    <div class="card secondary-card flex flex-col gap-2.5 items-center">
+                        <img src="./assets/img/muscle-joint-care.svg" alt="Muscle & Joint Care Image">
+                        <span class=" text-center font-semibold text-base md:text-lg">Muscle & Joint Care</span>
+                    </div>
+                    <!--Stomach Care Card-->
+                    <div class="card secondary-card flex flex-col gap-2.5 items-center">
+                        <img src="./assets/img/stomach-care.svg" alt="Stomach Care Image">
+                        <span class=" text-center font-semibold text-base md:text-lg">Stomach Care</span>
+                    </div>
+                    <!--Derma Care Card-->
+                    <div class="card secondary-card flex flex-col gap-2.5 items-center">
+                        <img src="./assets/img/derma-care.svg" alt="Derma Care Image">
+                        <span class=" text-center font-semibold text-base md:text-lg">Derma Care</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carousel Section -->
+        <section class="carousel-section ">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <img src="./assets/img/slider-img1.svg" class="carousel-slide" alt="Slide 1" />
+                    <img src="./assets/img/slider-img2.png" class="carousel-slide" alt="Slide 2" />
+                    <img src="./assets/img/slider-img3.png" class="carousel-slide" alt="Slide 3" />
+                </div>
+               
+            </div>
+             <div class="carousel-dots"></div>
+        </section>
+
+        <!--Shop by categories-->
+        <section class="bg-white p-5  md:p-20 categories-section">
+            <div>
+                <h1 class="font-bold text-xl md:text-3xl text-charcoal-black">
+                    Shop By Categories
+                </h1>
+                <div class="custom-hr"></div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-4 pt-5">
+                    <!--Popular Medicines Card-->
+                    <div class="card categories-card bg-light-coral rounded-[10px]">
+                        <p class="text-base md:text-lg font-bold text-white">Popular <br> Medicine</p>
+                        <div class="flex justify-end">
+                            <img src="./assets/img/popular-medicine.png" alt="Medicine Image" class="w-35 h-35">
+                        </div>
+                    </div>
+                    <!--Pain & Inflammation Relief Card-->
+                    <div class="card categories-card bg-mint-leaf rounded-[10px]">
+                        <p class="text-base md:text-lg font-bold text-white">Pain & <br> Inflammatory Relief</p>
+                        <div class="flex justify-end">
+                            <img src="./assets/img/pain-relief.png" alt="Medicine Image" class="w-35 h-35">
+                        </div>
+                    </div>
+                    <!--Cold,Coughr & Fever Card-->
+                    <div class="card categories-card bg-pastel-blue rounded-[10px]">
+                        <p class="text-base md:text-lg font-bold text-white">Cold,<br> Cough & Fever</p>
+                        <div class="flex justify-end">
+                            <img src="./assets/img/cold-fever.png" alt="Medicine Image" class="w-35 h-35">
+                        </div>
+                    </div>
+                    <!--Skin & Personal Care Card-->
+                    <div class="card categories-card bg-pastel-red rounded-[10px]">
+                        <p class="text-base md:text-lg font-bold text-white">Skin &<br>Personal Care</p>
+                        <div class="flex justify-end">
+                            <img src="./assets/img/skin-care.png" alt="Skin care products image" class="w-35 h-35">
+                        </div>
+                    </div>
+                    <!--Child & Maternal Health Card-->
+                    <div class="card categories-card bg-orchid rounded-[10px]">
+                        <p class="text-base md:text-lg font-bold text-white">Child &<br>Maternal Health</p>
+                        <div class="flex justify-end">
+                            <img src="./assets/img/child-maternal.png" alt="Children products image" class="w-35 h-35">
+                        </div>
+                    </div>
+                    <!--Devices & Health Tools Card-->
+                    <div class="card categories-card bg-mustard-yellow rounded-[10px]">
+                        <p class="text-base md:text-lg font-bold text-white">Devices &<br>Health Tools</p>
+                        <div class="flex justify-end">
+                            <img src="./assets/img/devices.png" alt="Children products image" class="w-35 h-35">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </div>
 
     <script>
@@ -109,6 +222,8 @@
             mobileSubmenu.classList.toggle('hidden');
         });
     </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/script/main.js"></script>
 </body>
 
 </html>
