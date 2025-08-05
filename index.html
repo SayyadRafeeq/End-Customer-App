@@ -1,114 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>End Customer page</title>
-    <link rel="stylesheet" href="assets/output.css">
-   <style>
- .bg-mg {
-    background-image: url(./assets/img/map.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+    <link rel="stylesheet" href="assets/output.css" />
+    <style>
+      .bg-mg {
+        background-image: url(./assets/img/map.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="bg-mg max-h-100vh h-screen">
-
-        <header class="nav-menu px-20 py-2 mx-auto flex items-center justify-between">
-            <div class="max-w-[150px] max-h-10"><a href="#"><img src="assets/img/logo.png" alt="logo"
-                    class="max-w-[150px] max-h-10"></a></div>
-            <nav class="">
-                <div class="">
-                    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                    <ul id="menu" class="hidden md:flex space-x-6 items-center">
-                        <li><a href="#" class="hover:text-gray-300 ">Home</a></li>
-                        <li><a href="#" class="hover:text-gray-300">Medicine</a></li>
-                        <li class="relative group">
-                            <a class="flex items-center hover:text-gray-300 focus:outline-none">
-                                Services
-                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </a>
-                            <!-- Submenu -->
-                            <ul
-                                class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
-                                <li><a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web Design</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a></li>
-                            </ul>
-                        </li>
-                        <li class="relative group">
-                            <a class="flex items-center hover:text-gray-300 focus:outline-none">
-                                Services
-                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </a>
-                            <!-- Submenu -->
-                            <ul
-                                class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
-                                <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">Web Design</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">SEO</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-blue-100">Consulting</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#" class="hover:text-gray-300">Contact</a></li>
-                    </ul>
-                </div>
-                <!-- Mobile Menu -->
-                <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-2 mt-2 text-white px-4">
-                    <li><a href="#" class="block hover:text-gray-300">Home</a></li>
-                    <li><a href="#" class="block hover:text-gray-300">About</a></li>
+      <div class="max-h-100vh h-screen">
+        <header
+          class="nav-menu px-20 py-2 mx-auto flex items-center justify-between"
+        >
+          <div class="max-w-[150px] max-h-10">
+            <a href="#"
+              ><img
+                src="assets/img/logo.png"
+                alt="logo"
+                class="max-w-[150px] max-h-10"
+            /></a>
+          </div>
+          <nav class="">
+            <div class="">
+              <button
+                id="menu-btn"
+                class="md:hidden text-white focus:outline-none"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+              <ul id="menu" class="hidden md:flex space-x-6 items-center">
+                <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                <li><a href="#" class="hover:text-gray-300">Medicine</a></li>
+                <li class="relative group">
+                  <a
+                    class="flex items-center hover:text-gray-300 focus:outline-none"
+                  >
+                    Services
+                    <svg
+                      class="ml-1 w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </a>
+                  <!-- Submenu -->
+                  <ul
+                    class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10"
+                  >
                     <li>
-                        <button id="mobile-submenu-btn"
-                            class="flex items-center w-full hover:text-gray-300 focus:outline-none">
-                            Services
-                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <ul id="mobile-submenu" class="hidden flex-col pl-4 mt-1 space-y-1">
-                            <li><a href="#" class="block hover:text-gray-300">Web Design</a></li>
-                            <li><a href="#" class="block hover:text-gray-300">SEO</a></li>
-                            <li><a href="#" class="block hover:text-gray-300">Consulting</a></li>
-                        </ul>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-blue-100 font-normal"
+                        >Web Design</a
+                      >
                     </li>
-                    <li><a href="#" class="block hover:text-gray-300">Contact</a></li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-blue-100 font-normal"
+                        >SEO</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-blue-100 font-normal"
+                        >Consulting</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="relative group">
+                  <a
+                    class="flex items-center hover:text-gray-300 focus:outline-none"
+                  >
+                    Services
+                    <svg
+                      class="ml-1 w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </a>
+                  <!-- Submenu -->
+                  <ul
+                    class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10"
+                  >
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-blue-100"
+                        >Web Design</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-blue-100"
+                        >SEO</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-blue-100"
+                        >Consulting</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+              </ul>
+            </div>
+            <!-- Mobile Menu -->
+            <ul
+              id="mobile-menu"
+              class="md:hidden hidden flex-col space-y-2 mt-2 text-white px-4"
+            >
+              <li><a href="#" class="block hover:text-gray-300">Home</a></li>
+              <li><a href="#" class="block hover:text-gray-300">About</a></li>
+              <li>
+                <button
+                  id="mobile-submenu-btn"
+                  class="flex items-center w-full hover:text-gray-300 focus:outline-none"
+                >
+                  Services
+                  <svg
+                    class="ml-1 w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <ul
+                  id="mobile-submenu"
+                  class="hidden flex-col pl-4 mt-1 space-y-1"
+                >
+                  <li>
+                    <a href="#" class="block hover:text-gray-300">Web Design</a>
+                  </li>
+                  <li><a href="#" class="block hover:text-gray-300">SEO</a></li>
+                  <li>
+                    <a href="#" class="block hover:text-gray-300">Consulting</a>
+                  </li>
                 </ul>
-            </nav>
+              </li>
+              <li><a href="#" class="block hover:text-gray-300">Contact</a></li>
+            </ul>
+          </nav>
         </header>
-        </div>
+
+        <!-- On Going Campaigns Section -->
+         <section class="w-full h-[571px] py-20">
+            <div class="px-6 sm:px-10 md:px-16 xl:px-20">
+                <div>
+                    <h2 class="text-dark-slate text-30-bold pb-[9px]">On Going Campaigns</h2>
+                    <div class="w-full flex items-center">
+                        <div class="w-[100px] h-[3px] bg-sea-green-deep"></div>
+                        <div class="flex-1 h-[1.6px] bg-[#EEEEEE] mt-[0.2px]"></div>
+                    </div>
+                </div>
+                <div class="p-5 flex gap-[20px] overflow-x-auto no-scrollbar scroll-px-5">
+                    <div class="campaign-card">
+                        <div class="w-full h-[180px] rounded-md overflow-hidden">
+                            <img src="assets/img/campaign-1.jpg" alt="Campaigns" class="w-full h-full">
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="pr-5 border-r border-muted-rose">
+                                <span class="text-16-semibold text-onyx">Sankapl Foundation</span>
+                                <ul class="text-16-normal list-disc pl-4 mb-2.5">
+                                    <li class="whitespace-nowrap">Poverty Relief</li>
+                                </ul>
+                                <a href="#" class="text-16-normal text-sea-green-deep">Read More</a>
+                            </div>
+                            <div class="pl-5 flex flex-col gap-[10px] items-center">
+                                <span class="text-24-semibold text-sea-green-deep">₹700</span>
+                                <button class="h-[42px] w-[125px] px-4 rounded-[10px] bg-sea-green-deep text-16-normal text-white cursor-pointer">
+                                    Donate Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-card">
+                        <div class="w-full h-[180px] rounded-md overflow-hidden">
+                            <img src="assets/img/campaign-2.jpg" alt="Campaigns" class="w-full h-full">
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="pr-5 border-r border-muted-rose">
+                                <span class="text-16-semibold text-onyx">Sankapl Foundation</span>
+                                <ul class="text-16-normal list-disc pl-4 mb-2.5">
+                                    <li class="whitespace-nowrap">Poverty Relief</li>
+                                </ul>
+                                <a href="#" class="text-16-normal text-sea-green-deep">Read More</a>
+                            </div>
+                            <div class="pl-5 flex flex-col gap-[10px] items-center">
+                                <span class="text-24-semibold text-sea-green-deep">₹700</span>
+                                <button class="h-[42px] w-[125px] px-4 rounded-[10px] bg-sea-green-deep text-16-normal text-white cursor-pointer">
+                                    Donate Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-card">
+                        <div class="w-full h-[180px] rounded-md overflow-hidden">
+                            <img src="assets/img/campaign-1.jpg" alt="Campaigns" class="w-full h-full">
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="pr-5 border-r border-muted-rose">
+                                <span class="text-16-semibold text-onyx">Sankapl Foundation</span>
+                                <ul class="text-16-normal list-disc pl-4 mb-2.5">
+                                    <li class="whitespace-nowrap">Poverty Relief</li>
+                                </ul>
+                                <a href="#" class="text-16-normal text-sea-green-deep">Read More</a>
+                            </div>
+                            <div class="pl-5 flex flex-col gap-[10px] items-center">
+                                <span class="text-24-semibold text-sea-green-deep">₹700</span>
+                                <button class="h-[42px] w-[125px] px-4 rounded-[10px] bg-sea-green-deep text-16-normal text-white cursor-pointer">
+                                    Donate Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-card">
+                        <div class="w-full h-[180px] rounded-md overflow-hidden">
+                            <img src="assets/img/campaign-2.jpg" alt="Campaigns" class="w-full h-full">
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="pr-5 border-r border-muted-rose">
+                                <span class="text-16-semibold text-onyx">Sankapl Foundation</span>
+                                <ul class="text-16-normal list-disc pl-4 mb-2.5">
+                                    <li class="whitespace-nowrap">Poverty Relief</li>
+                                </ul>
+                                <a href="#" class="text-16-normal text-sea-green-deep">Read More</a>
+                            </div>
+                            <div class="pl-5 flex flex-col gap-[10px] items-center">
+                                <span class="text-24-semibold text-sea-green-deep">₹700</span>
+                                <button class="h-[42px] w-[125px] px-4 rounded-[10px] bg-sea-green-deep text-16-normal text-white cursor-pointer">
+                                    Donate Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-card">
+                        <div class="w-full h-[180px] rounded-md overflow-hidden">
+                            <img src="assets/img/campaign-1.jpg" alt="Campaigns" class="w-full h-full">
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="pr-5 border-r border-muted-rose">
+                                <span class="text-16-semibold text-onyx">Sankapl Foundation</span>
+                                <ul class="text-16-normal list-disc pl-4 mb-2.5">
+                                    <li class="whitespace-nowrap">Poverty Relief</li>
+                                </ul>
+                                <a href="#" class="text-16-normal text-sea-green-deep">Read More</a>
+                            </div>
+                            <div class="pl-5 flex flex-col gap-[10px] items-center">
+                                <span class="text-24-semibold text-sea-green-deep">₹700</span>
+                                <button class="h-[42px] w-[125px] px-4 rounded-[10px] bg-sea-green-deep text-16-normal text-white cursor-pointer">
+                                    Donate Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+        <footer class="w-full">
+          <!-- Top Footer Content -->
+          <div class="bg-gray-tint px-6 sm:px-10 md:px-16 xl:px-20 py-16 md:py-20 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10"
+          >
+            <!-- Logo & Contact -->
+            <div class="flex flex-col gap-3.5">
+              <a href="#">
+                <img
+                  src="assets/img/logo.png"
+                  alt="logo"
+                  class="max-w-[150px] max-h-10"
+                />
+              </a>
+              <div class="flex flex-col gap-3">
+                <h3 class="text-15-semibold text-dark-charcoal">
+                  Phone:
+                  <span class="text-dim-gray text-15-normal"
+                    >(+123) 456-7898</span
+                  >
+                </h3>
+                <h3 class="text-15-semibold text-dark-charcoal">
+                  Email:
+                  <span class="text-dim-gray text-15-normal"
+                    >hello@drodo.com</span
+                  >
+                </h3>
+                <h3 class="text-15-semibold text-dark-charcoal">
+                  Address:
+                  <span class="text-dim-gray text-15-normal"
+                    >6890 Blvd, The Bronx, NY 1058, USA</span
+                  >
+                </h3>
+              </div>
+              <!-- Social Icons -->
+              <div class="flex gap-3 flex-wrap">
+                <a href="#"
+                  ><img src="assets/img/facebook-icon.svg" alt="facebook-icon"
+                /></a>
+                <a href="#"
+                  ><img src="assets/img/twitter-icon.svg" alt="twitter-icon"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="assets/img/Instagram-icon.svg"
+                    alt="Instagram-icon"
+                /></a>
+                <a href="#"
+                  ><img src="assets/img/linkdin-icon.svg" alt="linkdin-icon"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="assets/img/Pinterest-icon.svg"
+                    alt="Pinterest-icon"
+                /></a>
+              </div>
+            </div>
+
+            <!-- Information -->
+            <nav class="flex flex-col gap-7">
+              <div>
+                <h3 class="text-22-bold text-dark-slate">Information</h3>
+                <hr class="w-20 text-sea-green-deep border-t-2" />
+              </div>
+              <ul class="space-y-3 list-disc text-15-normal text-dim-gray pl-4">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </nav>
+
+            <!-- Customer Care -->
+            <nav class="flex flex-col gap-7">
+              <div>
+                <h3 class="text-22-bold text-dark-slate">Customer Care</h3>
+                <hr class="w-20 text-sea-green-deep border-t-2" />
+              </div>
+              <ul class="space-y-3 list-disc text-15-normal text-dim-gray pl-4">
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Records</a></li>
+                <li><a href="#">Rewards</a></li>
+                <li><a href="#">Help & FAQs</a></li>
+              </ul>
+            </nav>
+
+            <!-- Policy -->
+            <nav class="flex flex-col gap-7">
+              <div>
+                <h3 class="text-22-bold text-dark-slate">Policy</h3>
+                <hr class="w-20 text-sea-green-deep border-t-2" />
+              </div>
+              <ul class="space-y-3 list-disc text-15-normal text-dim-gray pl-4">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Purchasing Policy</a></li>
+                <li><a href="#">Orders and Returns</a></li>
+              </ul>
+            </nav>
+
+            <!-- Newsletter -->
+            <nav class="flex flex-col gap-5">
+              <div>
+                <h3 class="text-22-bold text-dark-slate">Newsletter</h3>
+                <hr class="w-20 text-sea-green-deep border-t-2" />
+              </div>
+              <p class="text-15-normal text-dim-gray">
+                Sign up for our mailing list to get the latest updates & offers.
+              </p>
+              <div class="space-y-3">
+                <input
+                  type="email"
+                  placeholder="Enter your email address"
+                  class="h-[50px] w-full py-3 px-4 text-muted-gray placeholder:text-muted-gray focus:outline-none focus:ring-0 rounded border border-light-gray text-15-normal"
+                />
+                <button
+                  class="w-full py-3 px-6 flex items-center justify-center rounded bg-sea-green-deep text-15-semibold text-white hover:opacity-90 transition cursor-pointer"
+                >
+                  Subscribe Now
+                </button>
+              </div>
+            </nav>
+          </div>
+
+          <!-- Bottom Footer Strip -->
+          <div class="bg-snow-gray py-6 px-6 sm:px-10 md:px-16 xl:px-20 w-full">
+            <div
+              class="flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left"
+            >
+              <p class="text-dim-gray text-15-normal">
+                @ Avatar. Designed By Aibuzz
+              </p>
+              <div class="flex flex-col sm:flex-row sm:items-center gap-3">
+                <p class="text-dim-gray text-15-normal">
+                  We accept payment via:
+                </p>
+                <div
+                  class="flex items-center flex-wrap gap-2 sm:gap-[10px] justify-center sm:justify-start"
+                >
+                  <img
+                    src="assets/img/payment-via-1.png"
+                    alt="payment-1"
+                    class="h-6"
+                  />
+                  <img
+                    src="assets/img/payment-via-5.png"
+                    alt="payment-2"
+                    class="h-6"
+                  />
+                  <img
+                    src="assets/img/payment-via-4.png"
+                    alt="payment-3"
+                    class="h-6"
+                  />
+                  <img
+                    src="assets/img/payment-via-3.png"
+                    alt="payment-4"
+                    class="h-6"
+                  />
+                  <img
+                    src="assets/img/payment-via-2.png"
+                    alt="payment-5"
+                    class="h-6"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
 
     <script>
-        // Mobile menu toggle
-        const btn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        btn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+      // Mobile menu toggle
+      const btn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      btn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
 
-        // Mobile submenu toggle
-        const mobileSubmenuBtn = document.getElementById('mobile-submenu-btn');
-        const mobileSubmenu = document.getElementById('mobile-submenu');
-        mobileSubmenuBtn.addEventListener('click', () => {
-            mobileSubmenu.classList.toggle('hidden');
-        });
+      // Mobile submenu toggle
+      const mobileSubmenuBtn = document.getElementById("mobile-submenu-btn");
+      const mobileSubmenu = document.getElementById("mobile-submenu");
+      mobileSubmenuBtn.addEventListener("click", () => {
+        mobileSubmenu.classList.toggle("hidden");
+      });
     </script>
-</body>
-
+  </body>
 </html>
