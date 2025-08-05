@@ -1,58 +1,97 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 :root {
-  --color-white: #ffffff;  
-  --color-gray: #212B36;
-  --color-gray-light: #F8FAFC;
+  --color-white: #ffffff;
+  --color-gray: #212b36;
+  --color-gray-light: #f8fafc;
   --color-gray-dark: #212529;
-  --color-dark-charcoal: #111111; 
+  --color-dark-charcoal: #111111;
   --color-sea-green: #10b981;
-  --color-sea-green-deep: #238B6D; 
+  --color-sea-green-deep: #238b6d;
 }
 
 .container {
-    max-width: 1440px!important;
-    margin: 0 auto;
-    width: 100%;
+  max-width: 1440px !important;
+  margin: 0 auto;
+  width: 100%;
 }
 
 body {
-    font-family: "Nunito", sans-serif;
-    background-imgae: url(./img/map.png);
-    color: var(--color-gray-dark);
+  font-family: "Nunito", sans-serif;
+  background-imgae: url(./img/map.png);
+  color: var(--color-gray-dark);
 }
 
 .nav-menu {
-    max-height:78px;
-    height: 78px;
-    background: rgba(255, 255, 255, 0.30);
-    backdrop-filter: blur(5px);
-    width: 100%;
+  max-height: 78px;
+  height: 78px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  width: 100%;
 }
 
-
-.nav-menu ul li{
-    @apply text-[var(--color-dark-charcoal)] ;
-    font-weight: 600;
-    font-family: sans-serif;
-    font-style: normal;
-    font-size: 1rem;
+.nav-menu ul li {
+  @apply text-[var(--color-dark-charcoal)];
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 1rem;
 }
 
 .nav-menu ul li a:hover {
-    @apply text-[var(--color-sea-green-deep)] ;
+  @apply text-[var(--color-sea-green-deep)];
 }
-.color-red{
-    background-color: var(--color-gray);
+.color-red {
+  background-color: var(--color-gray);
 }
 
-.primary-radius-18{
-    @apply rounded-[18px] text-white flex items-center justify-center;
-    background-color: var(--color-sea-green-deep);
-    width: 36px;
-height: 36px;
-opacity: 1;
+.primary-radius-18 {
+  @apply rounded-[18px] text-white flex items-center justify-center;
+  background-color: var(--color-sea-green-deep);
+  width: 36px;
+  height: 36px;
+  opacity: 1;
+}
+
+.primary-btn {
+  display: flex;
+  height: 48px;
+  padding: 0.68rem 1.37rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.15);
+  font-family: "Public Sans", sans-serif;   
+}
+
+.primary-box-shadow {
+  box-shadow: 0 24px 48px 0 rgba(145, 158, 171, 0.2);
+}
+
+/* Custom styles */
+.custom-marker {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.facility-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.facility-card.selected {
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+.leaflet-left {
+  right: 0 !important;
+  position: absolute;
+
+  bottom: 5rem;
+}
+.leaflet-control-zoom {
+  position: absolute !important;
+  right: 2rem;
+  bottom: 0 !important;
 }
