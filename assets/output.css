@@ -1156,7 +1156,6 @@
 }
 body {
   font-family: "Nunito", sans-serif;
-  background-imgae: url(./img/map.png);
   color: var(--color-gray-dark);
 }
 .no-scrollbar::-webkit-scrollbar {
