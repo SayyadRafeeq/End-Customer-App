@@ -40,6 +40,7 @@
   --color-mustard-yellow:#D6B71D;
   --color-ice-gray:#F4F6F8;
   --color-sea-green-deep: #238b6d;
+  --color-orange-peach:#F8C373;
 
 /* Font Size and Font Weight */
     --text-30-bold: 1.875rem;
@@ -114,6 +115,11 @@ body {
 .nav-menu ul li a:hover {
   @apply text-[var(--color-sea-green-deep)];
 }
+
+.footer-nav ul li a:hover {
+  @apply text-sea-green-deep font-medium;
+}
+
 .color-red {
   background-color: var(--color-gray);
 }
