@@ -41,6 +41,7 @@
   --color-ice-gray:#F4F6F8;
   --color-sea-green-deep: #238b6d;
   --color-orange-peach:#F8C373;
+  --color-warm-gray:#B3AFAF;
 
 /* Font Size and Font Weight */
     --text-30-bold: 1.875rem;
@@ -253,4 +254,7 @@ opacity: 1;
   position: absolute !important;
   right: 2rem;
   bottom: 0 !important;
+}
+.blog-card{
+  @apply w-[19.063rem] h-[23rem] flex-shrink-0 bg-ice-gray
 }
