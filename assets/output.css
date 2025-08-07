@@ -75,6 +75,7 @@
     --color-orchid: #D36CFF;
     --color-mustard-yellow: #D6B71D;
     --color-ice-gray: #F4F6F8;
+    --color-orange-peach: #F8C373;
     --text-30-bold: 1.875rem;
     --text-30-bold--font-weight: 700;
     --text-30-bold--line-height: 36px;
@@ -743,6 +744,9 @@
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
   }
@@ -978,6 +982,13 @@
       }
     }
   }
+  .hover\:bg-orange-peach {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-orange-peach);
+      }
+    }
+  }
   .hover\:text-blue-600 {
     &:hover {
       @media (hover: hover) {
@@ -1003,6 +1014,13 @@
     &:hover {
       @media (hover: hover) {
         opacity: 90%;
+      }
+    }
+  }
+  .hover\:delay-300 {
+    &:hover {
+      @media (hover: hover) {
+        transition-delay: 300ms;
       }
     }
   }
@@ -1176,6 +1194,11 @@ body {
   font-size: 1rem;
 }
 .nav-menu ul li a:hover {
+  color: var(--color-sea-green-deep);
+}
+.footer-nav ul li a:hover {
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
   color: var(--color-sea-green-deep);
 }
 .color-red {
