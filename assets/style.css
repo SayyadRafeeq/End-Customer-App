@@ -44,7 +44,32 @@
   --color-sea-green-deep: #238b6d;
   --color-orange-peach:#F8C373;
   --color-warm-gray:#B3AFAF;
-
+  --color-deep-teal-green:#1A7A5E;
+  --color-mint-cream:#CAF8E4;
+  --color-powder-aqua:#CEE6E4;
+  --color-pale-aqua:#B7DBD2;
+  --color-pale-blue-gray:#DBE0E4;
+  --color-vivid-blue:#1890FF;
+  --color-slate-gray:#646B73;
+  --color-cool-gray:#929DA7;
+  --color-golden-yellow:#FFC107;
+  --color-light-powder-blue:#DAEDFF;
+  --color-light-cream:#FFF5D7;
+  --color-lime-green:#54D62C;
+  --color-pale-mint:#E3F8DD;
+  --color-medium-gray:#8E8E93;
+  --color-silver:#E0E0E0;
+  --color-transparent-black:#0000004D;
+  --color-deep-teal:#08817833;
+  --color-smoky-blue-gray:#637381;
+  --color-sea-green:#5FA28F;
+  --color-gainsboro-gray:#DBE0E4;
+  --color-strong-red:#B72136;
+  --color-persian-blue:#1939B7;
+  --color-deep-aquamarine:#408677;
+  --color-dark-gray:#484848;
+  --color-pewter-blue:#89C3BF;
+  --color-teal-green:#088178;
 /* Font Size and Font Weight */
     --text-30-bold: 1.875rem;
     --text-30-bold--font-weight: 700;
@@ -259,4 +284,31 @@ opacity: 1;
 }
 .blog-card{
   @apply w-[19.063rem] h-[23rem] flex-shrink-0 bg-ice-gray
+}
+
+.nav-menu-records {
+  max-height: 78px;
+  height: 78px;
+  backdrop-filter: blur(5px);
+  width: 100%;
+}
+
+.nav-menu-records ul li {
+  @apply text-[var(--color-dark-charcoal)];
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.nav-menu-records ul li a:hover {
+  @apply text-[var(--color-sea-green-deep)];
+}
+
+.active {
+    background-color: #238B6D; /* vivid-blue color */
+    color: white;
+}
+.grow-transition {
+  transition: max-height 0.3s ease-in-out;
 }
