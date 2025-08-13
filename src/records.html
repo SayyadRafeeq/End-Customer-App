@@ -94,7 +94,8 @@
                         <li><a href="#" class="">Rewards</a></li>
                         <li><a href="#" class="">Support</a></li>
                         <li>
-                            <div class="bg-sea-green-deep text-white md:p-1 lg:p-2 rounded-[10px] flex items-center gap-2">
+                            <div
+                                class="bg-sea-green-deep text-white md:p-1 lg:p-2 rounded-[10px] flex items-center gap-2">
                                 <p class="font-semibold lg:text-sm md:text-xs text-nowrap">Referral - JH2JK123</p>
                                 <i data-lucide="copy" class="w-[18px] h-[18px] cursor-pointer"></i>
                             </div>
@@ -105,11 +106,11 @@
                     </ul>
                 </div>
                 <!-- Mobile Menu -->
-                <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-2 mt-2 text-white px-4">
+                <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-2 mt-15 mr-5 rounded-md text-white px-4 bg-white">
                     <li><a href="#" class="block">Home</a></li>
                     <li><a href="#" class="block">About</a></li>
                     <li>
-                        <button id="mobile-submenu-btn" class="flex items-center w-full focus:outline-none">
+                      <button id="mobile-submenu-btn" class="flex items-center w-full focus:outline-none">
                             Services
                             <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -132,10 +133,12 @@
         </header>
         <!--Main Content-->
         <div class=" items-center  relative">
-            <div class="flex items-center justify-between content-div">
-                <img src="/assets/img/records-img1.svg" alt="" class="left-img md:w-[11rem] md:h-[22rem] lg:w-[18.75rem] lg:h-[37.5rem]">
+            <div class="flex items-center justify-center  content-div">
+                <img src="/assets/img/records-img1.svg" alt=""
+                    class="left-img hidden md:block md:w-[11rem] md:h-[22rem] lg:w-[20.75rem] lg:h-[37.5rem]">
                 <div class="flex flex-col gap-4 items-center">
-                    <h1 class="font-bold md:text-3xl lg:text-5xl text-white main-heading">What Would You Like To Upload?</h1>
+                    <h1 class="font-bold text-2xl md:text-3xl lg:text-5xl text-white main-heading">What Would You Like To Upload?
+                    </h1>
                     <h4 class="font-normal text-xs text-white secondary-heading">Select a Category From The Dropdown
                         Below</h4>
                     <div
@@ -176,10 +179,11 @@
                     </div>
 
                     <div
-                        class="bg-white mt-4 md:p-2 lg:p-4  rounded-full flex flex-col md:flex-row items-center space-y-4 md:space-y-0 lg:space-x-4 w-full  max-w-[50rem] max-h-[4.75rem] search-box">
+                        class="bg-white  mt-4 p-1 md:p-2 lg:p-4  rounded-full flex flex-col md:flex-row items-center space-y-4 md:space-y-0 lg:space-x-4 max-w-[20rem] max-h-[3rem] md:max-w-[50rem] md:max-h-[4.75rem] search-box">
 
                         <!-- Left section with search icon and input field -->
-                        <div class="flex items-center space-x-3 md:space-x-4 flex-grow w-full md:w-auto">
+                        <div
+                            class="flex items-center space-x-3 md:space-x-4 flex-grow w-full md:w-auto mt-1.5 md:mt-0 ml-5 md:ml-0">
                             <!-- Search Icon (using SVG) -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
@@ -192,18 +196,17 @@
                         </div>
 
                         <!-- Middle section with the two dropdowns -->
-                        <div
-                            class="flex items-center  lg:space-x-4 flex-wrap justify-center md:flex-nowrap relative">
+                        <div class="flex items-center  lg:space-x-4 flex-wrap justify-center md:flex-nowrap relative">
 
                             <!-- Patient Dropdown Container -->
-                            <div class="custom-select-container relative z-10 ">
+                            <div class="custom-select-container relative z-10 mt-5 md:mt-0">
                                 <div
                                     class="flex items-center   lg:px-2 py-2 bg-white rounded-full  cursor-pointer border border-powder-aqua my-1 md:my-0">
                                     <!-- Placeholder image for Patient icon -->
                                     <img src="/assets/img/patient-icon.svg" alt="Patient" class="h-8 w-8 rounded-full">
                                     <div class="relative w-full">
                                         <input
-                                            class="custom-select-input block w-full bg-transparent border-none py-2 lg:px-3 md:text-xs lg:text-sm leading-tight focus:outline-none appearance-none text-left cursor-pointer text-deep-teal-green placeholder:text-deep-teal-green"
+                                            class="custom-select-input block w-full bg-transparent border-none py-2 ml-3 md:ml-0 lg:px-3 md:text-xs lg:text-sm leading-tight focus:outline-none appearance-none text-left cursor-pointer text-deep-teal-green placeholder:text-deep-teal-green"
                                             placeholder="Patient" readonly>
                                         <div
                                             class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2">
@@ -214,7 +217,7 @@
                                 </div>
                                 <!-- Patient Dropdown Menu -->
                                 <div
-                                    class="custom-select-menu hidden absolute top-full left-2 z-10 w-[140px] bg-white rounded-md shadow-lg mt-1 overflow-hidden border">
+                                    class="custom-select-menu hidden absolute top-full left-2  w-full md:w-[140px] bg-white rounded-md shadow-lg mt-1 overflow-hidden border border-mint-cream z-[999]">
                                     <ul class="py-1">
                                         <li
                                             class="custom-select-option block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none cursor-pointer">
@@ -231,12 +234,12 @@
                             <!-- Doctor Dropdown Container -->
                             <div class="custom-select-container relative z-10">
                                 <div
-                                    class="flex items-center  lg:px-2 py-2 bg-white rounded-full  cursor-pointer border border-powder-aqua my-1 md:my-0">
-                                    <!-- Placeholder image for Doctor icon -->
-                                    <img src="/assets/img/doctor-icon.svg" alt="Doctor" class="h-8 w-8 rounded-full">
+                                    class="flex items-center   lg:px-2 py-2 bg-white rounded-full  cursor-pointer border border-powder-aqua my-1 md:my-0">
+                                    <!-- Placeholder image for Patient icon -->
+                                    <img src="/assets/img/doctor-icon.svg" alt="Patient" class="h-8 w-8 rounded-full">
                                     <div class="relative w-full">
                                         <input
-                                            class="custom-select-input block w-full bg-transparent border-none py-2 px-3 md:text-xs lg:text-sm leading-tight focus:outline-none appearance-none text-left cursor-pointer text-deep-teal-green placeholder:text-deep-teal-green"
+                                            class="custom-select-input block w-full bg-transparent border-none py-2 ml-3 md:ml-0 lg:px-3 md:text-xs lg:text-sm leading-tight focus:outline-none appearance-none text-left cursor-pointer text-deep-teal-green placeholder:text-deep-teal-green"
                                             placeholder="Doctor" readonly>
                                         <div
                                             class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2">
@@ -245,9 +248,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Patient Dropdown Menu -->
+                                <!-- Doctor Dropdown Menu -->
                                 <div
-                                    class="custom-select-menu hidden absolute top-full left-4 z-10 w-[140px] bg-white rounded-md shadow-lg mt-1 overflow-hidden border">
+                                    class="custom-select-menu hidden absolute top-full left-2 z-10 w-full md:w-[140px] bg-white rounded-md shadow-lg mt-1 overflow-hidden border border-mint-cream">
                                     <ul class="py-1">
                                         <li
                                             class="custom-select-option block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none cursor-pointer">
@@ -260,22 +263,23 @@
                                     </ul>
                                 </div>
                             </div>
-
                         </div>
 
                         <!-- Right section with the main search button -->
                         <button
-                            class="bg-deep-teal-green text-white md:px-3 md:py-1.5 lg:px-6 lg:py-3 rounded-full font-semibold shadow-md  flex-shrink-0 w-full md:w-[5rem] lg:w-auto mt-4 md:mt-0 search-btn cursor-pointer">
+                            class="bg-deep-teal-green text-white px-2 py-1 md:px-3 md:py-1.5 lg:px-6 lg:py-3 rounded-full font-semibold shadow-md  flex-shrink-0 w-1/2 md:w-[5rem] lg:w-auto mt-4 md:mt-0 search-btn cursor-pointer">
                             Search
                         </button>
                     </div>
 
                 </div>
-                <img src="/assets/img/records-img2.svg" alt="" class="right-img  md:w-[11rem] md:h-[22rem] lg:w-[18.75rem] lg:h-[37.5rem]">
+                <img src="/assets/img/records-img2.svg" alt=""
+                    class="right-img hidden md:block md:w-[11rem] md:h-[22rem] lg:w-[18.75rem] lg:h-[37.5rem]">
             </div>
             <!--Grid-->
             <div class="record-type hidden">
-                <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-10 px-20 cards pt-10">
+                <div
+                    class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-10 px-5 md:px-20 cards mt-60 md:mt-0 md:pt-10">
                     <div
                         class="bg-white rounded-[20px]  border border-pale-blue-gray p-4 relative w-full max-w-[18.75rem] max-h-[16.375rem]">
                         <div class="flex flex-col gap-2">
@@ -285,20 +289,19 @@
                             <p class="font-semibold text-xs text-slate-gray">Doctor: Dr. Aisha Rahman</p>
                             <p class="font-semibold text-xs text-cool-gray">12/05/25, 12:30 PM</p>
                         </div>
-                        <div class="absolute top-40  right-4 cursor-pointer">
-                            <div class="relative w-15 h-15  rounded-full flex items-center justify-center p-8
+                        <a href="#">
+                            <div class="absolute top-37 md:top-40 right-2  md:right-4 cursor-pointer">
+                                <div class="relative w-10 h-10  md:w-15 md:h-15  rounded-full flex items-center justify-center md:p-8
                             bg-light-powder-blue">
-
-                                <!-- Inner, solid blue circle with the 'i' icon -->
-                                <div
-                                    class="absolute w-10 h-10  rounded-full bg-vivid-blue flex items-center justify-center">
-                                    <!-- SVG for the information 'i' icon -->
-                                    <span class="text-white font-bold">i</span>
+                                    <!-- Inner, solid blue circle with the 'i' icon -->
+                                    <div
+                                        class="absolute w-5 h-5 md:w-10 md:h-10  rounded-full bg-vivid-blue flex items-center justify-center">
+                                        <!-- SVG for the information 'i' icon -->
+                                        <span class="text-white font-bold">i</span>
+                                    </div>
                                 </div>
-
                             </div>
-                        </div>
-
+                        </a>
                     </div>
                     <div
                         class="bg-white rounded-[20px]  border border-pale-blue-gray p-4 relative w-full max-w-[18.75rem] max-h-[16.375rem]">
@@ -309,19 +312,19 @@
                             <p class="font-semibold text-xs text-slate-gray">Doctor: Dr. Aisha Rahman</p>
                             <p class="font-semibold text-xs text-cool-gray">12/05/25, 12:30 PM</p>
                         </div>
-                        <div class="absolute top-40  right-4 cursor-pointer">
-                            <div class="relative w-15 h-15  rounded-full flex items-center justify-center p-8
-                             bg-light-cream">
-
-                                <!-- Inner, solid blue circle with the 'i' icon -->
-                                <div
-                                    class="absolute w-10 h-10  rounded-full bg-golden-yellow flex items-center justify-center">
-                                    <!-- SVG for the information 'i' icon -->
-                                    <span class="text-white font-bold">i</span>
+                         <a href="#">
+                            <div class="absolute top-37 md:top-40 right-2  md:right-4 cursor-pointer">
+                                <div class="relative w-10 h-10  md:w-15 md:h-15  rounded-full flex items-center justify-center md:p-8
+                            bg-light-cream">
+                                    <!-- Inner, solid blue circle with the 'i' icon -->
+                                    <div
+                                        class="absolute w-5 h-5 md:w-10 md:h-10  rounded-full bg-golden-yellow flex items-center justify-center">
+                                        <!-- SVG for the information 'i' icon -->
+                                        <span class="text-white font-bold">i</span>
+                                    </div>
                                 </div>
-
                             </div>
-                        </div>
+                        </a>
 
                     </div>
                     <div
@@ -333,19 +336,19 @@
                             <p class="font-semibold text-xs text-slate-gray">Doctor: Dr. Aisha Rahman</p>
                             <p class="font-semibold text-xs text-cool-gray">12/05/25, 12:30 PM</p>
                         </div>
-                        <div class="absolute top-40  right-4 cursor-pointer">
-                            <div class="relative w-15 h-15  rounded-full flex items-center justify-center p-8
+                        <a href="#">
+                            <div class="absolute top-37 md:top-40 right-2  md:right-4 cursor-pointer">
+                                <div class="relative w-10 h-10  md:w-15 md:h-15  rounded-full flex items-center justify-center md:p-8
                             bg-light-powder-blue">
-
-                                <!-- Inner, solid blue circle with the 'i' icon -->
-                                <div
-                                    class="absolute w-10 h-10  rounded-full bg-vivid-blue flex items-center justify-center">
-                                    <!-- SVG for the information 'i' icon -->
-                                    <span class="text-white font-bold">i</span>
+                                    <!-- Inner, solid blue circle with the 'i' icon -->
+                                    <div
+                                        class="absolute w-5 h-5 md:w-10 md:h-10  rounded-full bg-vivid-blue flex items-center justify-center">
+                                        <!-- SVG for the information 'i' icon -->
+                                        <span class="text-white font-bold">i</span>
+                                    </div>
                                 </div>
-
                             </div>
-                        </div>
+                        </a>
 
                     </div>
                     <div
@@ -357,19 +360,19 @@
                             <p class="font-semibold text-xs text-slate-gray">Doctor: Dr. Aisha Rahman</p>
                             <p class="font-semibold text-xs text-cool-gray">12/05/25, 12:30 PM</p>
                         </div>
-                        <div class="absolute top-40  right-4 cursor-pointer">
-                            <div class="relative w-15 h-15  rounded-full flex items-center justify-center p-8
+                         <a href="#">
+                            <div class="absolute top-37 md:top-40 right-2  md:right-4 cursor-pointer">
+                                <div class="relative w-10 h-10  md:w-15 md:h-15  rounded-full flex items-center justify-center md:p-8
                             bg-light-powder-blue">
-
-                                <!-- Inner, solid blue circle with the 'i' icon -->
-                                <div
-                                    class="absolute w-10 h-10  rounded-full bg-vivid-blue flex items-center justify-center">
-                                    <!-- SVG for the information 'i' icon -->
-                                    <span class="text-white font-bold">i</span>
+                                    <!-- Inner, solid blue circle with the 'i' icon -->
+                                    <div
+                                        class="absolute w-5 h-5 md:w-10 md:h-10  rounded-full bg-vivid-blue flex items-center justify-center">
+                                        <!-- SVG for the information 'i' icon -->
+                                        <span class="text-white font-bold">i</span>
+                                    </div>
                                 </div>
-
                             </div>
-                        </div>
+                        </a>
 
                     </div>
                     <div
@@ -381,19 +384,19 @@
                             <p class="font-semibold text-xs text-slate-gray">Doctor: Dr. Aisha Rahman</p>
                             <p class="font-semibold text-xs text-cool-gray">12/05/25, 12:30 PM</p>
                         </div>
-                        <div class="absolute top-40  right-4 cursor-pointer">
-                            <div class="relative w-15 h-15  rounded-full flex items-center justify-center p-8
+                         <a href="#">
+                            <div class="absolute top-37 md:top-40 right-2  md:right-4 cursor-pointer">
+                                <div class="relative w-10 h-10  md:w-15 md:h-15  rounded-full flex items-center justify-center md:p-8
                             bg-pale-mint">
-
-                                <!-- Inner, solid blue circle with the 'i' icon -->
-                                <div
-                                    class="absolute w-10 h-10  rounded-full bg-lime-green flex items-center justify-center">
-                                    <!-- SVG for the information 'i' icon -->
-                                    <span class="text-white font-bold">i</span>
+                                    <!-- Inner, solid blue circle with the 'i' icon -->
+                                    <div
+                                        class="absolute w-5 h-5 md:w-10 md:h-10  rounded-full bg-lime-green flex items-center justify-center">
+                                        <!-- SVG for the information 'i' icon -->
+                                        <span class="text-white font-bold">i</span>
+                                    </div>
                                 </div>
-
                             </div>
-                        </div>
+                        </a>
 
                     </div>
                     <div
@@ -405,19 +408,19 @@
                             <p class="font-semibold text-xs text-slate-gray">Doctor: Dr. Aisha Rahman</p>
                             <p class="font-semibold text-xs text-cool-gray">12/05/25, 12:30 PM</p>
                         </div>
-                        <div class="absolute top-40  right-4 cursor-pointer">
-                            <div class="relative w-15 h-15  rounded-full flex items-center justify-center p-8
+                        <a href="#">
+                            <div class="absolute top-37 md:top-40 right-2  md:right-4 cursor-pointer">
+                                <div class="relative w-10 h-10  md:w-15 md:h-15  rounded-full flex items-center justify-center md:p-8
                             bg-pale-mint">
-
-                                <!-- Inner, solid blue circle with the 'i' icon -->
-                                <div
-                                    class="absolute w-10 h-10  rounded-full bg-lime-green flex items-center justify-center">
-                                    <!-- SVG for the information 'i' icon -->
-                                    <span class="text-white font-bold">i</span>
+                                    <!-- Inner, solid blue circle with the 'i' icon -->
+                                    <div
+                                        class="absolute w-5 h-5 md:w-10 md:h-10  rounded-full bg-lime-green flex items-center justify-center">
+                                        <!-- SVG for the information 'i' icon -->
+                                        <span class="text-white font-bold">i</span>
+                                    </div>
                                 </div>
-
                             </div>
-                        </div>
+                        </a>
 
                     </div>
                     <div
@@ -429,19 +432,19 @@
                             <p class="font-semibold text-xs text-slate-gray">Doctor: Dr. Aisha Rahman</p>
                             <p class="font-semibold text-xs text-cool-gray">12/05/25, 12:30 PM</p>
                         </div>
-                        <div class="absolute top-40  right-4 cursor-pointer">
-                            <div class="relative w-15 h-15  rounded-full flex items-center justify-center p-8
-                             bg-light-cream">
-
-                                <!-- Inner, solid blue circle with the 'i' icon -->
-                                <div
-                                    class="absolute w-10 h-10  rounded-full bg-golden-yellow flex items-center justify-center">
-                                    <!-- SVG for the information 'i' icon -->
-                                    <span class="text-white font-bold">i</span>
+                         <a href="#">
+                            <div class="absolute top-37 md:top-40 right-2  md:right-4 cursor-pointer">
+                                <div class="relative w-10 h-10  md:w-15 md:h-15  rounded-full flex items-center justify-center md:p-8
+                            bg-light-cream">
+                                    <!-- Inner, solid blue circle with the 'i' icon -->
+                                    <div
+                                        class="absolute w-5 h-5 md:w-10 md:h-10  rounded-full bg-golden-yellow flex items-center justify-center">
+                                        <!-- SVG for the information 'i' icon -->
+                                        <span class="text-white font-bold">i</span>
+                                    </div>
                                 </div>
-
                             </div>
-                        </div>
+                        </a>
 
                     </div>
                     <div
@@ -453,19 +456,19 @@
                             <p class="font-semibold text-xs text-slate-gray">Doctor: Dr. Aisha Rahman</p>
                             <p class="font-semibold text-xs text-cool-gray">12/05/25, 12:30 PM</p>
                         </div>
-                        <div class="absolute top-40  right-4 cursor-pointer">
-                            <div class="relative w-15 h-15  rounded-full flex items-center justify-center p-8
+                         <a href="#">
+                            <div class="absolute top-37 md:top-40 right-2  md:right-4 cursor-pointer">
+                                <div class="relative w-10 h-10  md:w-15 md:h-15  rounded-full flex items-center justify-center md:p-8
                             bg-light-powder-blue">
-
-                                <!-- Inner, solid blue circle with the 'i' icon -->
-                                <div
-                                    class="absolute w-10 h-10  rounded-full bg-vivid-blue flex items-center justify-center">
-                                    <!-- SVG for the information 'i' icon -->
-                                    <span class="text-white font-bold">i</span>
+                                    <!-- Inner, solid blue circle with the 'i' icon -->
+                                    <div
+                                        class="absolute w-5 h-5 md:w-10 md:h-10  rounded-full bg-vivid-blue flex items-center justify-center">
+                                        <!-- SVG for the information 'i' icon -->
+                                        <span class="text-white font-bold">i</span>
+                                    </div>
                                 </div>
-
                             </div>
-                        </div>
+                        </a>
 
                     </div>
                     <div
@@ -477,19 +480,19 @@
                             <p class="font-semibold text-xs text-slate-gray">Doctor: Dr. Aisha Rahman</p>
                             <p class="font-semibold text-xs text-cool-gray">12/05/25, 12:30 PM</p>
                         </div>
-                        <div class="absolute top-40  right-4 cursor-pointer">
-                            <div class="relative w-15 h-15  rounded-full flex items-center justify-center p-8
+                        <a href="#">
+                            <div class="absolute top-37 md:top-40 right-2  md:right-4 cursor-pointer">
+                                <div class="relative w-10 h-10  md:w-15 md:h-15  rounded-full flex items-center justify-center md:p-8
                             bg-light-powder-blue">
-
-                                <!-- Inner, solid blue circle with the 'i' icon -->
-                                <div
-                                    class="absolute w-10 h-10  rounded-full bg-vivid-blue flex items-center justify-center">
-                                    <!-- SVG for the information 'i' icon -->
-                                    <span class="text-white font-bold">i</span>
+                                    <!-- Inner, solid blue circle with the 'i' icon -->
+                                    <div
+                                        class="absolute w-5 h-5 md:w-10 md:h-10  rounded-full bg-vivid-blue flex items-center justify-center">
+                                        <!-- SVG for the information 'i' icon -->
+                                        <span class="text-white font-bold">i</span>
+                                    </div>
                                 </div>
-
                             </div>
-                        </div>
+                        </a>
 
                     </div>
                     <div
@@ -501,19 +504,42 @@
                             <p class="font-semibold text-xs text-slate-gray">Doctor: Dr. Aisha Rahman</p>
                             <p class="font-semibold text-xs text-cool-gray">12/05/25, 12:30 PM</p>
                         </div>
-                        <div class="absolute top-40  right-4 cursor-pointer">
-                            <div class="relative w-15 h-15  rounded-full flex items-center justify-center p-8
-                             bg-light-cream">
-
-                                <!-- Inner, solid blue circle with the 'i' icon -->
-                                <div
-                                    class="absolute w-10 h-10  rounded-full bg-golden-yellow flex items-center justify-center">
-                                    <!-- SVG for the information 'i' icon -->
-                                    <span class="text-white font-bold">i</span>
+                        <a href="#">
+                            <div class="absolute top-37 md:top-40 right-2  md:right-4 cursor-pointer">
+                                <div class="relative w-10 h-10  md:w-15 md:h-15  rounded-full flex items-center justify-center md:p-8
+                            bg-light-cream">
+                                    <!-- Inner, solid blue circle with the 'i' icon -->
+                                    <div
+                                        class="absolute w-5 h-5 md:w-10 md:h-10  rounded-full bg-golden-yellow flex items-center justify-center">
+                                        <!-- SVG for the information 'i' icon -->
+                                        <span class="text-white font-bold">i</span>
+                                    </div>
                                 </div>
-
                             </div>
+                        </a>
+                    </div>
+                    <div
+                        class="bg-white rounded-[20px]  border border-pale-blue-gray p-4 relative w-full max-w-[18.75rem] max-h-[16.375rem]">
+                        <div class="flex flex-col gap-2">
+                            <img src="/assets/img/prescription-img.svg" alt="">
+                            <h1 class="font-bold text-2xl text-vivid-blue">Prescription</h1>
+                            <p class="font-semibold text-xs text-slate-gray pt-1">Patient: Monica Singh</p>
+                            <p class="font-semibold text-xs text-slate-gray">Doctor: Dr. Aisha Rahman</p>
+                            <p class="font-semibold text-xs text-cool-gray">12/05/25, 12:30 PM</p>
                         </div>
+                        <a href="#">
+                            <div class="absolute top-37 md:top-40 right-2  md:right-4 cursor-pointer">
+                                <div class="relative w-10 h-10  md:w-15 md:h-15  rounded-full flex items-center justify-center md:p-8
+                            bg-light-powder-blue">
+                                    <!-- Inner, solid blue circle with the 'i' icon -->
+                                    <div
+                                        class="absolute w-5 h-5 md:w-10 md:h-10  rounded-full bg-vivid-blue flex items-center justify-center">
+                                        <!-- SVG for the information 'i' icon -->
+                                        <span class="text-white font-bold">i</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
 
                     </div>
                     <div
@@ -525,43 +551,19 @@
                             <p class="font-semibold text-xs text-slate-gray">Doctor: Dr. Aisha Rahman</p>
                             <p class="font-semibold text-xs text-cool-gray">12/05/25, 12:30 PM</p>
                         </div>
-                        <div class="absolute top-40  right-4 cursor-pointer">
-                            <div class="relative w-15 h-15  rounded-full flex items-center justify-center p-8
+                        <a href="#">
+                            <div class="absolute top-37 md:top-40 right-2  md:right-4 cursor-pointer">
+                                <div class="relative w-10 h-10  md:w-15 md:h-15  rounded-full flex items-center justify-center md:p-8
                             bg-light-powder-blue">
-
-                                <!-- Inner, solid blue circle with the 'i' icon -->
-                                <div
-                                    class="absolute w-10 h-10  rounded-full bg-vivid-blue flex items-center justify-center">
-                                    <!-- SVG for the information 'i' icon -->
-                                    <span class="text-white font-bold">i</span>
+                                    <!-- Inner, solid blue circle with the 'i' icon -->
+                                    <div
+                                        class="absolute w-5 h-5 md:w-10 md:h-10  rounded-full bg-vivid-blue flex items-center justify-center">
+                                        <!-- SVG for the information 'i' icon -->
+                                        <span class="text-white font-bold">i</span>
+                                    </div>
                                 </div>
-
                             </div>
-                        </div>
-
-                    </div>
-                    <div
-                        class="bg-white rounded-[20px]  border border-pale-blue-gray p-4 relative w-full max-w-[18.75rem] max-h-[16.375rem]">
-                        <div class="flex flex-col gap-2">
-                            <img src="/assets/img/prescription-img.svg" alt="">
-                            <h1 class="font-bold text-2xl text-vivid-blue">Prescription</h1>
-                            <p class="font-semibold text-xs text-slate-gray pt-1">Patient: Monica Singh</p>
-                            <p class="font-semibold text-xs text-slate-gray">Doctor: Dr. Aisha Rahman</p>
-                            <p class="font-semibold text-xs text-cool-gray">12/05/25, 12:30 PM</p>
-                        </div>
-                        <div class="absolute top-40  right-4 cursor-pointer">
-                            <div class="relative w-15 h-15  rounded-full flex items-center justify-center p-8
-                            bg-light-powder-blue">
-
-                                <!-- Inner, solid blue circle with the 'i' icon -->
-                                <div
-                                    class="absolute w-10 h-10  rounded-full bg-vivid-blue flex items-center justify-center">
-                                    <!-- SVG for the information 'i' icon -->
-                                    <span class="text-white font-bold">i</span>
-                                </div>
-
-                            </div>
-                        </div>
+                        </a>
 
                     </div>
                 </div>
@@ -616,7 +618,8 @@
                     <div class="hidden flex justify-between items-center fileInfo pt-4">
                         <span class="fileName font-normal text-xs text-slate-gray truncate"></span>
                         <button class="text-sea-green font-bold text-xs replaceBtn cursor-pointer">Replace</button>
-                        <button class="text-sea-green font-bold text-xs  cursor-pointer hidden editDetails-btn">Edit Details</button>
+                        <button class="text-sea-green font-bold text-xs  cursor-pointer hidden editDetails-btn">Edit
+                            Details</button>
                     </div>
                     <div class="mt-4 flex items-center justify-between patient-doctor-dropdowns">
                         <!-- Patient Dropdown Container -->
@@ -820,7 +823,7 @@
                                 <span class="text-persian-blue font-bold text-xs">NPPA Regulated</span>
                             </div>
                         </div>
-                        <div class="mt-4 flex items-center justify-between">
+                        <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-2">
                             <div class="flex flex-col gap-4">
                                 <span class="font-semibold text-sm text-deep-teal-green">Dosage</span>
                                 <input type="text"
