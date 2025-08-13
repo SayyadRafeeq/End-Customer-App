@@ -6,10 +6,15 @@
   --color-white: #ffffff;  
   --color-gray: #212B36;
   --color-gray-light: #F8FAFC;
-   --color-gray-light1: #919EAB;
-    --color-gray-light2: #DFE3E8;
+  --color-gray-light1: #919EAB;
+  --color-gray-light2: #637381;
+   --color-warm-yellow: #FFC107;
+  --color-gray-light3: #DFE3E8;
   --color-white: #ffffff;
   --color-gray: #212b36;
+  --color-gray1: #5B5760;
+  --color-gray2: #606060;
+    --color-gray3: #8E8E93;
   --color-gray-light: #f8fafc;
   --color-gray-dark: #212529;
   --color-dim-gray: #696969;
@@ -20,10 +25,18 @@
   --color-dark-charcoal: #111111;
    --color-charcoal-black: #000000; 
   --color-sea-green: #10b981;
+  --color-sea-green2: #088178;
+  --color-light-sea-green: #99EAD6;
+  --color-light-sea-green1: #08817880;
+  --color-light-sea-green2:#00B69B;
+  --color-transparent-light-sea-green:#3AAFA926;
   --color-sea-green-deep: #238B6D;  
+  --color-sea-green-dark: #407672;  
+    --color-sea-green-dark1:#1A7A5E ;  
   --color-dark-slate:#212529;
   --color-muted-rose: #FF6F6180;
   --color-onyx: #1F1F1F;
+    --color-vibrant-purple: #3C0EB9;
 
   /* Box Shadow */
     --box-shadow-1: 4px 4px 10px 4px rgba(0, 0, 0, 0.20);
