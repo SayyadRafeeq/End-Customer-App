@@ -343,71 +343,86 @@
         </section>
 
         <!-- Carousel Section -->
-        <section class="carousel-section ">
-            <div class="carousel-container">
-                <div class="carousel-track">
-                    <img src="./assets/img/slider-img1.svg" class="carousel-slide" alt="Slide 1" />
-                    <img src="./assets/img/slider-img2.png" class="carousel-slide" alt="Slide 2" />
-                    <img src="./assets/img/slider-img3.png" class="carousel-slide" alt="Slide 3" />
+            <section class="carousel-section ">
+                <div class="carousel-container" id="carousel">
+                    <div class="carousel-track">
+                        <a href="#" class="carousel-slide"><img src="./assets/img/slider-img1.svg"  alt="Slide 1" /></a>
+                        <a href="#" class="carousel-slide"><img src="./assets/img/slider-img2.png"  alt="Slide 2" /></a>
+                        <a href="#" class="carousel-slide"><img src="./assets/img/slider-img3.png"  alt="Slide 3" /></a>
+                    </div>
                 </div>
+                <div class="carousel-dots"></div>
+            </section>
 
-            </div>
-            <div class="carousel-dots"></div>
-        </section>
-
-        <!--Shop by categories-->
-        <section class="bg-white p-5  md:p-20 categories-section">
-            <div>
-                <h1 class="font-bold text-xl md:text-3xl text-charcoal-black">
-                    Shop By Categories
-                </h1>
-                <div class="custom-hr"></div>
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-4 pt-5">
-                    <!--Popular Medicines Card-->
-                    <div class="card categories-card bg-light-coral rounded-[10px]">
-                        <p class="text-base md:text-lg font-bold text-white">Popular <br> Medicine</p>
-                        <div class="flex justify-end">
-                            <img src="./assets/img/popular-medicine.png" alt="Medicine Image" class="w-35 h-35">
-                        </div>
+         <!--Shop by categories-->
+            <section class="bg-white p-5  md:p-20 categories-section">
+                <div>
+                    <h1 class="font-bold text-xl md:text-3xl text-charcoal-black">
+                        Shop By Categories
+                    </h1>
+                    <div class="custom-hr"></div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-4 pt-5">
+                        <!--Popular Medicines Card-->
+                        <a href="#">
+                            <div class="card categories-card bg-light-coral rounded-[10px]">
+                                <p class="text-base md:text-lg font-bold text-white">Popular <br> Medicine</p>
+                                <div class="flex justify-end">
+                                    <img src="./assets/img/popular-medicine.png" alt="Medicine Image" class="w-35 h-35">
+                                </div>
+                            </div>
+                        </a>
+                        <!--Pain & Inflammation Relief Card-->
+                        <a href="#">
+                            <div class="card categories-card bg-mint-leaf rounded-[10px]">
+                                <p class="text-base md:text-lg font-bold text-white">Pain & <br> Inflammatory Relief</p>
+                                <div class="flex justify-end">
+                                    <img src="./assets/img/pain-relief.png" alt="Medicine Image" class="w-35 h-35">
+                                </div>
+                            </div>
+                        </a>
+                        <!--Cold,Coughr & Fever Card-->
+                        <a href="#">
+                            <div class="card categories-card bg-pastel-blue rounded-[10px]">
+                                <p class="text-base md:text-lg font-bold text-white">Cold,<br> Cough & Fever</p>
+                                <div class="flex justify-end">
+                                    <img src="./assets/img/cold-fever.png" alt="Medicine Image" class="w-35 h-35">
+                                </div>
+                            </div>
+                        </a>
+                        <!--Skin & Personal Care Card-->
+                        <a href="#">
+                            <div class="card categories-card bg-pastel-red rounded-[10px]">
+                                <p class="text-base md:text-lg font-bold text-white">Skin &<br>Personal Care</p>
+                                <div class="flex justify-end">
+                                    <img src="./assets/img/skin-care.png" alt="Skin care products image"
+                                        class="w-35 h-35">
+                                </div>
+                        
                     </div>
-                    <!--Pain & Inflammation Relief Card-->
-                    <div class="card categories-card bg-mint-leaf rounded-[10px]">
-                        <p class="text-base md:text-lg font-bold text-white">Pain & <br> Inflammatory Relief</p>
-                        <div class="flex justify-end">
-                            <img src="./assets/img/pain-relief.png" alt="Medicine Image" class="w-35 h-35">
-                        </div>
-                    </div>
-                    <!--Cold,Coughr & Fever Card-->
-                    <div class="card categories-card bg-pastel-blue rounded-[10px]">
-                        <p class="text-base md:text-lg font-bold text-white">Cold,<br> Cough & Fever</p>
-                        <div class="flex justify-end">
-                            <img src="./assets/img/cold-fever.png" alt="Medicine Image" class="w-35 h-35">
-                        </div>
-                    </div>
-                    <!--Skin & Personal Care Card-->
-                    <div class="card categories-card bg-pastel-red rounded-[10px]">
-                        <p class="text-base md:text-lg font-bold text-white">Skin &<br>Personal Care</p>
-                        <div class="flex justify-end">
-                            <img src="./assets/img/skin-care.png" alt="Skin care products image" class="w-35 h-35">
-                        </div>
-                    </div>
+                    </a>
                     <!--Child & Maternal Health Card-->
-                    <div class="card categories-card bg-orchid rounded-[10px]">
-                        <p class="text-base md:text-lg font-bold text-white">Child &<br>Maternal Health</p>
-                        <div class="flex justify-end">
-                            <img src="./assets/img/child-maternal.png" alt="Children products image" class="w-35 h-35">
+                    <a href="#">
+                        <div class="card categories-card bg-orchid rounded-[10px]">
+                            <p class="text-base md:text-lg font-bold text-white">Child &<br>Maternal Health</p>
+                            <div class="flex justify-end">
+                                <img src="./assets/img/child-maternal.png" alt="Children products image"
+                                    class="w-35 h-35">
+                            </div>
                         </div>
-                    </div>
+                    </a>
                     <!--Devices & Health Tools Card-->
-                    <div class="card categories-card bg-mustard-yellow rounded-[10px]">
-                        <p class="text-base md:text-lg font-bold text-white">Devices &<br>Health Tools</p>
-                        <div class="flex justify-end">
-                            <img src="./assets/img/devices.png" alt="Children products image" class="w-35 h-35">
+                    <a href="#">
+                        <div class="card categories-card bg-mustard-yellow rounded-[10px]">
+                            <p class="text-base md:text-lg font-bold text-white">Devices &<br>Health Tools</p>
+                            <div class="flex justify-end">
+                                <img src="./assets/img/devices.png" alt="Children products image" class="w-35 h-35">
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-            </div>
+        </div>
         </section>
+
 
         <!--Payment Partner Offers-->
 

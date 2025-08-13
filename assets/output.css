@@ -74,6 +74,7 @@
     --color-gray-light1: #919EAB;
     --color-gray-light2: #637381;
     --color-warm-yellow: #FFC107;
+    --color-gray-light3: #DFE3E8;
     --color-gray1: #5B5760;
     --color-gray2: #606060;
     --color-gray3: #8E8E93;
@@ -1086,6 +1087,9 @@
   }
   .border-gray-light2 {
     border-color: var(--color-gray-light2);
+  }
+  .border-gray-light3 {
+    border-color: var(--color-gray-light3);
   }
   .border-green-light {
     border-color: var(--color-green-light);
