@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="My Account Page">
+    <title>My Account</title>
+
+    <link rel="stylesheet" href="assets/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="./script/main.js"></script>
+</head>
+
+<body class="bg-gray-50">
+    <div class="container">
+        <header class="nav-menu px-20 py-2 mx-auto flex items-center justify-between relative z-10">
+            <div class="max-w-[150px] max-h-10">
+                <a href="#"><img src="assets/img/logo.png" alt="logo" class="max-w-[150px] max-h-10" /></a>
+            </div>
+            <nav class="">
+                <div class="">
+                    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                    <ul id="menu" class="hidden md:flex space-x-6 items-center">
+                        <li class="relative group">
+                            <a class="flex items-center focus:outline-none">
+                                Home
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                            <!-- Submenu -->
+                            <ul
+                                class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web Design</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="relative group">
+                            <a class="flex items-center focus:outline-none">
+                                Medicine
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                            <!-- Submenu -->
+                            <ul
+                                class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web Design</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="relative group">
+                            <a class="flex items-center focus:outline-none">
+                                Maps
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                            <!-- Submenu -->
+                            <ul
+                                class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web Design</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="relative group">
+                            <a class="flex items-center focus:outline-none">
+                                Services
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                            <!-- Submenu -->
+                            <ul
+                                class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web Design</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="">Records</a></li>
+                        <li><a href="#" class="">Rewards</a></li>
+                        <li><a href="#" class="">Support</a></li>
+                        <li><a href="#" class="text-[#238b6d]">Login/Sign Up</a></li>
+                    </ul>
+                </div>
+                <!-- Mobile Menu -->
+                <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-2 mt-2 text-white px-4">
+                    <li><a href="#" class="block">Home</a></li>
+                    <li><a href="#" class="block">About</a></li>
+                    <li>
+                        <button id="mobile-submenu-btn" class="flex items-center w-full focus:outline-none">
+                            Services
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <ul id="mobile-submenu" class="hidden flex-col pl-4 mt-1 space-y-1">
+                            <li>
+                                <a href="#" class="block hover:text-gray-300">Web Design</a>
+                            </li>
+                            <li><a href="#" class="block hover:text-gray-300">SEO</a></li>
+                            <li>
+                                <a href="#" class="block hover:text-gray-300">Consulting</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="block hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class=" mx-auto px-20 py-8 flex flex-col md:flex-row gap-8">
+
+            <!-- Sidebar Navigation -->
+            <div class="w-full md:w-64 flex-shrink-0">
+                <div
+                    class=" flex justify-between items-center border px-4 py-2 gap-2 rounded-lg bg-gray-tint border-gray-200 mb-6">
+                    <span class=" text-gray-500 text-xs">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input type="text" name="search-d" placeholder="What do you want to help?"
+                        class="w-full text-xs py-2 px-4 pr-10 rounded-full text-gray-dark-1 focus:outline-none">
+                </div>
+                <div class="mt-5">
+                    <nav>
+                        <ul class="space-y-3">
+                            <li><a href="#"
+                                    class="flex items-center text-white text-sm bg-green-light px-4 py-2 rounded font-semibold"><i
+                                        class="fas fa-user mr-3"></i> My Account</a></li>
+                            <li><a href="#"
+                                    class="flex items-center text-gray-med text-sm hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-bookmark mr-3"></i> My Save</a></li>
+                            <li><a href="#"
+                                    class="flex items-center text-gray-med text-sm hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-upload mr-3"></i> My Uploads</a></li>
+                            <li><a href="#"
+                                    class="flex items-center text-gray-med text-sm hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-map-marker-alt mr-3"></i> Manage Address</a></li>
+                            <li><a href="#"
+                                    class="flex items-center text-gray-med text-sm hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-credit-card mr-3"></i> Payment Methods</a></li>
+                            <li><a href="#"
+                                    class="flex items-center text-gray-med text-sm hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-file-alt mr-3"></i> Policy</a></li>
+                            <li><a href="#"
+                                    class="flex items-center text-gray-med text-sm hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-question-circle mr-3"></i> Help Center</a></li>
+                            <li><a href="#"
+                                    class="flex items-center text-gray-med text-sm hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-cog mr-3"></i> Settings</a></li>
+                            <li><a href="#"
+                                    class="flex items-center text-gray-med text-sm hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-sign-out-alt mr-3"></i> Logout</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="flex-1">
+                <h1 class="text-2xl font-semibold text-black">Good Morning User :)</h1>
+                <h2 class="text-sm font-normal text-gray-700 mb-4">Edit all your Account Information</h2>
+                <!-- Account Information Card -->
+                <div class="bg-white mb-8 mx-auto flex  gap-4">
+                    <div class="flex flex-col items-center border border-gray-light2 p-6 rounded-lg">
+                        <img src="./assets/img/Profile-acc.png" alt="this" class="w-28 h-28 rounded-full mb-4">
+                            <div class="flex items-center justify-between mt-4">
+                                <button id="editBtn"
+                                    class="border border-green-light text-sm bg-white text-green-light px-4 py-2 rounded-4xl mr-2">Update</button>
+                               <div class="icon-trash-2"></div>
+                                    <button
+                                    class="flex items-center gap-1 text-sm text-gray-med px-4 py-2 hover:bg-green-light hover:text-white rounded-4xl"><i class="fa-solid fa-trash-can"></i>Remove</button>
+                            </div>    
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 w-full gap-6 gap-y-3 border border-gray-light2 p-6 rounded-lg">
+                        <div>
+                            <label class="block text-gray-600 mb-1">First Name</label>
+                            <span>Gaurav</span>
+                        </div>
+                        <div>
+                            <label class="block text-gray-600 mb-1">Last Name</label>
+                            <span>Yadav</span>
+                        </div>
+                        <div>
+                            <label class="block text-gray-600 mb-1">Age</label>
+                           <span>29</span>
+                        </div>
+                        <div>
+                            <label class="block text-gray-600 mb-1">Gender</label>
+                            <span>Male</span>
+                        </div>
+                        <div>
+                            <label class="block text-gray-600 mb-1">Email</label>
+                            <Span>gaurav@gmail.com</Span>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-600 mb-1">Phone No.</label>
+                            <span>+91 8345990258</span>
+                        </div>
+                        <div>
+                            <label class="block text-gray-600 mb-1">Pan Card No.</label>
+                           <span>MSPPALS6729A</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 bg-green-light p-6 rounded-lg shadow-lg">
+                    <!-- Donate Card -->
+                    <div class="bg-white rounded-sm border shadow p-4 text-white">
+                        <div class="flex items-center justify-start gap-4 mb-4">
+                            <i class="fa-solid fa-heart-circle-plus text-lg w-10 h-10 !flex items-center justify-center bg-green-light rounded-full p-4"></i>
+                            <h3 class="text-lg font-semibold text-gray-med">Donate</h3>
+                            <i class="fa-solid fa-greater-than text-gray-med"></i>
+                        </div>
+                        <p class="mb-4 text-gray-700 text-sm font-normal">Your one step could feed underprivileged children and those in Need.</p>
+                    </div>
+
+                    <!-- My Orders Card -->
+                    <div class="bg-white rounded-sm border shadow p-4 text-white">
+                        <div class="flex items-center justify-start gap-4 mb-4">
+                            <i class="fa-solid fa-clipboard-list text-lg w-10 h-10 !flex items-center justify-center bg-green-light rounded-full p-4"></i>
+                            <h3 class="text-lg font-semibold text-gray-med">My Orders</h3>
+                            <i class="fa-solid fa-greater-than text-gray-med"></i>
+                        </div>
+                        <p class="mb-4 text-gray-700 text-sm font-normal">Your one step could feed underprivileged children and those in Need.</p>
+                    </div>
+
+                    <!-- My Rewards Card -->
+                    <div class="bg-white rounded-sm border shadow p-4 text-white">
+                        <div class="flex items-center justify-start gap-4 mb-4">
+                            <i class="fa-solid fa-gift text-lg w-10 h-10 !flex items-center justify-center bg-green-light rounded-full p-4"></i>
+                            <h3 class="text-lg font-semibold text-gray-med">My Rewards</h3>
+                            <i class="fa-solid fa-greater-than text-gray-med"></i>
+                        </div>
+                        <p class="mb-4 text-gray-700 text-sm font-normal">Your one step could feed underprivileged children and those in Need.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const editBtn = document.getElementById('editBtn');
+            const inputs = document.querySelectorAll('input, select');
+            let isEditing = false;
+
+            editBtn.addEventListener('click', function () {
+                isEditing = !isEditing;
+
+                if (isEditing) {
+                    editBtn.textContent = 'Save';
+                    editBtn.classList.remove('bg-blue-600');
+                    editBtn.classList.add('bg-green-600');
+
+                    inputs.forEach(input => {
+                        input.disabled = false;
+                        input.classList.add('bg-gray-50');
+                    });
+                } else {
+                    editBtn.textContent = 'Update';
+                    editBtn.classList.remove('bg-green-600');
+                    editBtn.classList.add('bg-blue-600');
+
+                    inputs.forEach(input => {
+                        input.disabled = true;
+                        input.classList.remove('bg-gray-50');
+                    });
+
+                    // Here you would typically save the data to a server
+                    alert('Information updated successfully!');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

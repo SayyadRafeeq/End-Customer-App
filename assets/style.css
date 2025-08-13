@@ -5,8 +5,11 @@
 @theme{
   --color-white: #ffffff;  
   --color-gray: #212B36;
+  
+  --color-gray-dark-1: #637381;
   --color-gray-light: #F8FAFC;
    --color-gray-light1: #919EAB;
+    --color-gray-light2: #DFE3E8;
   --color-white: #ffffff;
   --color-gray: #212b36;
   --color-gray-light: #f8fafc;
@@ -16,15 +19,20 @@
   --color-muted-gray: #999999;
   --color-light-gray: #EEEEEE;
   --color-gray-tint: #F4F6F8;
-  --color-dark-charcoal: #111111; 
+  --color-dark-charcoal: #111111;
+   --color-charcoal-black: #000000; 
   --color-sea-green: #10b981;
   --color-sea-green-deep: #238B6D;  
   --color-dark-slate:#212529;
   --color-muted-rose: #FF6F6180;
   --color-onyx: #1F1F1F;
+  --color-green-light: #1A7A5E;
+  --color-gray-med: #161C24;
+  --color-gray-700: #454F5B;
 
   /* Box Shadow */
     --box-shadow-1: 4px 4px 10px 4px rgba(0, 0, 0, 0.20);
+    --box-shadow-2: 0 12px 24px -4px rgba(145, 158, 171, 0.12);
 
   --color-dark-charcoal: #111111;
   --color-sea-green: #10b981;
@@ -41,6 +49,7 @@
   --color-ice-gray:#F4F6F8;
   --color-sea-green-deep: #238b6d;
   --color-orange-peach:#F8C373;
+  --color-warm-gray:#B3AFAF;
 
 /* Font Size and Font Weight */
     --text-30-bold: 1.875rem;
@@ -131,6 +140,13 @@ body {
     width: 36px;
 height: 36px;
 opacity: 1;
+}
+
+.primary-card {
+  @apply w-[200px] h-[200px] max-w-[200px] max-h-[200px] rounded-[12px] bg-white shadow-(--box-shadow-2) px-3 py-4 flex items-center justify-between;
+}
+.primary-card:hover {
+  @apply shadow-(--box-shadow-1);
 }
 
 .campaign-card{
@@ -254,4 +270,7 @@ opacity: 1;
   position: absolute !important;
   right: 2rem;
   bottom: 0 !important;
+}
+.blog-card{
+  @apply w-[19.063rem] h-[23rem] flex-shrink-0 bg-ice-gray
 }
