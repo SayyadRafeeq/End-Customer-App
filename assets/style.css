@@ -39,17 +39,18 @@
   --color-vibrant-purple: #3C0EB9;
   --color-dark-charcoal: #111111;
   --color-sea-green: #10b981;
-  --color-sea-green-deep: #238B6D;
-  --color-charcoal-black: #212529;
-  --color-smoke-white: #EEEEEE;
-  --color-ash-gray: #D9D9D9;
-  --color-light-coral: #FF916C;
-  --color-mint-leaf: #58D36A;
-  --color-pastel-blue: #6CA4FF;
-  --color-pastel-red: #FF6C6C;
-  --color-orchid: #D36CFF;
-  --color-mustard-yellow: #D6B71D;
-  --color-ice-gray: #F4F6F8;
+  --color-sea-green-deep: #238B6D; 
+  --color-charcoal-black:#212529;
+  --color-smoke-white:#EEEEEE;
+  --color-ash-gray:#D9D9D9;
+  --color-light-coral:#FF916C;
+  --color-mint-leaf:#58D36A;
+  --color-pastel-blue:#6CA4FF;
+  --color-pastel-red:#FF6C6C;
+  --color-orchid:#D36CFF;
+  --color-mustard-yellow:#D6B71D;
+    --color-smoky-black:#00000066;
+  --color-ice-gray:#F4F6F8;
   --color-sea-green-deep: #238b6d;
   --color-orange-peach: #F8C373;
   --color-warm-gray: #B3AFAF;
@@ -211,9 +212,18 @@ body {
   @apply bg-ice-gray px-20 py-[4.5rem];
 }
 
+.carousel-section-donate {
+  @apply  px-20 py-[4.5rem]; 
+}
+
 .carousel-container {
   @apply w-full overflow-hidden relative touch-pan-y;
 }
+
+.carousel-container-donate {
+  @apply w-full overflow-hidden relative touch-pan-y;
+}
+
 
 .carousel-track {
   @apply flex transition-transform duration-500 ease-in-out;
