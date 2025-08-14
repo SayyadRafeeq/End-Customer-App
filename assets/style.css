@@ -2,19 +2,19 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-@theme{
-  --color-white: #ffffff;  
+@theme {
+  --color-white: #ffffff;
   --color-gray: #212B36;
   --color-gray-light: #F8FAFC;
   --color-gray-light1: #919EAB;
   --color-gray-light2: #637381;
-   --color-warm-yellow: #FFC107;
+  --color-warm-yellow: #FFC107;
   --color-gray-light3: #DFE3E8;
   --color-white: #ffffff;
   --color-gray: #212b36;
   --color-gray1: #5B5760;
   --color-gray2: #606060;
-    --color-gray3: #8E8E93;
+  --color-gray3: #8E8E93;
   --color-gray-light: #f8fafc;
   --color-gray-dark: #212529;
   --color-dim-gray: #696969;
@@ -23,101 +23,111 @@
   --color-light-gray: #EEEEEE;
   --color-gray-tint: #F4F6F8;
   --color-dark-charcoal: #111111;
-   --color-charcoal-black: #000000; 
+  --color-charcoal-black: #000000;
   --color-sea-green: #10b981;
   --color-sea-green2: #088178;
   --color-light-sea-green: #99EAD6;
   --color-light-sea-green1: #08817880;
-  --color-light-sea-green2:#00B69B;
-  --color-transparent-light-sea-green:#3AAFA926;
-  --color-sea-green-deep: #238B6D;  
-  --color-sea-green-dark: #407672;  
-    --color-sea-green-dark1:#1A7A5E ;  
-  --color-dark-slate:#212529;
+  --color-light-sea-green2: #00B69B;
+  --color-transparent-light-sea-green: #3AAFA926;
+  --color-sea-green-deep: #238B6D;
+  --color-sea-green-dark: #407672;
+  --color-sea-green-dark1: #1A7A5E;
+  --color-dark-slate: #212529;
   --color-muted-rose: #FF6F6180;
   --color-onyx: #1F1F1F;
-    --color-vibrant-purple: #3C0EB9;
-
-  /* Box Shadow */
-    --box-shadow-1: 4px 4px 10px 4px rgba(0, 0, 0, 0.20);
-
+  --color-vibrant-purple: #3C0EB9;
   --color-dark-charcoal: #111111;
   --color-sea-green: #10b981;
-  --color-sea-green-deep: #238B6D; 
-  --color-charcoal-black:#212529;
-  --color-smoke-white:#EEEEEE;
-  --color-ash-gray:#D9D9D9;
-  --color-light-coral:#FF916C;
-  --color-mint-leaf:#58D36A;
-  --color-pastel-blue:#6CA4FF;
-  --color-pastel-red:#FF6C6C;
-  --color-orchid:#D36CFF;
-  --color-mustard-yellow:#D6B71D;
-  --color-ice-gray:#F4F6F8;
+  --color-sea-green-deep: #238B6D;
+  --color-charcoal-black: #212529;
+  --color-smoke-white: #EEEEEE;
+  --color-ash-gray: #D9D9D9;
+  --color-light-coral: #FF916C;
+  --color-mint-leaf: #58D36A;
+  --color-pastel-blue: #6CA4FF;
+  --color-pastel-red: #FF6C6C;
+  --color-orchid: #D36CFF;
+  --color-mustard-yellow: #D6B71D;
+  --color-ice-gray: #F4F6F8;
   --color-sea-green-deep: #238b6d;
-  --color-orange-peach:#F8C373;
-  --color-warm-gray:#B3AFAF;
-  --color-deep-teal-green:#1A7A5E;
-  --color-mint-cream:#CAF8E4;
-  --color-powder-aqua:#CEE6E4;
-  --color-pale-aqua:#B7DBD2;
-  --color-pale-blue-gray:#DBE0E4;
-  --color-vivid-blue:#1890FF;
-  --color-slate-gray:#646B73;
-  --color-cool-gray:#929DA7;
-  --color-golden-yellow:#FFC107;
-  --color-light-powder-blue:#DAEDFF;
-  --color-light-cream:#FFF5D7;
-  --color-lime-green:#54D62C;
-  --color-pale-mint:#E3F8DD;
-  --color-medium-gray:#8E8E93;
-  --color-silver:#E0E0E0;
-  --color-transparent-black:#0000004D;
-  --color-deep-teal:#08817833;
-  --color-smoky-blue-gray:#637381;
-  --color-sea-green:#5FA28F;
-  --color-gainsboro-gray:#DBE0E4;
-  --color-strong-red:#B72136;
-  --color-persian-blue:#1939B7;
-  --color-deep-aquamarine:#408677;
-  --color-dark-gray:#484848;
-  --color-pewter-blue:#89C3BF;
-  --color-teal-green:#088178;
-/* Font Size and Font Weight */
-    --text-30-bold: 1.875rem;
-    --text-30-bold--font-weight: 700;
-    --text-30-bold--line-height: 36px;
-    --text-30-bold--font-style: normal;
+  --color-orange-peach: #F8C373;
+  --color-warm-gray: #B3AFAF;
+  --color-deep-teal-green: #1A7A5E;
+  --color-mint-cream: #CAF8E4;
+  --color-powder-aqua: #CEE6E4;
+  --color-pale-aqua: #B7DBD2;
+  --color-pale-blue-gray: #DBE0E4;
+  --color-vivid-blue: #1890FF;
+  --color-slate-gray: #646B73;
+  --color-cool-gray: #929DA7;
+  --color-golden-yellow: #FFC107;
+  --color-light-powder-blue: #DAEDFF;
+  --color-light-cream: #FFF5D7;
+  --color-lime-green: #54D62C;
+  --color-pale-mint: #E3F8DD;
+  --color-medium-gray: #8E8E93;
+  --color-silver: #E0E0E0;
+  --color-transparent-black: #0000004D;
+  --color-deep-teal: #08817833;
+  --color-smoky-blue-gray: #637381;
+  --color-sea-green: #5FA28F;
+  --color-gainsboro-gray: #DBE0E4;
+  --color-strong-red: #B72136;
+  --color-persian-blue: #1939B7;
+  --color-deep-aquamarine: #408677;
+  --color-dark-gray: #484848;
+  --color-pewter-blue: #89C3BF;
+  --color-teal-green: #088178;
+  --color-charcoal-gray: #333333;
+  --color-carbon-gray: #666666;
+  --color-night-black: #141414;
+  --color-tomato-red: #FF4842;
+  --color-pale-slate: #AEAEB2;
+  --color-granite-gray: #4D4D4D;
+  --color-seafoam-blue: #83BEBB;
+  --color-bright-green: #54D62C;
 
-    --text-24-semibold: 1.5rem;
-    --text-24-semibold--font-weight: 600;
-    --text-24-semibold--line-height: 120%;
-    --text-24-semibold--font-style: normal;
+  /* Box Shadow */
+  --box-shadow-1: 4px 4px 10px 4px rgba(0, 0, 0, 0.20);
+  --box-shadow-2: 0 8px 16px 0 rgba(145, 158, 171, 0.12);
+  --box-shadow-3: 0 8px 16px 0 rgba(8, 129, 120, 0.24);
 
-    --text-22-bold: 1.375rem;
-    --text-22-bold--font-weight: 700;
-    --text-22-bold--line-height: 26.4px;
-    --text-22-bold--font-style: normal;
+  /* Font Size and Font Weight */
+  --text-30-bold: 1.875rem;
+  --text-30-bold--font-weight: 700;
+  --text-30-bold--line-height: 36px;
+  --text-30-bold--font-style: normal;
 
-    --text-16-semibold: 1rem;
-    --text-16-semibold--font-weight: 600;
-    --text-16-semibold--line-height: 120%;
-    --text-16-semibold--font-style: normal;
+  --text-24-semibold: 1.5rem;
+  --text-24-semibold--font-weight: 600;
+  --text-24-semibold--line-height: 120%;
+  --text-24-semibold--font-style: normal;
 
-    --text-16-normal: 1rem;
-    --text-16-normal--font-weight: 400;
-    --text-16-normal--line-height: 120%;
-    --text-16-normal--font-style: normal;
+  --text-22-bold: 1.375rem;
+  --text-22-bold--font-weight: 700;
+  --text-22-bold--line-height: 26.4px;
+  --text-22-bold--font-style: normal;
 
-    --text-15-normal: 0.938rem;
-    --text-15-normal--font-weight: 400;
-    --text-15-normal--line-height: 22.5px;
-    --text-15-normal--font-style: normal;
+  --text-16-semibold: 1rem;
+  --text-16-semibold--font-weight: 600;
+  --text-16-semibold--line-height: 120%;
+  --text-16-semibold--font-style: normal;
 
-    --text-15-semibold: 0.938rem;
-    --text-15-semibold--font-weight: 600;
-    --text-15-semibold--line-height: 22.5px;
-    --text-15-semibold--font-style: normal;
+  --text-16-normal: 1rem;
+  --text-16-normal--font-weight: 400;
+  --text-16-normal--line-height: 120%;
+  --text-16-normal--font-style: normal;
+
+  --text-15-normal: 0.938rem;
+  --text-15-normal--font-weight: 400;
+  --text-15-normal--line-height: 22.5px;
+  --text-15-normal--font-style: normal;
+
+  --text-15-semibold: 0.938rem;
+  --text-15-semibold--font-weight: 600;
+  --text-15-semibold--line-height: 22.5px;
+  --text-15-semibold--font-style: normal;
 }
 
 .container {
@@ -133,8 +143,8 @@ body {
 }
 
 .no-scrollbar::-webkit-scrollbar {
-    display: none;
-    /* Hides scrollbar in Chrome, Safari, and Edge */
+  display: none;
+  /* Hides scrollbar in Chrome, Safari, and Edge */
 }
 
 .nav-menu {
@@ -165,27 +175,29 @@ body {
   background-color: var(--color-gray);
 }
 
-.primary-radius-18{
-    @apply rounded-[18px] text-white flex items-center justify-center;
-    background-color: var(--color-sea-green-deep);
-    width: 36px;
-height: 36px;
-opacity: 1;
+.primary-radius-18 {
+  @apply rounded-[18px] text-white flex items-center justify-center;
+  background-color: var(--color-sea-green-deep);
+  width: 36px;
+  height: 36px;
+  opacity: 1;
 }
 
-.campaign-card{
-    @apply w-[319px] flex-shrink-0 h-[346px] rounded-[10px] bg-white shadow-(--box-shadow-1) p-5 space-y-5;
-}
-.secondary-card{
-    max-width: 12.5rem;
-    max-height: 14.75rem;
+.campaign-card {
+  @apply w-[319px] flex-shrink-0 h-[346px] rounded-[10px] bg-white shadow-(--box-shadow-1) p-5 space-y-5;
 }
 
-.categories-card{
-    max-height:12.5rem;
-    max-width: 12.5rem;
-    padding:10px;
+.secondary-card {
+  max-width: 12.5rem;
+  max-height: 14.75rem;
 }
+
+.categories-card {
+  max-height: 12.5rem;
+  max-width: 12.5rem;
+  padding: 10px;
+}
+
 .custom-hr {
   @apply relative h-[1px] border-none bg-smoke-white w-full mt-2
 }
@@ -196,7 +208,7 @@ opacity: 1;
 }
 
 .carousel-section {
-  @apply bg-ice-gray px-20 py-[4.5rem]; 
+  @apply bg-ice-gray px-20 py-[4.5rem];
 }
 
 .carousel-container {
@@ -214,8 +226,8 @@ opacity: 1;
 
 .carousel-container img {
   @apply w-full;
-  max-height: 70vh;  
-  object-fit: contain; 
+  max-height: 70vh;
+  object-fit: contain;
 }
 
 .carousel-dots {
@@ -232,7 +244,7 @@ opacity: 1;
 
 @media (max-width: 840px) {
   .carousel-section {
-    @apply px-4 py-8; 
+    @apply px-4 py-8;
   }
 
   .carousel-dots {
@@ -243,10 +255,11 @@ opacity: 1;
     @apply w-2 h-2;
   }
 
-  .carousel-dots .dot.active{
+  .carousel-dots .dot.active {
     @apply w-2.5 h-2.5
   }
 }
+
 .primary-radius-18 {
   @apply rounded-[18px] text-white flex items-center justify-center;
   background-color: var(--color-sea-green-deep);
@@ -263,7 +276,7 @@ opacity: 1;
   align-items: center;
   border-radius: 8px;
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.15);
-  font-family: "Public Sans", sans-serif;   
+  font-family: "Public Sans", sans-serif;
 }
 
 .primary-box-shadow {
@@ -284,18 +297,21 @@ opacity: 1;
 .facility-card.selected {
   box-shadow: 0 0 0 2px #3b82f6;
 }
+
 .leaflet-left {
   right: 0 !important;
   position: absolute;
 
   bottom: 5rem;
 }
+
 .leaflet-control-zoom {
   position: absolute !important;
   right: 2rem;
   bottom: 0 !important;
 }
-.blog-card{
+
+.blog-card {
   @apply w-[19.063rem] h-[23rem] flex-shrink-0 bg-ice-gray
 }
 
@@ -319,9 +335,54 @@ opacity: 1;
 }
 
 .active {
-    background-color: #238B6D; /* vivid-blue color */
-    color: white;
+  background-color: #238B6D;
+  /* vivid-blue color */
+  color: white;
 }
+
 .grow-transition {
   transition: max-height 0.3s ease-in-out;
+}
+
+.custom-radio {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.custom-radio input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.custom-radio .checkmark {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #123456;
+  border-radius: 50%;
+  background: transparent;
+  transition: border-color 0.3s;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkmark::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #123456;
+  display: none;
+}
+
+.custom-radio input:checked~.checkmark::after {
+  display: block;
 }
