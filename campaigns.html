@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>End Customer page</title>
+    <link rel="stylesheet" href="assets/output.css" />
+    <style>
+        .bg-mg {
+            background-image: url(./assets/img/map.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <link link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style></style>
+
+    <!-- Leaflet CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <div class="container relative">
+        <div class="relative">
+            <header class="nav-menu px-20 py-2 mx-auto flex items-center justify-between relative z-10">
+                <div class="max-w-[150px] max-h-10">
+                    <a href="#"><img src="assets/img/logo.png" alt="logo" class="max-w-[150px] max-h-10" /></a>
+                </div>
+                <nav class="">
+                    <div class="">
+                        <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                        <ul id="menu" class="hidden md:flex space-x-6 items-center">
+                            <li class="relative group">
+                                <a href="index.html" class="flex items-center focus:outline-none">
+                                    Home
+                                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </a>
+                                <!-- Submenu -->
+                                <ul
+                                    class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web
+                                            Design</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="relative group">
+                                <a class="flex items-center focus:outline-none">
+                                    Medicine
+                                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </a>
+                                <!-- Submenu -->
+                                <ul
+                                    class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web
+                                            Design</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="relative group">
+                                <a class="flex items-center focus:outline-none">
+                                    Maps
+                                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </a>
+                                <!-- Submenu -->
+                                <ul
+                                    class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web
+                                            Design</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="relative group">
+                                <a class="flex items-center focus:outline-none">
+                                    Services
+                                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </a>
+                                <!-- Submenu -->
+                                <ul
+                                    class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web
+                                            Design</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="/src/records.html" class="">Records</a></li>
+                            <li><a href="#" class="">Rewards</a></li>
+                            <li><a href="#" class="">Support</a></li>
+                            <li><a href="#" class="text-[#238b6d]">Login/Sign Up</a></li>
+                        </ul>
+                    </div>
+                    <!-- Mobile Menu -->
+                    <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-2 mt-2 text-white px-4">
+                        <li><a href="#" class="block">Home</a></li>
+                        <li><a href="#" class="block">About</a></li>
+                        <li>
+                            <button id="mobile-submenu-btn" class="flex items-center w-full focus:outline-none">
+                                Services
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <ul id="mobile-submenu" class="hidden flex-col pl-4 mt-1 space-y-1">
+                                <li>
+                                    <a href="#" class="block hover:text-gray-300">Web Design</a>
+                                </li>
+                                <li><a href="#" class="block hover:text-gray-300">SEO</a></li>
+                                <li>
+                                    <a href="#" class="block hover:text-gray-300">Consulting</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="">Records</a></li>
+                        <li><a href="rewards.html" class="">Rewards</a></li>
+                        <li><a href="#" class="">Support</a></li>
+                        <li><a href="#" class="text-[#238b6d]">Login/Sign Up</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <!-- Breadcrumb Navigation -->
+        <nav class="flex items-center justify-between text-gray-500 text-sm mt-10 mb-4" aria-label="Breadcrumb">
+            <!-- Breadcrumb links -->
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                <li class="inline-flex items-center">
+                    <a href="index.html" class="inline-flex items-center text-black hover:text-gray-light2 font-medium">
+                        Home
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <i data-lucide="chevron-right" class="mx-2 w-4 h-4 align-middle text-gray"></i>
+                    <a href="donation.html" class="text-black hover:text-gray-light2 font-medium">Donation</a>
+                </li>
+                <li class="flex items-center">
+                    <i data-lucide="chevron-right" class="mx-2 w-4 h-4 align-middle text-gray"></i>
+                    <span class="text-gray-light2 font-bold">Education</span>
+                </li>
+            </ol>
+
+            <!-- Close icon -->
+            <button onclick="window.location.href='donation.html'" class="hover:text-gray cursor-pointer">
+                <i data-lucide="x" class="w-10 h-10"></i>
+            </button>
+        </nav>
+
+        <!--Education-->
+        <section class=" p-5">
+            <div class="flex justify-between items-center mb-4">
+                <h1 class="font-bold text-xl md:text-3xl text-charcoal-black">Education</h1>
+                <a href="#" class="text-sea-green-deep font-bold text-lg md:text-xl ">View
+                    All</a>
+            </div>
+
+            <div class="pt-4 grid grid-cols-1 gap-3 place-items-center sm:grid-cols-2 lg:grid-cols-4">
+                <!--Card 1-->
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white">
+                    <!-- Image -->
+                    <img class="w-full h-48 object-cover" src="/assets/img/campaign-3.png" alt="Campaign Image" />
+
+                    <!-- Content -->
+                    <div class="p-4 space-y-4">
+                        <!-- Title -->
+                        <p class="font-semibold text-gray text-base leading-snug">
+                            Blood cancer has drained my son of life. Please help save him!
+                        </p>
+
+                        <hr class="my-2 border-gray-300">
+
+                        <!-- Info Row -->
+                        <div class="flex justify-between ">
+                            <div>
+                                <p class="text-base font-normal text-gray-light1">Funds Required</p>
+                                <p class="text-sea-green-dark1 font-semibold text-lg">₹35,00,000</p>
+                            </div>
+                            <div class="text-right">
+                                <p class=" text-gray-light1 text-base font-normal">Campaign end in</p>
+                                <p class="text-red-500 font-semibold text-lg">11 days left</p>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-sea-green-dark1 h-2 rounded-full w-[60%]"></div>
+                        </div>
+
+                        <!-- Donors + Button -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-col items-start">
+                                <div class="flex items-center -space-x-2">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate1.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate2.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate3.png" alt="Donor">
+                                </div>
+                                <span class="mt-1 text-sm text-gray-600">145 people donated</span>
+                            </div>
+                            <button class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card 2-->
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white">
+                    <!-- Image -->
+                    <img class="w-full h-48 object-cover" src="/assets/img/campaign-1.jpg" alt="Campaign Image" />
+
+                    <!-- Content -->
+                    <div class="p-4 space-y-4">
+                        <!-- Title -->
+                        <p class="font-semibold text-gray text-base leading-snug">
+                            Blood cancer has drained my son of life. Please help save him!
+                        </p>
+
+                        <hr class="my-2 border-gray-300">
+
+                        <!-- Info Row -->
+                        <div class="flex justify-between ">
+                            <div>
+                                <p class="text-base font-normal text-gray-light1">Funds Required</p>
+                                <p class="text-sea-green-dark1 font-semibold text-lg">₹35,00,000</p>
+                            </div>
+                            <div class="text-right">
+                                <p class=" text-gray-light1 text-base font-normal">Campaign end in</p>
+                                <p class="text-red-500 font-semibold text-lg">11 days left</p>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-sea-green-dark1 h-2 rounded-full w-[60%]"></div>
+                        </div>
+
+                        <!-- Donors + Button -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-col items-start">
+                                <div class="flex items-center -space-x-2">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate1.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate2.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate3.png" alt="Donor">
+                                </div>
+                                <span class="mt-1 text-sm text-gray-600">145 people donated</span>
+                            </div>
+                            <button class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 3-->
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white">
+                    <!-- Image -->
+                    <img class="w-full h-48 object-cover" src="/assets/img/campaign-4.png" alt="Campaign Image" />
+
+                    <!-- Content -->
+                    <div class="p-4 space-y-4">
+                        <!-- Title -->
+                        <p class="font-semibold text-gray text-base leading-snug">
+                            Blood cancer has drained my son of life. Please help save him!
+                        </p>
+
+                        <hr class="my-2 border-gray-300">
+
+                        <!-- Info Row -->
+                        <div class="flex justify-between ">
+                            <div>
+                                <p class="text-base font-normal text-gray-light1">Funds Required</p>
+                                <p class="text-sea-green-dark1 font-semibold text-lg">₹35,00,000</p>
+                            </div>
+                            <div class="text-right">
+                                <p class=" text-gray-light1 text-base font-normal">Campaign end in</p>
+                                <p class="text-red-500 font-semibold text-lg">11 days left</p>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-sea-green-dark1 h-2 rounded-full w-[60%]"></div>
+                        </div>
+
+                        <!-- Donors + Button -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-col items-start">
+                                <div class="flex items-center -space-x-2">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate1.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate2.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate3.png" alt="Donor">
+                                </div>
+                                <span class="mt-1 text-sm text-gray-600">145 people donated</span>
+                            </div>
+                            <button class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 4-->
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white">
+                    <!-- Image -->
+                    <img class="w-full h-48 object-cover" src="/assets/img/campaign-5.png" alt="Campaign Image" />
+
+                    <!-- Content -->
+                    <div class="p-4 space-y-4">
+                        <!-- Title -->
+                        <p class="font-semibold text-gray text-base leading-snug">
+                            Blood cancer has drained my son of life. Please help save him!
+                        </p>
+
+                        <hr class="my-2 border-gray-300">
+
+                        <!-- Info Row -->
+                        <div class="flex justify-between ">
+                            <div>
+                                <p class="text-base font-normal text-gray-light1">Funds Required</p>
+                                <p class="text-sea-green-dark1 font-semibold text-lg">₹35,00,000</p>
+                            </div>
+                            <div class="text-right">
+                                <p class=" text-gray-light1 text-base font-normal">Campaign end in</p>
+                                <p class="text-red-500 font-semibold text-lg">11 days left</p>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-sea-green-dark1 h-2 rounded-full w-[60%]"></div>
+                        </div>
+
+                        <!-- Donors + Button -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-col items-start">
+                                <div class="flex items-center -space-x-2">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate1.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate2.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate3.png" alt="Donor">
+                                </div>
+                                <span class="mt-1 text-sm text-gray-600">145 people donated</span>
+                            </div>
+                            <button class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Health-->
+        <section class=" p-5 mt-4">
+            <div class="flex justify-between items-center mb-4">
+                <h1 class="font-bold text-xl md:text-3xl text-charcoal-black">Health</h1>
+                <a href="#" class="text-sea-green-deep font-bold text-lg md:text-xl ">View
+                    All</a>
+            </div>
+
+            <div class="pt-4 grid grid-cols-1 gap-3 place-items-center sm:grid-cols-2 lg:grid-cols-4">
+                <!--Card 1-->
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white">
+                    <!-- Image -->
+                    <img class="w-full h-48 object-cover" src="/assets/img/campaign-3.png" alt="Campaign Image" />
+
+                    <!-- Content -->
+                    <div class="p-4 space-y-4">
+                        <!-- Title -->
+                        <p class="font-semibold text-gray text-base leading-snug">
+                            Blood cancer has drained my son of life. Please help save him!
+                        </p>
+
+                        <hr class="my-2 border-gray-300">
+
+                        <!-- Info Row -->
+                        <div class="flex justify-between ">
+                            <div>
+                                <p class="text-base font-normal text-gray-light1">Funds Required</p>
+                                <p class="text-sea-green-dark1 font-semibold text-lg">₹35,00,000</p>
+                            </div>
+                            <div class="text-right">
+                                <p class=" text-gray-light1 text-base font-normal">Campaign end in</p>
+                                <p class="text-red-500 font-semibold text-lg">11 days left</p>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-sea-green-dark1 h-2 rounded-full w-[60%]"></div>
+                        </div>
+
+                        <!-- Donors + Button -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-col items-start">
+                                <div class="flex items-center -space-x-2">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate1.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate2.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate3.png" alt="Donor">
+                                </div>
+                                <span class="mt-1 text-sm text-gray-600">145 people donated</span>
+                            </div>
+                            <button class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card 2-->
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white">
+                    <!-- Image -->
+                    <img class="w-full h-48 object-cover" src="/assets/img/campaign-1.jpg" alt="Campaign Image" />
+
+                    <!-- Content -->
+                    <div class="p-4 space-y-4">
+                        <!-- Title -->
+                        <p class="font-semibold text-gray text-base leading-snug">
+                            Blood cancer has drained my son of life. Please help save him!
+                        </p>
+
+                        <hr class="my-2 border-gray-300">
+
+                        <!-- Info Row -->
+                        <div class="flex justify-between ">
+                            <div>
+                                <p class="text-base font-normal text-gray-light1">Funds Required</p>
+                                <p class="text-sea-green-dark1 font-semibold text-lg">₹35,00,000</p>
+                            </div>
+                            <div class="text-right">
+                                <p class=" text-gray-light1 text-base font-normal">Campaign end in</p>
+                                <p class="text-red-500 font-semibold text-lg">11 days left</p>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-sea-green-dark1 h-2 rounded-full w-[60%]"></div>
+                        </div>
+
+                        <!-- Donors + Button -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-col items-start">
+                                <div class="flex items-center -space-x-2">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate1.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate2.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate3.png" alt="Donor">
+                                </div>
+                                <span class="mt-1 text-sm text-gray-600">145 people donated</span>
+                            </div>
+                            <button class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 3-->
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white">
+                    <!-- Image -->
+                    <img class="w-full h-48 object-cover" src="/assets/img/campaign-4.png" alt="Campaign Image" />
+
+                    <!-- Content -->
+                    <div class="p-4 space-y-4">
+                        <!-- Title -->
+                        <p class="font-semibold text-gray text-base leading-snug">
+                            Blood cancer has drained my son of life. Please help save him!
+                        </p>
+
+                        <hr class="my-2 border-gray-300">
+
+                        <!-- Info Row -->
+                        <div class="flex justify-between ">
+                            <div>
+                                <p class="text-base font-normal text-gray-light1">Funds Required</p>
+                                <p class="text-sea-green-dark1 font-semibold text-lg">₹35,00,000</p>
+                            </div>
+                            <div class="text-right">
+                                <p class=" text-gray-light1 text-base font-normal">Campaign end in</p>
+                                <p class="text-red-500 font-semibold text-lg">11 days left</p>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-sea-green-dark1 h-2 rounded-full w-[60%]"></div>
+                        </div>
+
+                        <!-- Donors + Button -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-col items-start">
+                                <div class="flex items-center -space-x-2">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate1.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate2.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate3.png" alt="Donor">
+                                </div>
+                                <span class="mt-1 text-sm text-gray-600">145 people donated</span>
+                            </div>
+                            <button class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 4-->
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white">
+                    <!-- Image -->
+                    <img class="w-full h-48 object-cover" src="/assets/img/campaign-5.png" alt="Campaign Image" />
+
+                    <!-- Content -->
+                    <div class="p-4 space-y-4">
+                        <!-- Title -->
+                        <p class="font-semibold text-gray text-base leading-snug">
+                            Blood cancer has drained my son of life. Please help save him!
+                        </p>
+
+                        <hr class="my-2 border-gray-300">
+
+                        <!-- Info Row -->
+                        <div class="flex justify-between ">
+                            <div>
+                                <p class="text-base font-normal text-gray-light1">Funds Required</p>
+                                <p class="text-sea-green-dark1 font-semibold text-lg">₹35,00,000</p>
+                            </div>
+                            <div class="text-right">
+                                <p class=" text-gray-light1 text-base font-normal">Campaign end in</p>
+                                <p class="text-red-500 font-semibold text-lg">11 days left</p>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-sea-green-dark1 h-2 rounded-full w-[60%]"></div>
+                        </div>
+
+                        <!-- Donors + Button -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-col items-start">
+                                <div class="flex items-center -space-x-2">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate1.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate2.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate3.png" alt="Donor">
+                                </div>
+                                <span class="mt-1 text-sm text-gray-600">145 people donated</span>
+                            </div>
+                            <button class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Poverty Relief-->
+        <section class=" p-5 mt-4">
+            <div class="flex justify-between items-center mb-4">
+                <h1 class="font-bold text-xl md:text-3xl text-charcoal-black">Poverty Relief</h1>
+                <a href="#" class="text-sea-green-deep font-bold text-lg md:text-xl ">View
+                    All</a>
+            </div>
+
+            <div class="pt-4 grid grid-cols-1 gap-3 place-items-center sm:grid-cols-2 lg:grid-cols-4">
+                <!--Card 1-->
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white">
+                    <!-- Image -->
+                    <img class="w-full h-48 object-cover" src="/assets/img/campaign-3.png" alt="Campaign Image" />
+
+                    <!-- Content -->
+                    <div class="p-4 space-y-4">
+                        <!-- Title -->
+                        <p class="font-semibold text-gray text-base leading-snug">
+                            Blood cancer has drained my son of life. Please help save him!
+                        </p>
+
+                        <hr class="my-2 border-gray-300">
+
+                        <!-- Info Row -->
+                        <div class="flex justify-between ">
+                            <div>
+                                <p class="text-base font-normal text-gray-light1">Funds Required</p>
+                                <p class="text-sea-green-dark1 font-semibold text-lg">₹35,00,000</p>
+                            </div>
+                            <div class="text-right">
+                                <p class=" text-gray-light1 text-base font-normal">Campaign end in</p>
+                                <p class="text-red-500 font-semibold text-lg">11 days left</p>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-sea-green-dark1 h-2 rounded-full w-[60%]"></div>
+                        </div>
+
+                        <!-- Donors + Button -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-col items-start">
+                                <div class="flex items-center -space-x-2">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate1.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate2.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate3.png" alt="Donor">
+                                </div>
+                                <span class="mt-1 text-sm text-gray-600">145 people donated</span>
+                            </div>
+                            <button class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card 2-->
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white">
+                    <!-- Image -->
+                    <img class="w-full h-48 object-cover" src="/assets/img/campaign-1.jpg" alt="Campaign Image" />
+
+                    <!-- Content -->
+                    <div class="p-4 space-y-4">
+                        <!-- Title -->
+                        <p class="font-semibold text-gray text-base leading-snug">
+                            Blood cancer has drained my son of life. Please help save him!
+                        </p>
+
+                        <hr class="my-2 border-gray-300">
+
+                        <!-- Info Row -->
+                        <div class="flex justify-between ">
+                            <div>
+                                <p class="text-base font-normal text-gray-light1">Funds Required</p>
+                                <p class="text-sea-green-dark1 font-semibold text-lg">₹35,00,000</p>
+                            </div>
+                            <div class="text-right">
+                                <p class=" text-gray-light1 text-base font-normal">Campaign end in</p>
+                                <p class="text-red-500 font-semibold text-lg">11 days left</p>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-sea-green-dark1 h-2 rounded-full w-[60%]"></div>
+                        </div>
+
+                        <!-- Donors + Button -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-col items-start">
+                                <div class="flex items-center -space-x-2">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate1.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate2.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate3.png" alt="Donor">
+                                </div>
+                                <span class="mt-1 text-sm text-gray-600">145 people donated</span>
+                            </div>
+                            <button class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 3-->
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white">
+                    <!-- Image -->
+                    <img class="w-full h-48 object-cover" src="/assets/img/campaign-4.png" alt="Campaign Image" />
+
+                    <!-- Content -->
+                    <div class="p-4 space-y-4">
+                        <!-- Title -->
+                        <p class="font-semibold text-gray text-base leading-snug">
+                            Blood cancer has drained my son of life. Please help save him!
+                        </p>
+
+                        <hr class="my-2 border-gray-300">
+
+                        <!-- Info Row -->
+                        <div class="flex justify-between ">
+                            <div>
+                                <p class="text-base font-normal text-gray-light1">Funds Required</p>
+                                <p class="text-sea-green-dark1 font-semibold text-lg">₹35,00,000</p>
+                            </div>
+                            <div class="text-right">
+                                <p class=" text-gray-light1 text-base font-normal">Campaign end in</p>
+                                <p class="text-red-500 font-semibold text-lg">11 days left</p>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-sea-green-dark1 h-2 rounded-full w-[60%]"></div>
+                        </div>
+
+                        <!-- Donors + Button -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-col items-start">
+                                <div class="flex items-center -space-x-2">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate1.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate2.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate3.png" alt="Donor">
+                                </div>
+                                <span class="mt-1 text-sm text-gray-600">145 people donated</span>
+                            </div>
+                            <button class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 4-->
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white">
+                    <!-- Image -->
+                    <img class="w-full h-48 object-cover" src="/assets/img/campaign-5.png" alt="Campaign Image" />
+
+                    <!-- Content -->
+                    <div class="p-4 space-y-4">
+                        <!-- Title -->
+                        <p class="font-semibold text-gray text-base leading-snug">
+                            Blood cancer has drained my son of life. Please help save him!
+                        </p>
+
+                        <hr class="my-2 border-gray-300">
+
+                        <!-- Info Row -->
+                        <div class="flex justify-between ">
+                            <div>
+                                <p class="text-base font-normal text-gray-light1">Funds Required</p>
+                                <p class="text-sea-green-dark1 font-semibold text-lg">₹35,00,000</p>
+                            </div>
+                            <div class="text-right">
+                                <p class=" text-gray-light1 text-base font-normal">Campaign end in</p>
+                                <p class="text-red-500 font-semibold text-lg">11 days left</p>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-sea-green-dark1 h-2 rounded-full w-[60%]"></div>
+                        </div>
+
+                        <!-- Donors + Button -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-col items-start">
+                                <div class="flex items-center -space-x-2">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate1.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate2.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate3.png" alt="Donor">
+                                </div>
+                                <span class="mt-1 text-sm text-gray-600">145 people donated</span>
+                            </div>
+                            <button class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Others-->
+        <section class=" p-5 mt-4">
+            <div class="flex justify-between items-center mb-4">
+                <h1 class="font-bold text-xl md:text-3xl text-charcoal-black">Others</h1>
+                <a href="#" class="text-sea-green-deep font-bold text-lg md:text-xl ">View
+                    All</a>
+            </div>
+
+            <div class="pt-4 grid grid-cols-1 gap-3 place-items-center sm:grid-cols-2 lg:grid-cols-4">
+                <!--Card 1-->
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white">
+                    <!-- Image -->
+                    <img class="w-full h-48 object-cover" src="/assets/img/campaign-3.png" alt="Campaign Image" />
+
+                    <!-- Content -->
+                    <div class="p-4 space-y-4">
+                        <!-- Title -->
+                        <p class="font-semibold text-gray text-base leading-snug">
+                            Blood cancer has drained my son of life. Please help save him!
+                        </p>
+
+                        <hr class="my-2 border-gray-300">
+
+                        <!-- Info Row -->
+                        <div class="flex justify-between ">
+                            <div>
+                                <p class="text-base font-normal text-gray-light1">Funds Required</p>
+                                <p class="text-sea-green-dark1 font-semibold text-lg">₹35,00,000</p>
+                            </div>
+                            <div class="text-right">
+                                <p class=" text-gray-light1 text-base font-normal">Campaign end in</p>
+                                <p class="text-red-500 font-semibold text-lg">11 days left</p>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-sea-green-dark1 h-2 rounded-full w-[60%]"></div>
+                        </div>
+
+                        <!-- Donors + Button -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-col items-start">
+                                <div class="flex items-center -space-x-2">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate1.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate2.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate3.png" alt="Donor">
+                                </div>
+                                <span class="mt-1 text-sm text-gray-600">145 people donated</span>
+                            </div>
+                            <button class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card 2-->
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white">
+                    <!-- Image -->
+                    <img class="w-full h-48 object-cover" src="/assets/img/campaign-1.jpg" alt="Campaign Image" />
+
+                    <!-- Content -->
+                    <div class="p-4 space-y-4">
+                        <!-- Title -->
+                        <p class="font-semibold text-gray text-base leading-snug">
+                            Blood cancer has drained my son of life. Please help save him!
+                        </p>
+
+                        <hr class="my-2 border-gray-300">
+
+                        <!-- Info Row -->
+                        <div class="flex justify-between ">
+                            <div>
+                                <p class="text-base font-normal text-gray-light1">Funds Required</p>
+                                <p class="text-sea-green-dark1 font-semibold text-lg">₹35,00,000</p>
+                            </div>
+                            <div class="text-right">
+                                <p class=" text-gray-light1 text-base font-normal">Campaign end in</p>
+                                <p class="text-red-500 font-semibold text-lg">11 days left</p>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-sea-green-dark1 h-2 rounded-full w-[60%]"></div>
+                        </div>
+
+                        <!-- Donors + Button -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-col items-start">
+                                <div class="flex items-center -space-x-2">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate1.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate2.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate3.png" alt="Donor">
+                                </div>
+                                <span class="mt-1 text-sm text-gray-600">145 people donated</span>
+                            </div>
+                            <button class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 3-->
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white">
+                    <!-- Image -->
+                    <img class="w-full h-48 object-cover" src="/assets/img/campaign-4.png" alt="Campaign Image" />
+
+                    <!-- Content -->
+                    <div class="p-4 space-y-4">
+                        <!-- Title -->
+                        <p class="font-semibold text-gray text-base leading-snug">
+                            Blood cancer has drained my son of life. Please help save him!
+                        </p>
+
+                        <hr class="my-2 border-gray-300">
+
+                        <!-- Info Row -->
+                        <div class="flex justify-between ">
+                            <div>
+                                <p class="text-base font-normal text-gray-light1">Funds Required</p>
+                                <p class="text-sea-green-dark1 font-semibold text-lg">₹35,00,000</p>
+                            </div>
+                            <div class="text-right">
+                                <p class=" text-gray-light1 text-base font-normal">Campaign end in</p>
+                                <p class="text-red-500 font-semibold text-lg">11 days left</p>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-sea-green-dark1 h-2 rounded-full w-[60%]"></div>
+                        </div>
+
+                        <!-- Donors + Button -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-col items-start">
+                                <div class="flex items-center -space-x-2">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate1.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate2.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate3.png" alt="Donor">
+                                </div>
+                                <span class="mt-1 text-sm text-gray-600">145 people donated</span>
+                            </div>
+                            <button class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--Card 4-->
+                <div class="max-w-sm rounded-xl overflow-hidden shadow-md bg-white">
+                    <!-- Image -->
+                    <img class="w-full h-48 object-cover" src="/assets/img/campaign-5.png" alt="Campaign Image" />
+
+                    <!-- Content -->
+                    <div class="p-4 space-y-4">
+                        <!-- Title -->
+                        <p class="font-semibold text-gray text-base leading-snug">
+                            Blood cancer has drained my son of life. Please help save him!
+                        </p>
+
+                        <hr class="my-2 border-gray-300">
+
+                        <!-- Info Row -->
+                        <div class="flex justify-between ">
+                            <div>
+                                <p class="text-base font-normal text-gray-light1">Funds Required</p>
+                                <p class="text-sea-green-dark1 font-semibold text-lg">₹35,00,000</p>
+                            </div>
+                            <div class="text-right">
+                                <p class=" text-gray-light1 text-base font-normal">Campaign end in</p>
+                                <p class="text-red-500 font-semibold text-lg">11 days left</p>
+                            </div>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-sea-green-dark1 h-2 rounded-full w-[60%]"></div>
+                        </div>
+
+                        <!-- Donors + Button -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-col items-start">
+                                <div class="flex items-center -space-x-2">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate1.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate2.png" alt="Donor">
+                                    <img class="w-6 h-6 rounded-full border-2 border-white"
+                                        src="/assets/img/people-donate3.png" alt="Donor">
+                                </div>
+                                <span class="mt-1 text-sm text-gray-600">145 people donated</span>
+                            </div>
+                            <button class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/script/main.js"></script>
+
+</body>
+
+</html>
