@@ -1,23 +1,14 @@
 $(document).ready(function() {
-    
-  // Handle click events for all dropdown buttons
   $('.custom-select-container').on('click', '.custom-select-input', function(e) {
     e.stopPropagation();
-    // Close any other open menus
     $('.custom-select-menu').not($(this).closest('.custom-select-container').find('.custom-select-menu')).addClass('hidden');
-    // Toggle the current menu
     $(this).closest('.custom-select-container').find('.custom-select-menu').toggleClass('hidden');
   });
 
   // Handle option selection by getting text content
   $('.custom-select-container').on('click', '.custom-select-option', function(e) {
-    // Get the text content of the clicked list item
     const selectedText = $(this).text().trim();
-    
-    // Set the input's value to the text content
     $(this).closest('.custom-select-container').find('.custom-select-input').val(selectedText);
-    
-    // Hide the dropdown menu
     $(this).closest('.custom-select-menu').addClass('hidden');
   });
 
@@ -31,7 +22,7 @@ $(document).ready(function() {
 $('.search-btn').on('click', function(){
     $('.left-img').hide();
     $('.right-img').hide();
-    $('.content-div').removeClass(' justify-between').addClass('justify-center').addClass('pt-[11rem]')
+    $('.content-div').removeClass(' justify-between').addClass('justify-center').addClass('md:pt-[11rem]')
     $('.container')
         .removeClass('bg-gradient-to-r from-[#99EAD6] to-[#407672]')
         .addClass('bg-white');
@@ -41,7 +32,19 @@ $('.search-btn').on('click', function(){
     $('.record-type').removeClass('hidden')
 });
 
+ // Mobile menu toggle
+            const btn = document.getElementById("menu-btn");
+            const mobileMenu = document.getElementById("mobile-menu");
+            btn.addEventListener("click", () => {
+                mobileMenu.classList.toggle("hidden");
+            });
 
+            // Mobile submenu toggle
+            const mobileSubmenuBtn = document.getElementById("mobile-submenu-btn");
+            const mobileSubmenu = document.getElementById("mobile-submenu");
+            mobileSubmenuBtn.addEventListener("click", () => {
+                mobileSubmenu.classList.toggle("hidden");
+            });
 const cards = $('.cards > div');
     const itemsPerPage = 8;
     let currentPage = 1;
@@ -196,5 +199,5 @@ function showPreview(file) {
         $(".fileName").text(file.name);
         $(".fileInfo").removeClass("hidden");
     };
-    reader.readAsDataURL(file); // ✅ Corrected
+    reader.readAsDataURL(file); 
 }
