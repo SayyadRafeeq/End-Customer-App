@@ -194,11 +194,13 @@
                     </a>
 
                     <a href="#" class="carousel-slide">
-                        <img src="./assets/img/slider-image-donate2.svg" alt="Slide 2" class="w-full h-full object-cover" />
+                        <img src="./assets/img/slider-image-donate2.svg" alt="Slide 2"
+                            class="w-full h-full object-cover" />
                     </a>
 
                     <a href="#" class="carousel-slide">
-                        <img src="./assets/img/slider-image-donate3.svg" alt="Slide 3" class="w-full h-full object-cover" />
+                        <img src="./assets/img/slider-image-donate3.svg" alt="Slide 3"
+                            class="w-full h-full object-cover" />
                     </a>
                 </div>
             </div>
@@ -330,9 +332,11 @@
                                 </div>
                                 <span class="mt-1 text-sm text-gray-600">145 people donated</span>
                             </div>
-                            <button class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium">
+                            <button onclick="window.location.href='education.html'"
+                                class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium cursor-pointer">
                                 Contribute
                             </button>
+
                         </div>
                     </div>
                 </div>
@@ -381,7 +385,8 @@
                                 </div>
                                 <span class="mt-1 text-sm text-gray-600">145 people donated</span>
                             </div>
-                            <button class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium">
+                            <button onclick="window.location.href='education.html'"
+                                class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium cursor-pointer">
                                 Contribute
                             </button>
                         </div>
@@ -431,7 +436,8 @@
                                 </div>
                                 <span class="mt-1 text-sm text-gray-600">145 people donated</span>
                             </div>
-                            <button class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium">
+                             <button onclick="window.location.href='education.html'"
+                                class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium cursor-pointer">
                                 Contribute
                             </button>
                         </div>
@@ -481,7 +487,8 @@
                                 </div>
                                 <span class="mt-1 text-sm text-gray-600">145 people donated</span>
                             </div>
-                            <button class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium">
+                             <button onclick="window.location.href='education.html'"
+                                class="bg-sea-green-dark1 text-white px-4 py-2 rounded-md font-medium cursor-pointer">
                                 Contribute
                             </button>
                         </div>
@@ -490,14 +497,813 @@
 
             </div>
         </section>
-       
+
         <!--Donation History-->
         <section class=" p-5 mt-6">
             <div class="flex justify-between items-center mb-4">
                 <h1 class="font-bold text-xl md:text-3xl text-charcoal-black">Donation History</h1>
-                <a href="#" class="text-sea-green-deep font-bold text-lg md:text-xl ">View
-                    All</a>
+                <a href="#" onclick="showFullscreenTable()" class="text-sea-green-deep font-bold text-lg md:text-xl">
+                    View All
+                </a>
             </div>
+
+            <!-- Full-screen Donation Table -->
+            <div id="fullscreenTable" class="fixed inset-0 z-50 bg-gray-100 hidden flex-col">
+                <div class="relative">
+                    <header class="nav-menu px-20 py-2 mx-auto flex items-center justify-between relative z-10">
+                        <div class="max-w-[150px] max-h-10">
+                            <a href="#"><img src="assets/img/logo.png" alt="logo" class="max-w-[150px] max-h-10" /></a>
+                        </div>
+                        <nav class="">
+                            <div class="">
+                                <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 6h16M4 12h16M4 18h16" />
+                                    </svg>
+                                </button>
+                                <ul id="menu" class="hidden md:flex space-x-6 items-center">
+                                    <li class="relative group">
+                                        <a href="index.html" class="flex items-center focus:outline-none">
+                                            Home
+                                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M19 9l-7 7-7-7" />
+                                            </svg>
+                                        </a>
+                                        <!-- Submenu -->
+                                        <ul
+                                            class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                            <li>
+                                                <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web
+                                                    Design</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="relative group">
+                                        <a class="flex items-center focus:outline-none">
+                                            Medicine
+                                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M19 9l-7 7-7-7" />
+                                            </svg>
+                                        </a>
+                                        <!-- Submenu -->
+                                        <ul
+                                            class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                            <li>
+                                                <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web
+                                                    Design</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="relative group">
+                                        <a class="flex items-center focus:outline-none">
+                                            Maps
+                                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M19 9l-7 7-7-7" />
+                                            </svg>
+                                        </a>
+                                        <!-- Submenu -->
+                                        <ul
+                                            class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                            <li>
+                                                <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web
+                                                    Design</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="relative group">
+                                        <a class="flex items-center focus:outline-none">
+                                            Services
+                                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M19 9l-7 7-7-7" />
+                                            </svg>
+                                        </a>
+                                        <!-- Submenu -->
+                                        <ul
+                                            class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                            <li>
+                                                <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web
+                                                    Design</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/src/records.html" class="">Records</a></li>
+                                    <li><a href="#" class="">Rewards</a></li>
+                                    <li><a href="#" class="">Support</a></li>
+                                    <li><a href="#" class="text-[#238b6d]">Login/Sign Up</a></li>
+                                </ul>
+                            </div>
+                            <!-- Mobile Menu -->
+                            <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-2 mt-2 text-white px-4">
+                                <li><a href="#" class="block">Home</a></li>
+                                <li><a href="#" class="block">About</a></li>
+                                <li>
+                                    <button id="mobile-submenu-btn" class="flex items-center w-full focus:outline-none">
+                                        Services
+                                        <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </button>
+                                    <ul id="mobile-submenu" class="hidden flex-col pl-4 mt-1 space-y-1">
+                                        <li>
+                                            <a href="#" class="block hover:text-gray-300">Web Design</a>
+                                        </li>
+                                        <li><a href="#" class="block hover:text-gray-300">SEO</a></li>
+                                        <li>
+                                            <a href="#" class="block hover:text-gray-300">Consulting</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="">Records</a></li>
+                                <li><a href="rewards.html" class="">Rewards</a></li>
+                                <li><a href="#" class="">Support</a></li>
+                                <li><a href="#" class="text-[#238b6d]">Login/Sign Up</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+
+                <nav class="flex items-center justify-between text-gray-500 text-sm -mt-2 -mb-6 p-10"
+                    aria-label="Breadcrumb">
+                    <!-- Breadcrumb links -->
+                    <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                        <li class="inline-flex items-center">
+                            <a href="index.html"
+                                class="inline-flex items-center text-black hover:text-gray-light2 font-medium">
+                                Home
+                            </a>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="chevron-right" class="mx-2 w-4 h-4 align-middle text-gray"></i>
+                            <a href="donation.html" class="text-black hover:text-gray-light2 font-medium">Donation</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="chevron-right" class="mx-2 w-4 h-4 align-middle text-gray"></i>
+                            <span class="text-gray-light2 font-bold">Donation History</span>
+                        </li>
+                    </ol>
+
+                    <!-- Close icon -->
+
+                </nav>
+
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-12 bg-gray-100">
+
+                    <!-- Left Heading -->
+                    <h1 class="font-semibold text-lg text-gray">
+                        Donation history
+                    </h1>
+
+                    <!-- Right Section (Search + Filter + View) -->
+                    <div class="flex items-center gap-3">
+                        <!-- Search -->
+                        <div class="relative w-68">
+                            <i data-lucide="search"
+                                class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 "></i>
+                            <input type="text" placeholder="Search by name or categories"
+                                class="w-full pl-10 pr-4 py-2 border border-gray-light3 rounded-lg text-base font-normal">
+                        </div>
+
+                        <!-- Filter -->
+                        <div class="relative inline-block">
+                            <button
+                                class="filter-toggle-btn cursor-pointer flex items-center gap-1 px-4 py-2 border border-sea-green2 rounded-xl text-sea-green2">
+                                <i data-lucide="chevron-down" class="w-6 h-6 text-sea-green2"></i>
+                                <span>Filter</span>
+                            </button>
+                            <div
+                                class="filter-popup absolute mt-1 left-0 w-28 bg-white text-dark-gray shadow-[4px_4px_10px_2px_#00000026] rounded-lg hidden z-50">
+                                <div class="px-4 py-2 hover:bg-sea-green2 cursor-pointer rounded hover:text-white">
+                                    Show 5</div>
+                                <div class="px-4 py-2 hover:bg-sea-green2 cursor-pointer rounded hover:text-white">
+                                    Show 10</div>
+                                <div class="px-4 py-2 hover:bg-sea-green2 cursor-pointer rounded hover:text-white">
+                                    Show 15</div>
+                            </div>
+                        </div>
+
+                        <!-- View -->
+                        <button onclick="toggleViewButton(this)"
+                            class="view-btn px-4 py-2 border border-sea-green2 rounded-xl text-sea-green2 flex items-center gap-2">
+                            <i data-lucide="file-up" class="w-6 h-6 text-sea-green2"></i>
+                            View
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- Full-screen Table Container -->
+                <div class="flex-1 overflow-y-auto p-4 bg-gray-100">
+                    <div class="container mx-auto bg-white">
+
+                        <div class="overflow-x-auto no-scrollbar ">
+                            <table class="table-auto min-w-full text-base text-dark-gray whitespace-nowrap docTable ">
+                                <thead class="bg-sea-green2  text-white">
+                                    <tr>
+                                        <th class="text-center px-4 py-4 border-r border-white">Date & Time
+
+                                        </th>
+                                        <th class="px-4 py-4 text-center border-r border-white">
+                                            Post Name
+
+                                        </th>
+                                        <th class="text-center px-4 py-4 border-r border-white">NGO Name</th>
+                                        <th class="text-center px-4 py-4 border-r border-white">Post Type</th>
+                                        <th class="text-center px-4 py-4 border-r border-white">Paid Donation</th>
+                                        <th class="text-center px-4 py-4 border-r border-white">
+                                            Status
+
+                                        </th>
+                                        <th class="text-center px-4 py-4 border-r border-white">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-snow-gray text-dark-gray text-[16px]">
+                                    <tr>
+                                        <td class="px-4 py-2.5 text-center">
+                                            20/03/25,14:30
+                                        </td>
+                                        <td class="px-4 py-2.5 text-center">Bills</td>
+
+                                        <td class="px-4 py-2.5 text-center">Bharat Seva<br> Mandal</td>
+                                        <td class="px-4 py-2.5 text-center">Poverty Relief</td>
+                                        <td class="px-4 py-2.5 text-center">₹500000</td>
+
+                                        <td class="px-4 py-2.5 text-center">
+                                            <button
+                                                class="bg-mint-cream text-sea-green2 px-5 py-2 rounded-md text-sm font-semibold ">
+                                                Successful
+                                            </button>
+                                        </td>
+                                        <td class="px-4 py-2.5 text-center">
+                                            <div class="flex items-center justify-center gap-2">
+
+                                                <!-- Bookmark icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <i data-lucide="bookmark"
+                                                        class="bookmark-donate-pharmacy w-10 h-10 cursor-pointer hover:bg-transparent-light-sea-green rounded-full p-2 transition-all"
+                                                        onclick="/* your bookmark logic */">
+                                                    </i>
+
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        Bookmark
+                                                    </div>
+                                                </div>
+
+                                                <!-- Assignment icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <span
+                                                        class=" hover:bg-transparent-light-sea-green rounded-full p-2 transition-all cursor-pointer">
+                                                        <img src="/assets/img/assignment.svg" alt="Assignment"
+                                                            class="inline-block w-6 h-6 align-middle platform-bill-btn" />
+                                                    </span>
+
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        View Tax Bill
+                                                    </div>
+                                                </div>
+
+                                                <!-- Calendar icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <span
+                                                        class="hover:bg-transparent-light-sea-green rounded-full p-2 transition-all cursor-pointer"
+                                                        onclick="openPopupDonation()">
+                                                        <img src="/assets/img/calendar_today.svg" alt="Calendar"
+                                                            class="inline-block w-6 h-6 align-middle" />
+                                                    </span>
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        View Donation Receipt
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td class="px-4 py-2.5 text-center">
+                                            20/03/25,14:30
+                                        </td>
+                                        <td class="px-4 py-2.5 text-center">Bills</td>
+
+                                        <td class="px-4 py-2.5 text-center">Bharat Seva <br>Mandal</td>
+                                        <td class="px-4 py-2.5 text-center">Education</td>
+                                        <td class="px-4 py-2.5 text-center">₹500000</td>
+
+                                        <td class="px-4 py-2.5 text-center">
+                                            <button
+                                                class="bg-pale-pink text-tomato-red px-10 py-2 rounded-md text-sm font-semibold ">
+                                                Failed
+                                            </button>
+                                        </td>
+                                        <td class="px-4 py-2.5 text-center">
+                                            <div class="flex items-center justify-center gap-2">
+
+                                                <!-- Bookmark icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <i data-lucide="bookmark"
+                                                        class="bookmark-donate-pharmacy w-10 h-10 cursor-pointer hover:bg-transparent-light-sea-green rounded-full p-2 transition-all"
+                                                        onclick="/* your bookmark logic */">
+                                                    </i>
+
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        Bookmark
+                                                    </div>
+                                                </div>
+
+                                                <!-- Assignment icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <span
+                                                        class="platform-bill-btn hover:bg-transparent-light-sea-green rounded-full p-2 transition-all cursor-pointer">
+                                                        <img src="/assets/img/assignment.svg" alt="Assignment"
+                                                            class="inline-block w-6 h-6 align-middle" />
+                                                    </span>
+
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        View Tax Bill
+                                                    </div>
+                                                </div>
+
+                                                <!-- Calendar icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <span
+                                                        class="hover:bg-transparent-light-sea-green rounded-full p-2 transition-all cursor-pointer"
+                                                        onclick="openPopupDonation()">
+                                                        <img src="/assets/img/calendar_today.svg" alt="Calendar"
+                                                            class="inline-block w-6 h-6 align-middle" />
+                                                    </span>
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        View Donation Receipt
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="px-4 py-2.5 text-center">
+                                            20/03/25,14:30
+                                        </td>
+                                        <td class="px-4 py-2.5 text-center">Bills</td>
+
+                                        <td class="px-4 py-2.5 text-center">Bharat Seva<br> Mandal</td>
+                                        <td class="px-4 py-2.5 text-center">Healthcare</td>
+                                        <td class="px-4 py-2.5 text-center">₹10000</td>
+
+                                        <td class="px-4 py-2.5 text-center">
+                                            <button
+                                                class="bg-mint-cream text-sea-green2 px-5 py-2 rounded-md text-sm font-semibold ">
+                                                Successful
+                                            </button>
+                                        </td>
+                                        <td class="px-4 py-2.5 text-center">
+                                            <div class="flex items-center justify-center gap-2">
+
+                                                <!-- Bookmark icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <i data-lucide="bookmark"
+                                                        class="bookmark-donate-pharmacy w-10 h-10 cursor-pointer hover:bg-transparent-light-sea-green rounded-full p-2 transition-all"
+                                                        onclick="/* your bookmark logic */">
+                                                    </i>
+
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        Bookmark
+                                                    </div>
+                                                </div>
+
+                                                <!-- Assignment icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <span
+                                                        class="platform-bill-btn hover:bg-transparent-light-sea-green rounded-full p-2 transition-all cursor-pointer">
+                                                        <img src="/assets/img/assignment.svg" alt="Assignment"
+                                                            class="inline-block w-6 h-6 align-middle" />
+                                                    </span>
+
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        View Tax Bill
+                                                    </div>
+                                                </div>
+
+                                                <!-- Calendar icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <span
+                                                        class="hover:bg-transparent-light-sea-green rounded-full p-2 transition-all cursor-pointer"
+                                                        onclick="openPopupDonation()">
+                                                        <img src="/assets/img/calendar_today.svg" alt="Calendar"
+                                                            class="inline-block w-6 h-6 align-middle" />
+                                                    </span>
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        View Donation Receipt
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-2.5 text-center">
+                                            20/03/25,14:30
+                                        </td>
+                                        <td class="px-4 py-2.5 text-center">Bills</td>
+
+                                        <td class="px-4 py-2.5 text-center">Bharat Seva<br> Mandal</td>
+                                        <td class="px-4 py-2.5 text-center">Poverty Relief</td>
+                                        <td class="px-4 py-2.5 text-center">₹500000</td>
+
+                                        <td class="px-4 py-2.5 text-center">
+                                            <button
+                                                class="bg-pale-pink text-tomato-red px-10 py-2 rounded-md text-sm font-semibold ">
+                                                Failed
+                                            </button>
+                                        </td>
+                                        <td class="px-4 py-2.5 text-center">
+                                            <div class="flex items-center justify-center gap-2">
+
+                                                <!-- Bookmark icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <i data-lucide="bookmark"
+                                                        class="bookmark-donate-pharmacy w-10 h-10 cursor-pointer hover:bg-transparent-light-sea-green rounded-full p-2 transition-all"
+                                                        onclick="/* your bookmark logic */">
+                                                    </i>
+
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        Bookmark
+                                                    </div>
+                                                </div>
+
+                                                <!-- Assignment icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <span
+                                                        class="platform-bill-btn hover:bg-transparent-light-sea-green rounded-full p-2 transition-all cursor-pointer">
+                                                        <img src="/assets/img/assignment.svg" alt="Assignment"
+                                                            class="inline-block w-6 h-6 align-middle" />
+                                                    </span>
+
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        View Tax Bill
+                                                    </div>
+                                                </div>
+
+                                                <!-- Calendar icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <span
+                                                        class="hover:bg-transparent-light-sea-green rounded-full p-2 transition-all cursor-pointer"
+                                                        onclick="openPopupDonation()">
+                                                        <img src="/assets/img/calendar_today.svg" alt="Calendar"
+                                                            class="inline-block w-6 h-6 align-middle" />
+                                                    </span>
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        View Donation Receipt
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td class="px-4 py-2.5 text-center">
+                                            20/03/25,14:30
+                                        </td>
+                                        <td class="px-4 py-2.5 text-center">Bills</td>
+
+                                        <td class="px-4 py-2.5 text-center">Bharat Seva<br> Mandal</td>
+                                        <td class="px-4 py-2.5 text-center">Poverty Relief</td>
+                                        <td class="px-4 py-2.5 text-center">₹500000</td>
+
+                                        <td class="px-4 py-2.5 text-center">
+                                            <button
+                                                class="bg-mint-cream text-sea-green2 px-5 py-2 rounded-md text-sm font-semibold ">
+                                                Successful
+                                            </button>
+                                        </td>
+                                        <td class="px-4 py-2.5 text-center">
+                                            <div class="flex items-center justify-center gap-2">
+
+                                                <!-- Bookmark icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <i data-lucide="bookmark"
+                                                        class="bookmark-donate-pharmacy w-10 h-10 cursor-pointer hover:bg-transparent-light-sea-green rounded-full p-2 transition-all"
+                                                        onclick="/* your bookmark logic */">
+                                                    </i>
+
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        Bookmark
+                                                    </div>
+                                                </div>
+
+                                                <!-- Assignment icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <span
+                                                        class=" hover:bg-transparent-light-sea-green rounded-full p-2 transition-all cursor-pointer">
+                                                        <img src="/assets/img/assignment.svg" alt="Assignment"
+                                                            class="inline-block w-6 h-6 align-middle platform-bill-btn" />
+                                                    </span>
+
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        View Tax Bill
+                                                    </div>
+                                                </div>
+
+                                                <!-- Calendar icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <span
+                                                        class="hover:bg-transparent-light-sea-green rounded-full p-2 transition-all cursor-pointer"
+                                                        onclick="openPopupDonation()">
+                                                        <img src="/assets/img/calendar_today.svg" alt="Calendar"
+                                                            class="inline-block w-6 h-6 align-middle" />
+                                                    </span>
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        View Donation Receipt
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td class="px-4 py-2.5 text-center">
+                                            20/03/25,14:30
+                                        </td>
+                                        <td class="px-4 py-2.5 text-center">Bills</td>
+
+                                        <td class="px-4 py-2.5 text-center">Bharat Seva <br>Mandal</td>
+                                        <td class="px-4 py-2.5 text-center">Education</td>
+                                        <td class="px-4 py-2.5 text-center">₹500000</td>
+
+                                        <td class="px-4 py-2.5 text-center">
+                                            <button
+                                                class="bg-pale-pink text-tomato-red px-10 py-2 rounded-md text-sm font-semibold ">
+                                                Failed
+                                            </button>
+                                        </td>
+                                        <td class="px-4 py-2.5 text-center">
+                                            <div class="flex items-center justify-center gap-2">
+
+                                                <!-- Bookmark icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <i data-lucide="bookmark"
+                                                        class="bookmark-donate-pharmacy w-10 h-10 cursor-pointer hover:bg-transparent-light-sea-green rounded-full p-2 transition-all"
+                                                        onclick="/* your bookmark logic */">
+                                                    </i>
+
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        Bookmark
+                                                    </div>
+                                                </div>
+
+                                                <!-- Assignment icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <span
+                                                        class="platform-bill-btn hover:bg-transparent-light-sea-green rounded-full p-2 transition-all cursor-pointer">
+                                                        <img src="/assets/img/assignment.svg" alt="Assignment"
+                                                            class="inline-block w-6 h-6 align-middle" />
+                                                    </span>
+
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        View Tax Bill
+                                                    </div>
+                                                </div>
+
+                                                <!-- Calendar icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <span
+                                                        class="hover:bg-transparent-light-sea-green rounded-full p-2 transition-all cursor-pointer"
+                                                        onclick="openPopupDonation()">
+                                                        <img src="/assets/img/calendar_today.svg" alt="Calendar"
+                                                            class="inline-block w-6 h-6 align-middle" />
+                                                    </span>
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        View Donation Receipt
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="px-4 py-2.5 text-center">
+                                            20/03/25,14:30
+                                        </td>
+                                        <td class="px-4 py-2.5 text-center">Bills</td>
+
+                                        <td class="px-4 py-2.5 text-center">Bharat Seva<br> Mandal</td>
+                                        <td class="px-4 py-2.5 text-center">Poverty Relief</td>
+                                        <td class="px-4 py-2.5 text-center">₹500000</td>
+
+                                        <td class="px-4 py-2.5 text-center">
+                                            <button
+                                                class="bg-mint-cream text-sea-green2 px-5 py-2 rounded-md text-sm font-semibold ">
+                                                Successful
+                                            </button>
+                                        </td>
+                                        <td class="px-4 py-2.5 text-center">
+                                            <div class="flex items-center justify-center gap-2">
+
+                                                <!-- Bookmark icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <i data-lucide="bookmark"
+                                                        class="bookmark-donate-pharmacy w-10 h-10 cursor-pointer hover:bg-transparent-light-sea-green rounded-full p-2 transition-all"
+                                                        onclick="/* your bookmark logic */">
+                                                    </i>
+
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        Bookmark
+                                                    </div>
+                                                </div>
+
+                                                <!-- Assignment icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <span
+                                                        class=" hover:bg-transparent-light-sea-green rounded-full p-2 transition-all cursor-pointer">
+                                                        <img src="/assets/img/assignment.svg" alt="Assignment"
+                                                            class="inline-block w-6 h-6 align-middle platform-bill-btn" />
+                                                    </span>
+
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        View Tax Bill
+                                                    </div>
+                                                </div>
+
+                                                <!-- Calendar icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <span
+                                                        class="hover:bg-transparent-light-sea-green rounded-full p-2 transition-all cursor-pointer"
+                                                        onclick="openPopupDonation()">
+                                                        <img src="/assets/img/calendar_today.svg" alt="Calendar"
+                                                            class="inline-block w-6 h-6 align-middle" />
+                                                    </span>
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        View Donation Receipt
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td class="px-4 py-2.5 text-center">
+                                            20/03/25,14:30
+                                        </td>
+                                        <td class="px-4 py-2.5 text-center">Bills</td>
+
+                                        <td class="px-4 py-2.5 text-center">Bharat Seva <br>Mandal</td>
+                                        <td class="px-4 py-2.5 text-center">Education</td>
+                                        <td class="px-4 py-2.5 text-center">₹500000</td>
+
+                                        <td class="px-4 py-2.5 text-center">
+                                            <button
+                                                class="bg-pale-pink text-tomato-red px-10 py-2 rounded-md text-sm font-semibold ">
+                                                Failed
+                                            </button>
+                                        </td>
+                                        <td class="px-4 py-2.5 text-center">
+                                            <div class="flex items-center justify-center gap-2">
+
+                                                <!-- Bookmark icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <i data-lucide="bookmark"
+                                                        class="bookmark-donate-pharmacy w-10 h-10 cursor-pointer hover:bg-transparent-light-sea-green rounded-full p-2 transition-all"
+                                                        onclick="/* your bookmark logic */">
+                                                    </i>
+
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        Bookmark
+                                                    </div>
+                                                </div>
+
+                                                <!-- Assignment icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <span
+                                                        class="platform-bill-btn hover:bg-transparent-light-sea-green rounded-full p-2 transition-all cursor-pointer">
+                                                        <img src="/assets/img/assignment.svg" alt="Assignment"
+                                                            class="inline-block w-6 h-6 align-middle" />
+                                                    </span>
+
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        View Tax Bill
+                                                    </div>
+                                                </div>
+
+                                                <!-- Calendar icon with tooltip below -->
+                                                <div class="relative group">
+                                                    <span
+                                                        class="hover:bg-transparent-light-sea-green rounded-full p-2 transition-all cursor-pointer"
+                                                        onclick="openPopupDonation()">
+                                                        <img src="/assets/img/calendar_today.svg" alt="Calendar"
+                                                            class="inline-block w-6 h-6 align-middle" />
+                                                    </span>
+                                                    <div
+                                                        class="absolute bottom-[-28px] left-1/2 -translate-x-1/2 z-20 bg-white border border-light-sea-green rounded-md text-xs px-2 py-1 font-normal hidden group-hover:block whitespace-nowrap shadow">
+                                                        View Donation Receipt
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-2 mt-6">
+                        <button id="prevBtn" disabled class=" text-sm font-bold text-gray3 transition-colors">
+                            Previous
+                        </button>
+                        <div class="flex gap-1">
+                            <button
+                                class="page-btn px-3 py-1 rounded border bg-sea-green-dark border-sea-green-dark text-white"
+                                data-page="1">1</button>
+                            <button class="page-btn px-3 py-1 rounded border border-gray-300 bg-gray-100 text-black "
+                                data-page="2">2</button>
+                            <button class="page-btn px-3 py-1 rounded border border-gray-300 bg-gray-100 text-black "
+                                data-page="3">3</button>
+                        </div>
+
+                        <button id="nextBtn" class="text-sm font-bold text-gray3 transition-colors">
+                            Next
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 <!-- Card 1 -->

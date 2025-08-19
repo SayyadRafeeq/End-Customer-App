@@ -38,7 +38,8 @@
   --color-dark-slate: #212529;
   --color-muted-rose: #FF6F6180;
   --color-onyx: #1F1F1F;
-    --color-vibrant-purple: #3C0EB9;
+  --color-vibrant-purple: #3C0EB9;
+  --color-pale-pink: #FBE7E8;
   --color-green-light: #1A7A5E;
   --color-gray-med: #161C24;
   --color-gray-700: #454F5B;
@@ -420,4 +421,29 @@ body {
 
 .custom-radio input:checked~.checkmark::after {
   display: block;
+}
+
+#fullscreenTable {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background-color: white;
+    display: none;   /* <-- keeps it hidden initially */
+    flex-direction: column;
+    transition: opacity 0.3s ease;
+}
+
+
+/* Ensure table takes full width */
+#fullscreenTable .docTable {
+    min-width: 100%;
+}
+
+/* Improve scrollbar for full-screen (optional) */
+#fullscreenTable::-webkit-scrollbar {
+    width: 8px;
+}
+#fullscreenTable::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
 }
