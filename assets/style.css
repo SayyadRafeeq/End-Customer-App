@@ -5,7 +5,7 @@
 @theme {
   --color-white: #ffffff;
   --color-gray: #212B36;
-  
+
   --color-gray-dark-1: #637381;
   --color-gray-light: #F8FAFC;
   --color-gray-light1: #919EAB;
@@ -45,23 +45,23 @@
   --color-gray-700: #454F5B;
 
   /* Box Shadow */
-    --box-shadow-1: 4px 4px 10px 4px rgba(0, 0, 0, 0.20);
-    --box-shadow-2: 0 12px 24px -4px rgba(145, 158, 171, 0.12);
+  --box-shadow-1: 4px 4px 10px 4px rgba(0, 0, 0, 0.20);
+  --box-shadow-2: 0 12px 24px -4px rgba(145, 158, 171, 0.12);
 
   --color-dark-charcoal: #111111;
   --color-sea-green: #10b981;
-  --color-sea-green-deep: #238B6D; 
-  --color-charcoal-black:#212529;
-  --color-smoke-white:#EEEEEE;
-  --color-ash-gray:#D9D9D9;
-  --color-light-coral:#FF916C;
-  --color-mint-leaf:#58D36A;
-  --color-pastel-blue:#6CA4FF;
-  --color-pastel-red:#FF6C6C;
-  --color-orchid:#D36CFF;
-  --color-mustard-yellow:#D6B71D;
-    --color-smoky-black:#00000066;
-  --color-ice-gray:#F4F6F8;
+  --color-sea-green-deep: #238B6D;
+  --color-charcoal-black: #212529;
+  --color-smoke-white: #EEEEEE;
+  --color-ash-gray: #D9D9D9;
+  --color-light-coral: #FF916C;
+  --color-mint-leaf: #58D36A;
+  --color-pastel-blue: #6CA4FF;
+  --color-pastel-red: #FF6C6C;
+  --color-orchid: #D36CFF;
+  --color-mustard-yellow: #D6B71D;
+  --color-smoky-black: #00000066;
+  --color-ice-gray: #F4F6F8;
   --color-sea-green-deep: #238b6d;
   --color-orange-peach: #F8C373;
   --color-warm-gray: #B3AFAF;
@@ -99,11 +99,16 @@
   --color-granite-gray: #4D4D4D;
   --color-seafoam-blue: #83BEBB;
   --color-bright-green: #54D62C;
-
+  --color-soft-cloud:#FAFBFE;
+  --color-tea-green:#E9FCD4;
+  --color-medium-aquamarine:#5ED9BA;
   /* Box Shadow */
   --box-shadow-1: 4px 4px 10px 4px rgba(0, 0, 0, 0.20);
   --box-shadow-2: 0 8px 16px 0 rgba(145, 158, 171, 0.12);
   --box-shadow-3: 0 8px 16px 0 rgba(8, 129, 120, 0.24);
+  --box-shadow-4: 0 3px 4px 0 rgba(0, 0, 0, 0.10);
+  --box-shadow-5: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
 
   /* Font Size and Font Weight */
   --text-30-bold: 1.875rem;
@@ -152,7 +157,7 @@ body {
   font-family: "Nunito", sans-serif;
 
   color: var(--color-gray-dark);
-  
+
 }
 
 .no-scrollbar::-webkit-scrollbar {
@@ -199,6 +204,7 @@ body {
 .primary-card {
   @apply w-[200px] h-[200px] max-w-[200px] max-h-[200px] rounded-[12px] bg-white shadow-(--box-shadow-2) px-3 py-4 flex items-center justify-between;
 }
+
 .primary-card:hover {
   @apply shadow-(--box-shadow-1);
 }
@@ -206,6 +212,7 @@ body {
 .primary-card {
   @apply w-[200px] h-[200px] max-w-[200px] max-h-[200px] rounded-[12px] bg-white shadow-(--box-shadow-2) px-3 py-4 flex items-center justify-between;
 }
+
 .primary-card:hover {
   @apply shadow-(--box-shadow-1);
 }
@@ -239,7 +246,7 @@ body {
 }
 
 .carousel-section-donate {
-  @apply  px-20 py-[4.5rem]; 
+  @apply px-20 py-[4.5rem];
 }
 
 .carousel-container {
