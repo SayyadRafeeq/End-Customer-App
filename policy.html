@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="My Account Page">
+    <title>Policy</title>
+
+    <link rel="stylesheet" href="assets/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-gray-50 no-scrollbar ">
+    <div class="container">
+        <header
+            class="nav-menu  md:px-5 lg:px-20 py-2 mx-auto flex items-center justify-between relative z-10 bg-soft-cloud shadow-(--box-shadow-4) backdrop-blur-xs">
+            <div class="max-w-[150px] max-h-10">
+                <a href="#"><img src="/assets/img/logo.png" alt="logo" class="max-w-[150px] max-h-10" /></a>
+            </div>
+            <nav class="">
+                <div class="">
+                    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                    <ul id="menu" class="hidden md:flex md:space-x-2 md:pl-3 lg:pl-0 lg:space-x-6 items-center">
+                        <li class="relative group">
+                            <a class="flex items-center focus:outline-none">
+                                Home
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                            <!-- Submenu -->
+                            <ul
+                                class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web Design</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="relative group">
+                            <a class="flex items-center focus:outline-none">
+                                Medicine
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                            <!-- Submenu -->
+                            <ul
+                                class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web Design</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="relative group">
+                            <a class="flex items-center focus:outline-none">
+                                Maps
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                            <!-- Submenu -->
+                            <ul
+                                class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web Design</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="/src/records.html" class="">Records</a></li>
+                        <li><a href="#" class="">Rewards</a></li>
+                        <li><a href="#" class="">Support</a></li>
+                        <li>
+                            <div
+                                class="bg-sea-green-deep text-white md:p-1 lg:p-2 rounded-[10px] flex items-center gap-2">
+                                <p class="font-semibold lg:text-sm md:text-xs text-nowrap">Referral - JH2JK123</p>
+                                <i data-lucide="copy" class="w-[18px] h-[18px] cursor-pointer"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/assets/img/blog-profile.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <!-- Mobile Menu -->
+                <ul id="mobile-menu"
+                    class="md:hidden hidden flex-col space-y-2 mt-15 mr-5 rounded-md text-white px-4 bg-white">
+                    <li><a href="#" class="block">Home</a></li>
+                    <li><a href="#" class="block">About</a></li>
+                    <li>
+                        <button id="mobile-submenu-btn" class="flex items-center w-full focus:outline-none">
+                            Services
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <ul id="mobile-submenu" class="hidden flex-col pl-4 mt-1 space-y-1">
+                            <li>
+                                <a href="#" class="block hover:text-gray-300">Web Design</a>
+                            </li>
+                            <li><a href="#" class="block hover:text-gray-300">SEO</a></li>
+                            <li>
+                                <a href="#" class="block hover:text-gray-300">Consulting</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="block hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class=" mx-auto md:px-5 lg:px-20 py-8 flex flex-col md:flex-row md:gap-4 lg:gap-8">
+
+            <!-- Sidebar Navigation -->
+            <div class="w-full md:w-48 lg:w-64 flex-shrink-0 ">
+                <div
+                    class=" flex justify-between items-center border px-4 py-2 gap-2 rounded-lg bg-gray-tint border-gray-200 mb-6">
+                    <span class=" text-gray-500 text-xs">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input type="text" name="search-d" placeholder="What do you want to help?"
+                        class="w-full text-xs py-2 px-4 pr-10 rounded-full text-gray-dark-1 focus:outline-none">
+                </div>
+                <div class="mt-5">
+                    <nav>
+                        <ul class="space-y-3">
+                            <li><a href="myaccount.html"
+                                    class="flex items-center hover:text-white text-sm hover:bg-green-light px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-user mr-3"></i> My Account</a></li>
+                            <li><a href="#"
+                                    class="flex items-center text-gray-med text-sm hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-bookmark mr-3"></i> My Save</a></li>
+                            <li><a href="myuploads.html"
+                                    class="flex items-center text-gray-med text-sm hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-upload mr-3"></i> My Uploads</a></li>
+                            <li><a href="manageAddress.html"
+                                    class="flex items-center text-gray-med text-sm hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-map-marker-alt mr-3"></i> Manage Address</a></li>
+                            <li><a href="payment_methods.html"
+                                    class="flex items-center text-gray-med text-sm hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-credit-card mr-3"></i> Payment Methods</a></li>
+                            <li><a href="policy.html"
+                                    class="flex items-center text-sm bg-green-light text-white px-4 py-2 rounded font-semibold"><i
+                                        class="fas fa-file-alt mr-3"></i> Policy</a></li>
+                            <li><a href="help-center.html"
+                                    class="flex items-center text-gray-med text-sm hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-question-circle mr-3"></i> Help Center</a></li>
+                            <li><a href="settings.html"
+                                    class="flex items-center text-gray-med text-sm hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-cog mr-3"></i> Settings</a></li>
+                            <li><a href="#"
+                                    class="flex items-center text-gray-med text-sm hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-sign-out-alt mr-3"></i> Logout</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+
+            <!--Main Content-->
+            <div class="flex-1 bg-white border border-gray-light3 rounded-xl md:p-4 lg:p-8">
+                <div class="flex flex-col gap-2.5">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <!-- Breadcrumb Navigation -->
+                        <div class="w-full sm:w-auto">
+                            <nav class="flex items-center text-gray-500 text-sm overflow-x-auto"
+                                aria-label="Breadcrumb">
+                                <ol class="inline-flex items-center space-x-1 whitespace-nowrap">
+                                    <li class="inline-flex items-center">
+                                        <a href="index.html"
+                                            class="inline-flex items-center font-normal text-base text-gray hover:text-sea-green-deep">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i data-lucide="chevron-right"
+                                            class="w-4 h-4 align-middle text-dark-charcoal"></i>
+                                        <a href="myaccount.html"
+                                            class="font-normal text-base text-gray hover:text-sea-green-deep">Account</a>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i data-lucide="chevron-right"
+                                            class="w-4 h-4 align-middle text-dark-charcoal"></i>
+                                        <span class="font-normal text-xs sm:text-base text-medium-gray">Policy
+                                        </span>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="flex justify-end">
+                            <a href="myaccount.html">
+                                <i data-lucide="x" class="text-gray cursor-pointer w-7 h-7"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2.5">
+                        <div class="flex flex-wrap items-center gap-2.5">
+                            <h1 class="font-bold text-xl text-charcoal-black">Policy</h1>
+                        </div>
+                        <p class="font-normal text-sm text-charcoal-black">Here, you can view and manage uploaded files
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6">
+                    <!-- Tabs -->
+                    <div class="flex space-x-2 mb-4">
+                        <button
+                            class="tab-btn px-4 py-2 rounded-full font-semibold text-sea-green-dark1 text-sm bg-mint-cream"
+                            data-target="terms">Terms of Uses</button>
+                        <button class="tab-btn px-4 py-2 rounded-full border text-gray border-gray-300"
+                            data-target="privacy">Privacy Policy</button>
+                        <button class="tab-btn px-4 py-2 rounded-full border text-gray border-gray-300"
+                            data-target="disclaimer">Disclaimer</button>
+                    </div>
+
+                    <!-- Tab Contents -->
+                    <div class="tab-contents  h-96 overflow-y-auto">
+                        <!-- Terms of Use -->
+                        <div id="terms" class="tab-content block  ">
+                            <h2 class="text-2xl font-bold mt-10 text-sea-green-dark1">Terms of Uses Conditions</h2>
+
+                            <h3 class="font-bold text-lg mt-4">Your Agreement</h3>
+                            <p class="text-base font-medium text-gray4 mt-4">Last Revised: December 16, 2013</p>
+                            <p class="text-base font-medium text-gray4">
+                                Welcome to www.lorem-ipsum.info. This site is provided as a service to our visitors
+                                and may be used for informational purposes only. Because the Terms and Conditions
+                                contain legal obligations, please read them carefully.
+                            </p>
+
+                            <h4 class="text-base font-medium text-gray4 mt-2">1. YOUR AGREEMENT</h4>
+                            <p class="text-base font-medium text-gray4">
+                                By using this Site, you agree to be bound by, and to comply with, these Terms and
+                                Conditions. If you do not agree to these Terms and Conditions, please do not use
+                                this site.
+                            </p>
+                            <p class="text-base font-medium text-gray4">
+                                PLEASE NOTE: We reserve the right, at our sole discretion, to change, modify or
+                                otherwise alter these Terms and Conditions at any time. Unless otherwise indicated,
+                                amendments will become effective immediately. Please review these Terms and
+                                Conditions periodically. Your continued use of the Site following the posting of
+                                changes and/or modifications will constitute your acceptance of the revised Terms
+                                and Conditions and the reasonableness of these standards for notice of changes. For
+                                your information, this page was last updated as of the date at the top of these
+                                terms and conditions.
+                            </p>
+
+                            <h4 class="text-base font-medium text-gray4 mt-3">2. PRIVACY</h4>
+                            <p class="text-base font-medium text-gray4">
+                                Please review our Privacy Policy, which also governs your visit to this Site, to
+                                understand our practices.
+                            </p>
+
+                            <h4 class="text-base font-medium text-gray4 mt-3">3. LINKED SITES</h4>
+                            <p class="text-sm text-gray-700">
+                                This Site may contain links to other independent third-party Web sites ("Linked
+                                Sites”). These Linked Sites are provided solely as a convenience to our visitors.
+                                Such Linked Sites are not under our control, and we are not responsible for and do
+                                not endorse the content of such Linked Sites, including any information or
+                                materials contained on such Linked Sites. You will need to make your own independent
+                                judgment regarding your interaction with these Linked Sites.
+                            </p>
+
+                            <h4 class="text-base font-medium text-gray4 mt-3">4. FORWARD LOOKING STATEMENTS</h4>
+                            <p class="text-sm text-gray-700">
+                                This site may contain forward-looking statements that reflect our current expectations
+                                about future events and
+                                performance. These statements are based on assumptions and are subject to risks and
+                                uncertainties that could
+                                cause actual results to differ materially. We do not undertake any obligation to update
+                                or revise such statements
+                                to reflect new information or future events. Visitors are advised not to place undue
+                                reliance on these
+                                forward-looking statements when making decisions.
+                            </p>
+                        </div>
+
+                        
+                        <div id="privacy" class="tab-content hidden">
+                            <h2 class="text-2xl font-bold mt-10 text-sea-green-dark1">Privacy Policy</h2>
+
+                            <h3 class="font-bold text-lg mt-4">Your Agreement</h3>
+                            <p class="text-base font-medium text-gray4 mt-4">Last Revised: December 16, 2013</p>
+                            <p class="text-base font-medium text-gray4">
+                                Welcome to www.lorem-ipsum.info. This site is provided as a service to our visitors
+                                and may be used for informational purposes only. Because the Terms and Conditions
+                                contain legal obligations, please read them carefully.
+                            </p>
+
+                            <h4 class="text-base font-medium text-gray4 mt-2">1. YOUR AGREEMENT</h4>
+                            <p class="text-base font-medium text-gray4">
+                                By using this Site, you agree to be bound by, and to comply with, these Terms and
+                                Conditions. If you do not agree to these Terms and Conditions, please do not use
+                                this site.
+                            </p>
+                            <p class="text-base font-medium text-gray4">
+                                PLEASE NOTE: We reserve the right, at our sole discretion, to change, modify or
+                                otherwise alter these Terms and Conditions at any time. Unless otherwise indicated,
+                                amendments will become effective immediately. Please review these Terms and
+                                Conditions periodically. Your continued use of the Site following the posting of
+                                changes and/or modifications will constitute your acceptance of the revised Terms
+                                and Conditions and the reasonableness of these standards for notice of changes. For
+                                your information, this page was last updated as of the date at the top of these
+                                terms and conditions.
+                            </p>
+
+                            <h4 class="text-base font-medium text-gray4 mt-3">2. PRIVACY</h4>
+                            <p class="text-base font-medium text-gray4">
+                                Please review our Privacy Policy, which also governs your visit to this Site, to
+                                understand our practices.
+                            </p>
+
+                            <h4 class="text-base font-medium text-gray4 mt-3">3. LINKED SITES</h4>
+                            <p class="text-sm text-gray-700">
+                                This Site may contain links to other independent third-party Web sites ("Linked
+                                Sites”). These Linked Sites are provided solely as a convenience to our visitors.
+                                Such Linked Sites are not under our control, and we are not responsible for and do
+                                not endorse the content of such Linked Sites, including any information or
+                                materials contained on such Linked Sites. You will need to make your own independent
+                                judgment regarding your interaction with these Linked Sites.
+                            </p>
+
+                            <h4 class="text-base font-medium text-gray4 mt-3">4. FORWARD LOOKING STATEMENTS</h4>
+                            <p class="text-sm text-gray-700">
+                                This site may contain forward-looking statements that reflect our current expectations
+                                about future events and
+                                performance. These statements are based on assumptions and are subject to risks and
+                                uncertainties that could
+                                cause actual results to differ materially. We do not undertake any obligation to update
+                                or revise such statements
+                                to reflect new information or future events. Visitors are advised not to place undue
+                                reliance on these
+                                forward-looking statements when making decisions.
+                            </p>
+                        </div>
+
+                         <div id="disclaimer" class="tab-content hidden">
+                            <h2 class="text-2xl font-bold mt-10 text-sea-green-dark1">Disclaimer</h2>
+
+                            <h3 class="font-bold text-lg mt-4">Your Agreement</h3>
+                            <p class="text-base font-medium text-gray4 mt-4">Last Revised: December 16, 2013</p>
+                            <p class="text-base font-medium text-gray4">
+                                Welcome to www.lorem-ipsum.info. This site is provided as a service to our visitors
+                                and may be used for informational purposes only. Because the Terms and Conditions
+                                contain legal obligations, please read them carefully.
+                            </p>
+
+                            <h4 class="text-base font-medium text-gray4 mt-2">1. YOUR AGREEMENT</h4>
+                            <p class="text-base font-medium text-gray4">
+                                By using this Site, you agree to be bound by, and to comply with, these Terms and
+                                Conditions. If you do not agree to these Terms and Conditions, please do not use
+                                this site.
+                            </p>
+                            <p class="text-base font-medium text-gray4">
+                                PLEASE NOTE: We reserve the right, at our sole discretion, to change, modify or
+                                otherwise alter these Terms and Conditions at any time. Unless otherwise indicated,
+                                amendments will become effective immediately. Please review these Terms and
+                                Conditions periodically. Your continued use of the Site following the posting of
+                                changes and/or modifications will constitute your acceptance of the revised Terms
+                                and Conditions and the reasonableness of these standards for notice of changes. For
+                                your information, this page was last updated as of the date at the top of these
+                                terms and conditions.
+                            </p>
+
+                            <h4 class="text-base font-medium text-gray4 mt-3">2. PRIVACY</h4>
+                            <p class="text-base font-medium text-gray4">
+                                Please review our Privacy Policy, which also governs your visit to this Site, to
+                                understand our practices.
+                            </p>
+
+                            <h4 class="text-base font-medium text-gray4 mt-3">3. LINKED SITES</h4>
+                            <p class="text-sm text-gray-700">
+                                This Site may contain links to other independent third-party Web sites ("Linked
+                                Sites”). These Linked Sites are provided solely as a convenience to our visitors.
+                                Such Linked Sites are not under our control, and we are not responsible for and do
+                                not endorse the content of such Linked Sites, including any information or
+                                materials contained on such Linked Sites. You will need to make your own independent
+                                judgment regarding your interaction with these Linked Sites.
+                            </p>
+
+                            <h4 class="text-base font-medium text-gray4 mt-3">4. FORWARD LOOKING STATEMENTS</h4>
+                            <p class="text-sm text-gray-700">
+                                This site may contain forward-looking statements that reflect our current expectations
+                                about future events and
+                                performance. These statements are based on assumptions and are subject to risks and
+                                uncertainties that could
+                                cause actual results to differ materially. We do not undertake any obligation to update
+                                or revise such statements
+                                to reflect new information or future events. Visitors are advised not to place undue
+                                reliance on these
+                                forward-looking statements when making decisions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        lucide.createIcons();
+
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const target = btn.getAttribute('data-target');
+
+                // Hide all contents
+                tabContents.forEach(content => content.classList.add('hidden'));
+
+                // Reset all buttons
+                tabButtons.forEach(b => {
+                    b.classList.remove('font-semibold', 'text-sea-green-dark1', 'bg-mint-cream');
+                    b.classList.add('text-gray', 'border', 'border-gray-300');
+                });
+
+                // Show selected tab content
+                document.getElementById(target).classList.remove('hidden');
+
+                // Activate current button
+                btn.classList.add('font-semibold', 'text-sea-green-dark1', 'bg-mint-cream');
+                btn.classList.remove('text-gray', 'border', 'border-gray-300');
+            });
+        });
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/script/myupload.js"></script>
+    <script src="/script/payment_methods.js"></script>
+</body>
+
+</html>

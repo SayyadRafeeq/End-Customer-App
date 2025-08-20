@@ -18,6 +18,7 @@
   --color-gray2: #606060;
   --color-gray3: #8E8E93;
   --color-gray4: #929292;
+  --color-gray4: #6B6B6B;
   --color-gray-light: #f8fafc;
   --color-gray-dark: #212529;
   --color-dim-gray: #696969;
@@ -478,6 +479,28 @@ body {
 .input-group input:not(:placeholder-shown)+label {
   @apply -top-2 left-2 text-xs;
 }
+
+ /* width */
+  .tab-contents::-webkit-scrollbar {
+    width: 6px; /* scrollbar width */
+  }
+
+  /* Track (background) */
+  .tab-contents::-webkit-scrollbar-track {
+    background: #f1f1f1; /* light gray background */
+    border-radius: 6px;
+  }
+
+  /* Handle (the draggable part) */
+  .tab-contents::-webkit-scrollbar-thumb {
+    background: #1A7A5E; /* Tailwind green-600 */
+    border-radius: 6px;
+  }
+
+  /* Handle on hover */
+  .tab-contents::-webkit-scrollbar-thumb:hover {
+    background: #15803d; /* Tailwind green-700 */
+  }
 
 .sidebar-overlay {
   position: fixed;
