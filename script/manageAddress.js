@@ -143,20 +143,50 @@ $(document).ready(function () {
       });
   });
 
-  $(document).on("click", ".copy-address-btn", function () {
+  // Use both click and touchend to ensure mobile taps work
+  $(document).on("click touchend", ".copy-address-btn", function (e) {
+    e.preventDefault(); // Prevent any default behavior
+    e.stopPropagation(); // Stop bubbling if inside other clickable areas
+
     const addressText = $(this)
       .closest(".address-card")
       .find("p")
       .text()
       .trim();
-    navigator.clipboard.writeText(addressText).then(() => {
+
+    if (!navigator.clipboard) {
+      // Fallback for older browsers
+      const tempInput = $("<textarea>");
+      $("body").append(tempInput);
+      tempInput.val(addressText).select();
+      document.execCommand("copy");
+      tempInput.remove();
       showToast("Copied successfully!");
-    });
+      return;
+    }
+
+    navigator.clipboard
+      .writeText(addressText)
+      .then(() => showToast("Copied successfully!"))
+      .catch(() => showToast("Copy failed!"));
   });
 
   $(document).on("click", ".save-address-btn", function () {
-      $('.newAddressPopup').addClass('hidden')
-      showToast("Saved successfully!");
+    $(".newAddressPopup").addClass("hidden");
+    showToast("Saved successfully!");
+  });
+
+  //sidebar
+  $("#menu-toggle").click(function () {
+    $("#sidebar").toggleClass("hidden");
+  });
+
+  //header
+  $("#menu-btn").on("click", function () {
+    $("#mobile-menu").toggleClass("hidden");
+  });
+  $("#mobile-submenu-btn").on("click", function () {
+    $("#mobile-submenu").toggleClass("hidden");
   });
 });
 function showToast(message) {
