@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="My Account Page">
+    <title>Manage Address</title>
+
+    <link rel="stylesheet" href="assets/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-gray-50 no-scrollbar">
+    <div class="container">
+        <header
+            class="nav-menu  md:px-5 lg:px-20 py-2 mx-auto flex items-center justify-between relative z-10 bg-soft-cloud shadow-(--box-shadow-4) backdrop-blur-xs">
+            <div class="max-w-[150px] max-h-10">
+                <a href="#"><img src="/assets/img/logo.png" alt="logo" class="max-w-[150px] max-h-10" /></a>
+            </div>
+            <nav class="">
+                <div class="">
+                    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                    <ul id="menu" class="hidden md:flex md:space-x-2 md:pl-3 lg:pl-0 lg:space-x-6 items-center">
+                        <li class="relative group">
+                            <a class="flex items-center focus:outline-none">
+                                Home
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                            <!-- Submenu -->
+                            <ul
+                                class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web Design</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="relative group">
+                            <a class="flex items-center focus:outline-none">
+                                Medicine
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                            <!-- Submenu -->
+                            <ul
+                                class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web Design</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="relative group">
+                            <a class="flex items-center focus:outline-none">
+                                Maps
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </a>
+                            <!-- Submenu -->
+                            <ul
+                                class="submenu absolute left-0 top-full mt-2 w-40 bg-white text-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 ease-in-out z-10">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Web Design</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">SEO</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-blue-100 font-normal">Consulting</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="/src/records.html" class="">Records</a></li>
+                        <li><a href="#" class="">Rewards</a></li>
+                        <li><a href="#" class="">Support</a></li>
+                        <li>
+                            <div
+                                class="bg-sea-green-deep text-white md:p-1 lg:p-2 rounded-[10px] flex items-center gap-2">
+                                <p class="font-semibold lg:text-sm md:text-xs text-nowrap">Referral - JH2JK123</p>
+                                <i data-lucide="copy" class="w-[18px] h-[18px] cursor-pointer"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/assets/img/blog-profile.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <!-- Mobile Menu -->
+                <ul id="mobile-menu"
+                    class="md:hidden hidden flex-col space-y-2 mt-15 mr-5 rounded-md text-white px-4 bg-white">
+                    <li><a href="#" class="block">Home</a></li>
+                    <li><a href="#" class="block">About</a></li>
+                    <li>
+                        <button id="mobile-submenu-btn" class="flex items-center w-full focus:outline-none">
+                            Services
+                            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <ul id="mobile-submenu" class="hidden flex-col pl-4 mt-1 space-y-1">
+                            <li>
+                                <a href="#" class="block hover:text-gray-300">Web Design</a>
+                            </li>
+                            <li><a href="#" class="block hover:text-gray-300">SEO</a></li>
+                            <li>
+                                <a href="#" class="block hover:text-gray-300">Consulting</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="block hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class=" mx-auto md:px-5 lg:px-20 py-8 flex flex-col md:flex-row md:gap-4 lg:gap-8">
+
+            <!-- Sidebar Navigation -->
+            <div class="w-full md:w-48 lg:w-64 flex-shrink-0 ">
+                <div
+                    class=" flex justify-between items-center border px-4 py-2 gap-2 rounded-lg bg-gray-tint border-gray-200 mb-6">
+                    <span class=" text-gray-500 text-xs">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input type="text" name="search-d" placeholder="What do you want to help?"
+                        class="w-full text-xs py-2 px-4 pr-10 rounded-full text-gray-dark-1 focus:outline-none">
+                </div>
+                <div class="mt-5">
+                    <nav>
+                        <ul class="space-y-3">
+                            <li><a href="/myaccount.html"
+                                    class="flex items-center hover:text-white text-sm hover:bg-green-light px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-user mr-3"></i> My Account</a></li>
+                            <li><a href="#"
+                                    class="flex items-center text-gray-med text-sm hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-bookmark mr-3"></i> My Save</a></li>
+                            <li><a href="/myuploads.html"
+                                    class="flex items-center text-gray-med  text-sm  hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-upload mr-3"></i> My Uploads</a></li>
+                            <li><a href="#"
+                                    class="flex items-center  text-sm bg-green-light text-white px-4 py-2 rounded font-semibold"><i
+                                        class="fas fa-map-marker-alt mr-3"></i> Manage Address</a></li>
+                            <li><a href="#"
+                                    class="flex items-center text-gray-med text-sm hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-credit-card mr-3"></i> Payment Methods</a></li>
+                            <li><a href="#"
+                                    class="flex items-center text-gray-med text-sm hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-file-alt mr-3"></i> Policy</a></li>
+                            <li><a href="#"
+                                    class="flex items-center text-gray-med text-sm hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-question-circle mr-3"></i> Help Center</a></li>
+                            <li><a href="#"
+                                    class="flex items-center text-gray-med text-sm hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-cog mr-3"></i> Settings</a></li>
+                            <li><a href="#"
+                                    class="flex items-center text-gray-med text-sm hover:bg-green-light hover:text-white px-4 py-2 rounded font-normal"><i
+                                        class="fas fa-sign-out-alt mr-3"></i> Logout</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!--Main Content-->
+            <div
+                class="lg:ml-[4.625rem] bg-white border border-gray-light3 rounded-xl md:p-4 lg:p-8 max-w-[65rem] w-full overflow-y-auto">
+                <div class="flex flex-col gap-2.5">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <!-- Breadcrumb Navigation -->
+                        <div class="w-full sm:w-auto">
+                            <nav class="flex items-center text-gray-500 text-sm overflow-x-auto"
+                                aria-label="Breadcrumb">
+                                <ol class="inline-flex items-center space-x-1 whitespace-nowrap">
+                                    <li class="inline-flex items-center">
+                                        <a href="index.html"
+                                            class="inline-flex items-center font-normal text-base text-gray hover:text-sea-green-deep">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i data-lucide="chevron-right"
+                                            class="w-4 h-4 align-middle text-dark-charcoal"></i>
+                                        <a href="#"
+                                            class="font-normal text-base text-gray hover:text-sea-green-deep">Account</a>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i data-lucide="chevron-right"
+                                            class="w-4 h-4 align-middle text-dark-charcoal"></i>
+                                        <span class="font-normal text-xs sm:text-base text-medium-gray">Manage
+                                            Address</span>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="flex justify-end">
+                            <a href="#">
+                                <i data-lucide="x" class="text-gray cursor-pointer w-7 h-7"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2.5">
+                        <h1 class="font-bold text-xl text-charcoal-black">Addresses</h1>
+                        <p class="font-normal text-sm text-charcoal-black">
+                            Here, you can view and manage your Address
+                        </p>
+                    </div>
+                    <!--Add Address Button-->
+                    <div class="flex justify-end">
+                        <button
+                            class="w-1/3 border border-powder-aqua rounded-[38px] flex items-center justify-center gap-2 p-1 cursor-pointer popup-btn"
+                            data-popup="newAddressPopup">
+                            <img src="/assets/img/location-pin.svg" alt="">
+                            <h1 class="font-medium text-sm text-deep-teal-green">Add New Address</h1>
+                        </button>
+                    </div>
+                    <!--Addresses-->
+                    <div class="pt-6 grid grid-cols-1 sm:grid-cols-2 md:gap-x-8 lg:gap-x-10 gap-y-6 cards">
+                        <div
+                            class="bg-white  rounded-[10px] pb-3 flex flex-col gap-[18px] shadow-(--box-shadow-1) w-full max-w-[26.063rem] address-card">
+                            <img src="/assets/img/address-map.svg" alt="Map Image" class="w-full h-24 object-cover">
+                            <div class="flex flex-col gap-2.5 md:px-3 lg:px-5 pb-2">
+                                <h1 class="font-bold text-lg text-dark-gray">Delhi,India</h1>
+                                <p class="text-base font-normal text-dark-gray">Block H, Neb Sarai, Sainik Farm, New
+                                    Delhi, Delhi 110062</p>
+                            </div>
+                            <div class="md:px-3 lg:px-5 flex items-center justify-between">
+                                <button
+                                    class="border border-tomato-red rounded-[10px] md:px-3 md:h-8 lg:px-5 lg:h-12 cursor-pointer remove-address-btn">
+                                    <span class="font-normal text-base text-tomato-red">Remove</span>
+                                </button>
+                                <button
+                                    class="bg-deep-teal-green text-white rounded-[10px] md:px-3 md:h-8 lg:px-5 lg:h-12 flex items-center gap-2.5 cursor-pointer copy-address-btn">
+                                    <span class="font-normal text-base">Copy</span>
+                                    <i data-lucide="copy" class="h-6 w-6"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white  rounded-[10px] pb-3 flex flex-col gap-[18px] shadow-(--box-shadow-1) w-full max-w-[26.063rem] address-card">
+                            <img src="/assets/img/address-map.svg" alt="Map Image" class="w-full h-24 object-cover">
+                            <div class="flex flex-col gap-2.5 md:px-3 lg:px-5 pb-2">
+                                <h1 class="font-bold text-lg text-dark-gray">Delhi,India</h1>
+                                <p class="text-base font-normal text-dark-gray">Block H, Neb Sarai, Sainik Farm, New
+                                    Delhi, Delhi 110062</p>
+                            </div>
+                            <div class="md:px-3 lg:px-5 flex items-center justify-between">
+                                <button
+                                    class="border border-tomato-red rounded-[10px] md:px-3 md:h-8 lg:px-5 lg:h-12 cursor-pointer remove-address-btn">
+                                    <span class="font-normal text-base text-tomato-red">Remove</span>
+                                </button>
+                                <button
+                                    class="bg-deep-teal-green text-white rounded-[10px] md:px-3 md:h-8 lg:px-5 lg:h-12 flex items-center gap-2.5 cursor-pointer copy-address-btn">
+                                    <span class="font-normal text-base">Copy</span>
+                                    <i data-lucide="copy" class="h-6 w-6"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white  rounded-[10px] pb-3 flex flex-col gap-[18px] shadow-(--box-shadow-1) w-full max-w-[26.063rem] address-card">
+                            <img src="/assets/img/address-map.svg" alt="Map Image" class="w-full h-24 object-cover">
+                            <div class="flex flex-col gap-2.5 md:px-3 lg:px-5 pb-2">
+                                <h1 class="font-bold text-lg text-dark-gray">Delhi,India</h1>
+                                <p class="text-base font-normal text-dark-gray">Block H, Neb Sarai, Sainik Farm, New
+                                    Delhi, Delhi 110062</p>
+                            </div>
+                            <div class="md:px-3 lg:px-5 flex items-center justify-between">
+                                <button
+                                    class="border border-tomato-red rounded-[10px] md:px-3 md:h-8 lg:px-5 lg:h-12 cursor-pointer remove-address-btn">
+                                    <span class="font-normal text-base text-tomato-red">Remove</span>
+                                </button>
+                                <button
+                                    class="bg-deep-teal-green text-white rounded-[10px] md:px-3 md:h-8 lg:px-5 lg:h-12 flex items-center gap-2.5 cursor-pointer copy-address-btn">
+                                    <span class="font-normal text-base">Copy</span>
+                                    <i data-lucide="copy" class="h-6 w-6"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white  rounded-[10px] pb-3 flex flex-col gap-[18px] shadow-(--box-shadow-1) w-full max-w-[26.063rem] address-card">
+                            <img src="/assets/img/address-map.svg" alt="Map Image" class="w-full h-24 object-cover">
+                            <div class="flex flex-col gap-2.5 md:px-3 lg:px-5 pb-2">
+                                <h1 class="font-bold text-lg text-dark-gray">Delhi,India</h1>
+                                <p class="text-base font-normal text-dark-gray">Block H, Neb Sarai, Sainik Farm, New
+                                    Delhi, Delhi 110062</p>
+                            </div>
+                            <div class="md:px-3 lg:px-5 flex items-center justify-between">
+                                <button
+                                    class="border border-tomato-red rounded-[10px] md:px-3 md:h-8 lg:px-5 lg:h-12 cursor-pointer remove-address-btn">
+                                    <span class="font-normal text-base text-tomato-red">Remove</span>
+                                </button>
+                                <button
+                                    class="bg-deep-teal-green text-white rounded-[10px] md:px-3 md:h-8 lg:px-5 lg:h-12 flex items-center gap-2.5 cursor-pointer copy-address-btn">
+                                    <span class="font-normal text-base">Copy</span>
+                                    <i data-lucide="copy" class="h-6 w-6"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white  rounded-[10px] pb-3 flex flex-col gap-[18px] shadow-(--box-shadow-1) w-full max-w-[26.063rem] address-card">
+                            <img src="/assets/img/address-map.svg" alt="Map Image" class="w-full h-24 object-cover">
+                            <div class="flex flex-col gap-2.5 md:px-3 lg:px-5 pb-2">
+                                <h1 class="font-bold text-lg text-dark-gray">Delhi,India</h1>
+                                <p class="text-base font-normal text-dark-gray">Block H, Neb Sarai, Sainik Farm, New
+                                    Delhi, Delhi 110062</p>
+                            </div>
+                            <div class="md:px-3 lg:px-5 flex items-center justify-between">
+                                <button
+                                    class="border border-tomato-red rounded-[10px] md:px-3 md:h-8 lg:px-5 lg:h-12 cursor-pointer remove-address-btn">
+                                    <span class="font-normal text-base text-tomato-red">Remove</span>
+                                </button>
+                                <button
+                                    class="bg-deep-teal-green text-white rounded-[10px] md:px-3 md:h-8 lg:px-5 lg:h-12 flex items-center gap-2.5 cursor-pointer copy-address-btn">
+                                    <span class="font-normal text-base">Copy</span>
+                                    <i data-lucide="copy" class="h-6 w-6"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white  rounded-[10px] pb-3 flex flex-col gap-[18px] shadow-(--box-shadow-1) w-full max-w-[26.063rem] address-card">
+                            <img src="/assets/img/address-map.svg" alt="Map Image" class="w-full h-24 object-cover">
+                            <div class="flex flex-col gap-2.5 md:px-3 lg:px-5 pb-2">
+                                <h1 class="font-bold text-lg text-dark-gray">Delhi,India</h1>
+                                <p class="text-base font-normal text-dark-gray">Block H, Neb Sarai, Sainik Farm, New
+                                    Delhi, Delhi 110062</p>
+                            </div>
+                            <div class="md:px-3 lg:px-5 flex items-center justify-between">
+                                <button
+                                    class="border border-tomato-red rounded-[10px] md:px-3 md:h-8 lg:px-5 lg:h-12 cursor-pointer remove-address-btn">
+                                    <span class="font-normal text-base text-tomato-red">Remove</span>
+                                </button>
+                                <button
+                                    class="bg-deep-teal-green text-white rounded-[10px] md:px-3 md:h-8 lg:px-5 lg:h-12 flex items-center gap-2.5 cursor-pointer copy-address-btn">
+                                    <span class="font-normal text-base">Copy</span>
+                                    <i data-lucide="copy" class="h-6 w-6"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white  rounded-[10px] pb-3 flex flex-col gap-[18px] shadow-(--box-shadow-1) w-full max-w-[26.063rem] address-card">
+                            <img src="/assets/img/address-map.svg" alt="Map Image" class="w-full h-24 object-cover">
+                            <div class="flex flex-col gap-2.5 md:px-3 lg:px-5 pb-2">
+                                <h1 class="font-bold text-lg text-dark-gray">Delhi,India</h1>
+                                <p class="text-base font-normal text-dark-gray">Block H, Neb Sarai, Sainik Farm, New
+                                    Delhi, Delhi 110062</p>
+                            </div>
+                            <div class="md:px-3 lg:px-5 flex items-center justify-between">
+                                <button
+                                    class="border border-tomato-red rounded-[10px] md:px-3 md:h-8 lg:px-5 lg:h-12 cursor-pointer remove-address-btn">
+                                    <span class="font-normal text-base text-tomato-red">Remove</span>
+                                </button>
+                                <button
+                                    class="bg-deep-teal-green text-white rounded-[10px] md:px-3 md:h-8 lg:px-5 lg:h-12 flex items-center gap-2.5 cursor-pointer copy-address-btn">
+                                    <span class="font-normal text-base">Copy</span>
+                                    <i data-lucide="copy" class="h-6 w-6"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Pagination-->
+                    <div class="flex justify-center mt-8 space-x-2">
+                        <button id="prev-page" class="px-4 py-2 text-medium-gray rounded-md">Previous</button>
+                        <div id="page-numbers" class="flex space-x-2">
+                        </div>
+                        <button id="next-page" class="px-4 py-2 text-medium-gray rounded-md">Next</button>
+                    </div>
+                </div>
+                <!--Add New Address popup-->
+                <div
+                    class="newAddressPopup fixed inset-0 flex justify-center   hidden bg-transparent-black backdrop-blur-[2px]  z-100">
+                    <div
+                        class="bg-white rounded-xl border border-platinum-gray w-full max-w-[44rem] h-full max-h-[28.625rem] md:mt-[8rem] lg:mt-[11.75rem] py-7 px-9 ">
+                        <div class="flex flex-col gap-8 ">
+                            <h1 class="font-semibold text-2xl text-gray-med text-center">Add Shipping Address</h1>
+                            <div class="grid grid-cols-2 gap-x-4 gap-y-6">
+                                <div class="input-group">
+                                    <input type="text" id="firstName" class="w-full" placeholder=" " required />
+                                    <label for="firstName">First Name</label>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" id="lastName" class="w-full" placeholder=" " required />
+                                    <label for="lastName">Last Name</label>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" id="phone" class="w-full" placeholder=" " required />
+                                    <label for="phone">Phone no.</label>
+                                </div>
+                                <div class="input-group relative w-64">
+                                    <input type="text" id="country" class="w-full" placeholder=" " required readonly />
+                                    <label for="country">
+                                        Country
+                                    </label>
+                                    <div class="absolute right-4 top-3 cursor-pointer">
+                                        <i data-lucide="chevron-down"
+                                            class="transition-transform duration-200 dropdown-toggle"></i>
+                                    </div>
+                                    <ul
+                                        class="dropdown-menu hidden absolute z-10 w-full bg-white border border-gray-300 rounded-lg mt-1 shadow-lg">
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer">India</li>
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer">China</li>
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer">Indonesia</li>
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer">Malaysia</li>
+                                    </ul>
+                                </div>
+                                <div class="input-group relative w-64">
+                                    <input type="text" id="state"
+                                        class="w-full px-3 py-3 border border-gray-300 rounded-lg bg-white outline-none cursor-pointer"
+                                        placeholder=" " required readonly />
+                                    <label for="state">
+                                        State
+                                    </label>
+                                    <div class="absolute right-4 top-3 cursor-pointer">
+                                        <i data-lucide="chevron-down"
+                                            class="transition-transform duration-200 dropdown-toggle"></i>
+                                    </div>
+                                    <ul
+                                        class="dropdown-menu hidden absolute z-10 w-full bg-white border border-gray-300 rounded-lg mt-1 shadow-lg">
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer">Karnataka</li>
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer">Maharashtra</li>
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer">Delhi</li>
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer">Haryana</li>
+                                    </ul>
+                                </div>
+                                <div class="input-group relative w-64">
+                                    <input type="text" id="city" class="w-full" placeholder=" " required readonly />
+                                    <label for="city">
+                                        City
+                                    </label>
+                                    <div class="absolute right-4 top-3 cursor-pointer">
+                                        <i data-lucide="chevron-down"
+                                            class="transition-transform duration-200 dropdown-toggle"></i>
+                                    </div>
+                                    <ul
+                                        class="dropdown-menu hidden absolute z-10 w-full bg-white border border-gray-300 rounded-lg mt-1 shadow-lg">
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer">Delhi</li>
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer">Mumbai</li>
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer">Bangalore</li>
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer">Chennai</li>
+                                    </ul>
+                                </div>
+                                <div class="input-group relative w-64">
+                                    <input type="text" id="zipcode" class="w-full" placeholder=" " required readonly />
+                                    <label for="zipcode">
+                                        Zip Code
+                                    </label>
+                                    <div class="absolute right-4 top-3 cursor-pointer">
+                                        <i data-lucide="chevron-down"
+                                            class="transition-transform duration-200 dropdown-toggle"></i>
+                                    </div>
+                                    <ul
+                                        class="dropdown-menu hidden absolute z-10 w-full bg-white border border-gray-300 rounded-lg mt-1 shadow-lg">
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer">4110061</li>
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer">4110062</li>
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer">4110063</li>
+                                        <li class="px-3 py-2 hover:bg-gray-100 cursor-pointer">4110064</li>
+                                    </ul>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" id="address" class="w-full" placeholder=" " required />
+                                    <label for="address">Address</label>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-center gap-[27px]">
+                                <button
+                                    class="w-40 border border-pewter-blue text-teal-green py-[11px] px-[22px] font-bold text-[15px] rounded-xl cursor-pointer close-popup"
+                                    data-popup="newAddressPopup">Cancel</button>
+                                <button
+                                    class="w-40 bg-deep-teal-green py-[11px] px-[22px] rounded-lg font-bold text-[15px] cursor-pointer save-address-btn text-white shadow-(--box-shadow-btn)">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Text copied toaster message-->
+                <div
+                    class="toast hidden fixed top-5 left-1/2 bg-deep-teal-green text-white px-4 py-2 rounded-lg shadow-lg z-50">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/script/manageAddress.js"></script>
+</body>
+
+</html>
