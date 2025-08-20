@@ -101,16 +101,17 @@
   --color-granite-gray: #4D4D4D;
   --color-seafoam-blue: #83BEBB;
   --color-bright-green: #54D62C;
-  --color-soft-cloud:#FAFBFE;
-  --color-tea-green:#E9FCD4;
-  --color-medium-aquamarine:#5ED9BA;
+  --color-soft-cloud: #FAFBFE;
+  --color-tea-green: #E9FCD4;
+  --color-medium-aquamarine: #5ED9BA;
+  --color-stone-gray:#636465;
+  --color-platinum-gray:#C4CDD5;
   /* Box Shadow */
   --box-shadow-1: 4px 4px 10px 4px rgba(0, 0, 0, 0.20);
-  --box-shadow-2: 0 8px 16px 0 rgba(145, 158, 171, 0.12);
+  --box-shadow-btn: 0 8px 16px 0 rgba(145, 158, 171, 0.12);
   --box-shadow-3: 0 8px 16px 0 rgba(8, 129, 120, 0.24);
   --box-shadow-4: 0 3px 4px 0 rgba(0, 0, 0, 0.10);
   --box-shadow-5: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-
 
   /* Font Size and Font Weight */
   --text-30-bold: 1.875rem;
@@ -433,26 +434,45 @@ body {
 }
 
 #fullscreenTable {
-    position: fixed;
-    inset: 0;
-    z-index: 9999;
-    background-color: white;
-    display: none;   /* <-- keeps it hidden initially */
-    flex-direction: column;
-    transition: opacity 0.3s ease;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: white;
+  display: none;
+  /* <-- keeps it hidden initially */
+  flex-direction: column;
+  transition: opacity 0.3s ease;
 }
 
 
 /* Ensure table takes full width */
 #fullscreenTable .docTable {
-    min-width: 100%;
+  min-width: 100%;
 }
 
 /* Improve scrollbar for full-screen (optional) */
 #fullscreenTable::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
+
 #fullscreenTable::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 4px;
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.input-group {
+  @apply relative w-full;
+}
+
+.input-group input {
+  @apply w-full px-[14px] py-[12px] border border-gainsboro-gray rounded-lg text-base font-normal text-gray bg-white outline-none;
+}
+.input-group label {
+  @apply absolute left-3 top-4 bg-white px-1 text-gray-light1 text-xs font-normal transition-all duration-200 pointer-events-none;
+}
+
+/* Floating effect */
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  @apply -top-2 left-2 text-xs;
 }
