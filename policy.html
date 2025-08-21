@@ -138,9 +138,11 @@
             </nav>
         </header>
         <div class=" mx-auto md:px-5 lg:px-20 py-8 flex flex-col md:flex-row md:gap-4 lg:gap-8">
-
+             <div class="flex md:hidden p-4">
+                <i id="menu-toggle" data-lucide="menu" class="text-2xl cursor-pointer text-black"></i>
+            </div>
             <!-- Sidebar Navigation -->
-            <div class="w-full md:w-48 lg:w-64 flex-shrink-0 ">
+            <div id="sidebar" class="w-full md:w-48 lg:w-64 flex-shrink-0 hidden md:block">
                 <div
                     class=" flex justify-between items-center border px-4 py-2 gap-2 rounded-lg bg-gray-tint border-gray-200 mb-6">
                     <span class=" text-gray-500 text-xs">
@@ -187,7 +189,7 @@
 
 
             <!--Main Content-->
-            <div class="flex-1 bg-white border border-gray-light3 rounded-xl md:p-4 lg:p-8">
+            <div class="flex-1 bg-white border border-gray-light3 rounded-xl p-4 lg:p-8">
                 <div class="flex flex-col gap-2.5">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                         <!-- Breadcrumb Navigation -->
@@ -233,7 +235,7 @@
 
                 <div class="mt-6">
                     <!-- Tabs -->
-                    <div class="flex space-x-2 mb-4">
+                    <div class="flex space-x-2 mb-4 overflow-x-auto no-scrollbar">
                         <button
                             class="tab-btn px-4 py-2 rounded-full font-semibold text-sea-green-dark1 text-sm bg-mint-cream"
                             data-target="terms">Terms of Uses</button>
@@ -462,7 +464,7 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="/script/myupload.js"></script>
-    <script src="/script/payment_methods.js"></script>
+
 </body>
 
 </html>

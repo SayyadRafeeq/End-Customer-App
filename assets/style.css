@@ -251,7 +251,7 @@ body {
 }
 
 .carousel-section-donate {
-  @apply px-20 py-[4.5rem];
+  @apply  mt-4;
 }
 
 .carousel-container {
@@ -440,7 +440,7 @@ body {
   inset: 0;
   z-index: 9999;
   background-color: white;
-  display: none;
+  
   /* <-- keeps it hidden initially */
   flex-direction: column;
   transition: opacity 0.3s ease;
@@ -536,4 +536,11 @@ input[type="time"]::-moz-focus-inner {
 input[type="time"]::-ms-clear,
 input[type="time"]::-ms-expand {
   display: none;
+}
+
+.tab-btn-donation {
+    @apply text-dark-gray text-base font-normal pb-2 text-center
+}
+.tab-btn-donation.active {
+    @apply text-teal-green bg-white border-b-2 border-teal-green font-semibold w-[11.063rem];
 }

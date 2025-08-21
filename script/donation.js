@@ -161,4 +161,26 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
+$(document).ready(function(){
+  $('.view-all-btn').on('click',function(){
+    $('.carousel-section-donate').hide();
+    $('.search-section').hide();
+    $('.sharing-section').hide();
+    $('.nearby-campaign').hide();
+    $('.donation-history').hide();
+    $('.table-section').removeClass('hidden')
+  })
 
+  $(".tab-btn-donation").on("click", function() {
+        // deactivate all tabs
+        $(".tab-btn-donation").removeClass("active");
+        // activate current
+        $(this).addClass("active");
+
+        // hide all contents
+        $(".tab-content").addClass("hidden");
+        // show matching content
+        $("#" + $(this).data("tab")).removeClass("hidden");
+    });
+
+})
